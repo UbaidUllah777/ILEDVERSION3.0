@@ -18,34 +18,28 @@ const ElidHeaderLinkContactUs = document.getElementById(
 ElidHeaderSales.innerHTML = `
 Sales:
 <a
-  href="tel:+1234567890"
+  href="tel:+8613556848438"
   class="text-color-dark text-color-hover-primary text-decoration-none"
-  ><strong>123-456-789</strong></a
+  ><strong>+8613556848438</strong></a
 >
 `;
 
-ElidHeaderService.innerHTML = `
-Services:
-<a
-  href="tel:+1234567890"
-  class="text-color-dark text-color-hover-primary text-decoration-none"
-  ><strong>123-456-789</strong></a
->`;
+ElidHeaderService.innerHTML = ``;
 ElidHeaderFacebook.innerHTML = ` <a
-href="http://www.facebook.com/"
+href="https://www.facebook.com/iledscreen"
 target="_blank"
 title="Facebook"
 ><i class="fab fa-facebook-f"></i
 ></a>`;
 ElidHeaderTwitter.innerHTML = ` <a
-href="http://www.twitter.com/"
+href="https://twitter.com/NickHan09748088"
 target="_blank"
 title="Twitter"
 ><i class="fab fa-twitter"></i
 ></a>`;
 
 ElidHeaderInstagram.innerHTML = ` <a
-href="http://www.instagram.com/"
+href="https://www.instagram.com/iledscreen/"
 target="_blank"
 title="Instagram"
 ><i class="fab fa-instagram"></i
