@@ -133,53 +133,7 @@
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
-    <script>
-      var BannerHeadings = [
-        "Considering  LED  Video Wall ?",
-        "Have a Look on Markets",
-        "COB LED SERIES All-In-One",
-        "Seamless LED Video Displays",
-        "House Of BRIGHTNESS",
-      ];
-      var BannerParas = [
-        "Our team is with you through the entire process, from product selection to installation and service. Every project starts with a simple conversation.",
-        "The most prestigious ranking of the nation’s fastest-growing private companies.",
-        "Plug and play LED display with built-in OS, speakers, touchscreen, standard inputs, and wireless sharing.",
-        "CN Based Sales & Service Manufacturing Superior Indoor and Outdoor LED Display",
-        "Replace projectors with brighter, long lasting LED Video Walls with NEW COB Technology.",
-      ];
-      var BannerImg = [
-        "img/demos/industry-factory/backgrounds/banner01.jpg",
-        "img/demos/industry-factory/backgrounds/banner02.jpg",
-        "img/demos/industry-factory/backgrounds/banner03.jpg",
-        "img/demos/industry-factory/backgrounds/banner04.jpg",
-        "img/demos/industry-factory/backgrounds/banner05.jpg",
-      ];
-
-      var index = 0;
-      setInterval(function () {
-        if (index === BannerHeadings.length) {
-          index = 0;
-        }
-
-        document.getElementById("idBannerHeading").textContent =
-          BannerHeadings[index];
-        document.getElementById("BannerBGimage").style.backgroundImage =
-          "url(" + BannerImg[index] + ")";
-        document.getElementById("idBannerPara").textContent =
-          BannerParas[index];
-        // $("#quoteImage").fadeOut(500).delay(100).fadeIn(900);
-        index++;
-      }, 7000);
-    </script>
-    <script>
-      function blinker() {
-        $(".time").delay(1700);
-        $(".time").fadeOut(700);
-        $(".time").fadeIn(700);
-      }
-      setInterval(blinker, 1000);
-    </script>
+   
     <style>
       section.section {
         background: #fff;
