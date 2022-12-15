@@ -173,7 +173,51 @@
         // $("#quoteImage").fadeOut(500).delay(100).fadeIn(900);
         index++;
       }, 7000);
+    
+    
     </script>
+
+
+<script>
+  var IndustryHeadings = [
+    "ENTERTAINMENT AND CONCERTS",
+    "SPORTS",
+    "VENUE",
+    "RETAIL",
+    "RESTAURANT",
+  ];
+  var IndustryParas = [
+    "Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur nostrud culpa. Adipisicing esse id anim nulla non veniam nisi velit. Ullamco dolore cupidatat sit reprehenderit ut mollit. Ea id laboris est nisi ad cillum proident sit nostrud sunt ullamco labore. Sunt culpa amet consequat ipsum in irure.",
+    "Adipisicing laboris fugiat non incididunt enim Lorem voluptate fugiat fugiat laborum. Incididunt laboris sunt sunt anim non do occaecat anim. Duis in laboris eu ipsum deserunt nulla enim ex commodo deserunt adipisicing minim. Quis tempor veniam dolor voluptate officia et quis officia mollit mollit. Labore nulla elit non est aliqua officia ad ad velit nulla aliqua.",
+    "Pariatur esse laborum sunt laboris Lorem elit labore esse cillum eiusmod excepteur ea. Eiusmod dolore eiusmod culpa magna reprehenderit tempor Lorem laboris amet ex non minim. Ea exercitation proident anim aute enim minim incididunt adipisicing tempor occaecat aliqua adipisicing. Nulla duis culpa consectetur incididunt eiusmod officia deserunt tempor incididunt id minim duis consectetur..",
+    "Cillum nisi exercitation eiusmod cillum Lorem et elit velit aliqua et. Consequat aliquip proident excepteur pariatur velit velit. Qui consequat aliqua laborum ex voluptate aliqua. Occaecat aliquip proident reprehenderit excepteur adipisicing eu id dolore eu aliqua laboris laboris dolore. Reprehenderit do consectetur incididunt cupidatat culpa enim ullamco sunt.",
+    "Anim proident adipisicing commodo culpa tempor velit labore dolore ipsum officia sunt mollit. Aliqua eu eiusmod officia ea ut eu enim cupidatat. Nulla cupidatat pariatur tempor duis nulla exercitation sunt laboris. Culpa ad cupidatat cupidatat id Lorem labore officia occaecat proident aliqua aliquip consequat enim labore. Duis nostrud ex deserunt quis aute exercitation sit ut exercitation incididunt aute ad qui. Sint anim esse mollit ea voluptate voluptate nisi eu sint ut exercitation aliquip labore officia.",
+  ];
+  var IndustryImg = [
+    "img/demos/industry-factory/industries/Church-Rental.jpg",
+    "img/demos/industry-factory/industries/Ice hockey - Scoreboard.jpg",
+    "img/demos/industry-factory/industries/iledscreen - indoor categories.jpg",
+    "img/demos/industry-factory/industries/LCD-digital-signage.jpg",
+    "img/demos/industry-factory/industries/stage-show.jpg",
+  ];
+
+  var index = 0;
+  setInterval(function () {
+    if (index === IndustryHeadings.length) {
+      index = 0;
+    }
+
+    document.getElementById("idIndexIndustryHeading").textContent = IndustryHeadings[index];
+    document.getElementById("idInexindustryImage").src = IndustryImg[index] ;
+    document.getElementById("idIndexIndustryPara").textContent = IndustryParas[index];
+    
+    index++;
+  }, 7000);
+
+
+</script>
+
+
     <script>
       function blinker() {
         $(".time").delay(1700);
@@ -846,7 +890,7 @@
           <div class="container position-relative z-index-3 mt-3 mb-5">
             <div class="row align-items-center justify-content-center">
               <div class="col-lg-6 pe-lg-5 mb-4 mb-lg-0">
-                <img
+                <img id="idInexindustryImage"
                   src="img/demos/industry-factory/generic/homepageImage1.jpg"
                   class="img-fluid box-shadow-3 appear-animation"
                   data-appear-animation="fadeInRightShorter"
@@ -864,45 +908,18 @@
                 >
                   SPECIAL SERVICES
                 </h2>
-                <h3
+                <h3 id="idIndexIndustryHeading"
                   class="font-weight-bold text-transform-none text-9 line-height-2 mb-3"
                 >
                   Other Industries
                 </h3>
-                <p
+                <p id="idIndexIndustryPara"
                   class="custom-font-secondary custom-font-size-1 line-height-7 pb-2 mb-4"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   imperdiet libero id nisi euismod.
                 </p>
-                <ul
-                  class="list list-icons list-icons-style-2 list-icons-lg custom-list-icons-icon-size pb-1 mb-3"
-                >
-                  <li class="font-weight-semibold text-color-dark">
-                    <i
-                      class="fas fa-check text-color-dark border-color-grey-1 top-7"
-                    ></i>
-                    Pellentesque ultricies nibh
-                  </li>
-                  <li class="font-weight-semibold text-color-dark">
-                    <i
-                      class="fas fa-check text-color-dark border-color-grey-1 top-7"
-                    ></i>
-                    Ultricies nibh pellen
-                  </li>
-                  <li class="font-weight-semibold text-color-dark">
-                    <i
-                      class="fas fa-check text-color-dark border-color-grey-1 top-7"
-                    ></i>
-                    Ultricies nibh pellen
-                  </li>
-                  <li class="font-weight-semibold text-color-dark">
-                    <i
-                      class="fas fa-check text-color-dark border-color-grey-1 top-7"
-                    ></i>
-                    Pellentesque ultricies nubh
-                  </li>
-                </ul>
+               
                 <a
                   href="services-detail.html"
                   class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
