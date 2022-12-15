@@ -63,7 +63,7 @@ ElidHeaderlinkProducts.textContent = `Products`;
 ElidHeaderlinkProducts.href = `products.html`;
 
 ElidHeaderLinkMarkets.textContent = `Markets`;
-ElidHeaderLinkMarkets.href = `#`;
+ElidHeaderLinkMarkets.href = `market.html`;
 
 ElidHeaderLinkSupport.textContent = `Support`;
 ElidHeaderLinkSupport.href = `services.html`;
