@@ -2,7 +2,7 @@
 <html>
   <head>
     <style>
-   
+      
       
       /* The Modal (background) */
       .modal {
@@ -1130,7 +1130,7 @@
 
 
 		<!-- Contact Us Section : Start -->
-        <div class="container-fluid py-3" style="background-color: black;">
+        <div class="container-fluid py-3 " style="background-color: black;">
 			<div class="row justify-content-center pt-4 mt-5  py-5 my-5 ">
 				<div class="col-lg-8 text-center">
 				  <div class="overflow-hidden">
@@ -1142,7 +1142,7 @@
 					  Looking For Signage Solutions!
 					</h2>
 				  </div>
-				  <div class="overflow-hidden mb-3">
+				  <div class="overflow-hidden ">
 					<h3
 					  class="font-weight-bold text-transform-none text-9 line-height-2 mb-0 appear-animation text-color-light"
 					  data-appear-animation="maskUp"
@@ -1151,20 +1151,12 @@
 					  Let's FulFill Your Digital Signage Needs
 					</h3>
 				  </div>
-				  <!-- <p
-					class="custom-font-secondary custom-font-size-1 line-height-7 mb-0 appear-animation text-color-light"
-					data-appear-animation="fadeInUpShorter"
-					data-appear-animation-delay="600"
-				  >
-					We offer a wide range and varity of digital signage solutions for different usage
-					areas that fulfills your needs and requirements. Let's build your next outstanding 
-					digital signage solution together.
-				  </p> -->
+		
 				</div>
 			  </div>
-        <div class="row p-2" >
+        <div class="row px-lg-5 " >
 						
-          <div class="col-lg-6 bg-color-primary" style="border-radius: 5px 0px 0px 0px; ">
+          <div class="col-lg-6 " style="border-radius: 5px 0px 0px 0px; background-color: #504c54; ">
            <center> <h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4 mt-4 text-color-light">Send Us a Message</h2></center>
             <form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
               <div class="contact-form-success alert alert-success d-none mt-4">
@@ -1196,36 +1188,42 @@
               <!-- Modal Line and Variant -->
               <div class="row">
                 <div class="form-group col-sm-6">
-                  <div class="custom-select-1">
-                      <select class="form-select form-control h-auto" data-msg-required="Please select a Model Line." name="ModelLine" required="">
-                      <option value="">Model Line</option>
-                      <option value="1">Modal one</option>
-                      <option value="2">Modal Two</option>
-                      <option value="3">Modal Three</option>
+                  <div class="custom-select-1" >
+                      <select id="idProductDropDown" onchange="changeSelect()" class="form-select form-control h-auto" name="Product" >
+                      <option value="">Please Select your Product</option>
+                      <option value="1">3D HOLOGRAM </option>
+                      <option value="2">Outdoor Fixed Series</option>
+                      <option value="3">UL TRANSPARENT LED DISPLAY</option>
+                      <option value="4">ILED SPECIAL TILE Series</option>
+                      <option value="5">IB SERIES (BLACK LED)</option>
+                      <option value="6">TAXI TOP</option>
+                      <option value="7">STREET POLE</option>
+                      <option value="8">ILEX SERIES</option>
                       </select>
                     </div>
                 </div>
                 
                 <div class="form-group col-sm-6">
                   <div class="custom-select-1">
-                      <select class="form-select form-control h-auto" data-msg-required="Please select a Variant." name="Variant" required="">
-                      <option value="">Variant</option>
-                      <option value="1">Variant One</option>
-                      <option value="2">Variant Two</option>
-                      <option value="3">Variant Three</option>
+                      <select class="form-select form-control h-auto"  name="Variant">
+                      <option value="">Please Select a Variant</option>
+                      <option value="1">Model 1</option>
+                      <option value="2">Model 2</option>
+                      <option value="3">Model 3</option>
+                      <option value="4">Model 4</option>
                       </select>
                     </div>
                 </div>
               </div>
               <!-- Side -->
               <div class="row">
-                <div class="form-group col">
-                  <div class="form-check form-check-inline">
+                <div class="form-group col" >
+                  <div class="form-check form-check-inline" style="padding-left: 45px;">
                     <label class="form-check-label text-color-light  text-4">
                       <input class="form-check-input" type="radio" name="radios" data-msg-required="Please select at least one option." id="tabContent9Radio1" value="Single Sided" required=""> One Sided
                     </label>
                   </div>
-                  <div class="form-check form-check-inline">
+                  <div class="form-check form-check-inline"  style="padding-left: 45px;">
                     <label class="form-check-label text-color-light text-4">
                       <input class="form-check-input" type="radio" name="radios" data-msg-required="Please select at least one option." id="tabContent9Radio2" value="Double Sided" required=""> Double Sided
                     </label>
@@ -1253,25 +1251,31 @@
                 <div class="form-group col">
                   <button type="submit" href="#" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1" data-loading-text="Loading...">Send Message <i class="fas fa-arrow-right ms-2"></i></button>
                   
-                  <!-- <button type="submit" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1" data-loading-text="Loading...">
-                    <svg class="custom-svg-btn-background" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 210 70" preserveAspectRatio="none">
-                      <polygon fill="none" stroke="#D4D4D4" stroke-width="2" stroke-miterlimit="10" points="7,5 185,5 205,34 186,63 7,63 "/>
-                    </svg>
-                    Send Message
-                  </button> -->
+                 
                 </div>
               </div>
             </form>
           </div>
-          <div class="col-lg-6 custom-bg-lighten-grey-1"  style="border-radius: 0px 5px 0px 0px; ">
+          <div class="col-lg-6"  style="border-radius: 0px 5px 0px 0px;  background-color: white; ">
             <div class="overflow-hidden mb-3">
-              <h3
-                class=" pt-5 mt-5 font-weight-bold text-transform-none text-8 line-height-2 mb-0 appear-animation text-color-light"
+             <center> <h3 id="idIdexFormProductHeading"
+                class=" pt-5 mt-5 font-weight-semi-bold text-transform-none text-7 line-height-2 mb-0 appear-animation  text-color-dark"
                 data-appear-animation="maskUp"
                 data-appear-animation-delay="400"
               >
-                Here The Corresponding data will come
-              </h3>
+                Heading of the Selected Model or Varient from the FORM
+              </h3></center>
+              <p id="idIdexFormProductdetail"
+              class=" pt-5  text-transform-none text-4 line-height-2 mb-0  text-color-dark"
+              
+            >
+             Nisi duis labore proident consequat pariatur incididunt eu mollit esse labore consectetur ipsum labore qui. Cillum culpa eu deserunt laborum ut. Ea reprehenderit culpa anim voluptate laborum ea voluptate excepteur do duis officia ea est. Laborum ex do ad dolor sint veniam cupidatat eu esse voluptate culpa duis fugiat proident.
+            </p>
+           <center><img id="idIdexFormProductImage" src="img/demos/industry-factory/industries/stage-show.jpg"   
+            class="img-fluid pt-5"
+            width="323"
+            height="323"
+            alt=""></center> 
               </div>
           </div>
 
