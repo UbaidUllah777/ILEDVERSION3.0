@@ -109,7 +109,7 @@ for (const singleBlogPost of iLEDBlogPosts) {
         class="font-weight-bold text-6 position-absolute bottom-0 left-0 z-index-2 ms-4 mb-4 pb-2 ps-2 pe-5 me-5"
       >
         <a
-          id="idBlogPostHeading"
+          id="${singleBlogPost.id}" onclick="FnClickedBlog('${singleBlogPost.id}')"
           href="blog-post.html"
           class="text-color-light text-decoration-none"
           >${singleBlogPost.BlogLongHeading}</a
