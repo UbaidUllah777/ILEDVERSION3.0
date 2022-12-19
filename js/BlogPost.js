@@ -19,16 +19,4 @@ for (const singleBlogPost of iLEDBlogPosts) {
     ElidBlogPara2.textContent = `${singleBlogPost.blogPara2}`;
     ElidBlogPara3.textContent = `${singleBlogPost.blogPara3}`;
   }
-  ElSideBlogsInfo2.innerHTML += `
-    <p
-    
-    class="text-color-default text-uppercase text-1 mb-0 d-block text-decoration-none"
-  >
-   ${singleBlogPost.blogAuthor}
-  </p>
-  <a  id="${singleBlogPost.id}" onclick="FnClickedBlog('${singleBlogPost.id}')"
-  href="blog-post.html" 
-    class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4"
-    >${singleBlogPost.blogShortHeading}</a
-  >`;
 }

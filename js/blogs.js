@@ -93,7 +93,6 @@ const iLEDBlogPosts = [
 
  
 ];
-
 for (const singleBlogPost of iLEDBlogPosts) {
   if (ElidBlogsContainer) {
     ElidBlogsContainer.innerHTML += ` <div class="pt-5 BxBlogPost col-lg-6 isotope-item text-start">
@@ -144,21 +143,28 @@ for (const singleBlogPost of iLEDBlogPosts) {
     </div>
   </article>
 </div>`;
-    ElSideBlogsInfo.innerHTML += `
+  }
+}
+
+
+for  (const singleRecentBlogs of iLEDBlogPosts.slice(-4)){
+  if(ElSideBlogsInfo){
+    
+  ElSideBlogsInfo.innerHTML += `
   <p
   
   class="text-color-default text-uppercase text-1 mb-0 d-block text-decoration-none"
 >
- ${singleBlogPost.blogAuthor}
+ ${singleRecentBlogs.blogAuthor}
 </p>
-<a  id="${singleBlogPost.id}" onclick="FnClickedBlog('${singleBlogPost.id}')"
+<a  id="${singleRecentBlogs.id}" onclick="FnClickedBlog('${singleRecentBlogs.id}')"
 href="blog-post.html" 
   class="text-color-dark text-hover-primary font-weight-bold text-3 d-block pb-3 line-height-4"
-  >${singleBlogPost.blogShortHeading}</a
+  >${singleRecentBlogs.blogShortHeading}</a
 >`;
   }
-}
 
+}
 
 const loadIndexBlogs=()=>{
 const ELidindexBlogsSection=document.getElementById('idindexBlogsSection');
