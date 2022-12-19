@@ -240,11 +240,16 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
       type="text/javascript"
     ></script>
-     <script defer>
-      $(function () {
+
+    
+    <script defer>
+      $(function () { 
         $("#footer").load("footer.html");
+        $("#modal-body").load("modalBody.html");
+
       });
     </script>
+    
     <script src="js/common.js" defer></script>
     <script src="js/blogs.js" defer></script>
     
@@ -300,85 +305,8 @@
                     <div id="myModal" class="modal">
 
                       <!-- Modal content -->
-                      <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <!-- modalbody content -->
-                       	<!-- Contact Us Section : Start -->
-                            <div class="container py-3">
-                                <div class="row">
-                                    
-                                  <div class="col-lg-12">
-                                    <h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4 " style="color:#82ba41;">GET A QUOTE</h2>
-                                    <form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
-                                      <div class="contact-form-success alert alert-success d-none mt-4">
-                                        <strong>Success!</strong> Your message has been sent to us.
-                                      </div>
-                        
-                                      <div class="contact-form-error alert alert-danger d-none mt-4">
-                                        <strong>Error!</strong> There was an error sending your message.
-                                        <span class="mail-error-message text-1 d-block"></span>
-                                      </div>
-                        
-                                      <div class="row">
-                                        <div class="form-group col-sm-6">
-                                          <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name" required>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                          <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email Address" required>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="form-group col-sm-6">
-                                          <div class="custom-select-1">
-                                              <select class="form-select form-control h-auto" data-msg-required="Please select a Model Line." name="ModelLine" required="">
-                                              <option value="">Model Line</option>
-                                              <option value="1">1</option>
-                                              <option value="2">2</option>
-                                              <option value="3">3</option>
-                                              </select>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form-group col-sm-6">
-                                          <div class="custom-select-1">
-                                              <select class="form-select form-control h-auto" data-msg-required="Please select a Variant." name="Variant" required="">
-                                              <option value="">Variant</option>
-                                              <option value="1">1</option>
-                                              <option value="2">2</option>
-                                              <option value="3">3</option>
-                                              </select>
-                                            </div>
-                                        </div>
-                                      </div>
-                        
-                                      <div class="row">
-                                        <div class="form-group col-sm-6">
-                                          <input type="number" value="" data-msg-required="Please enter Width." maxlength="100" class="form-control" name="width" placeholder="Width" required>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                          <input type="number" value="" data-msg-required="Please enter Height." maxlength="100" class="form-control" name="height" placeholder="Height" required>
-                                        </div>
-                                      </div>
-                        
-                                      
-                                      <div class="row">
-                                        <div class="form-group col">
-                                          <textarea maxlength="5000" data-msg-required="Please enter your message." rows="6" class="form-control" name="message" placeholder="Your Message" required></textarea>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="form-group col">
-                                          <button type="submit" href="#" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1" data-loading-text="Loading...">GET A QUOTE <i class="fas fa-arrow-right ms-2"></i></button>
-                                          
-                                        
-                                        </div>
-                                      </div>
-                                    </form>
-                                  </div>
-                        
-                                </div>
-                              </div>
-                         <!-- Contact Us Section : End -->
+                      <div class="modal-content" id="modal-body">
+                      
                       </div>
                     
                     </div>
@@ -1130,7 +1058,7 @@
 						
           <div class="col-lg-6 " style="border-radius: 5px 0px 0px 0px; background-color: #504c54; ">
            <center> <h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4 mt-4 text-color-light">Send Us a Message</h2></center>
-            <form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
+            <form class="contact-form form-style-3" action="php/contact-form.php" method="POST">
               <div class="contact-form-success alert alert-success d-none mt-4">
                 <strong>Success!</strong> Your message has been sent to us.
               </div>
@@ -1142,10 +1070,10 @@
                 <!-- Name And Adddress -->
               <div class="row">
                 <div class="form-group col-sm-6">
-                  <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name" required>
+                  <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name*" required>
                 </div>
                 <div class="form-group col-sm-6">
-                  <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email Address" required>
+                  <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email Address*" required>
                 </div>
               </div>
               <!-- Company and Phone -->
@@ -1154,7 +1082,7 @@
                   <input type="text" value=""  maxlength="100" class="form-control" name="Company-Name" placeholder="Your Compnay Name" >
                 </div>
                 <div class="form-group col-sm-6">
-                  <input type="tel" value="" data-msg-required="Please enter your Phone Number" data-msg-phone="Please enter a valid  Phone Number." maxlength="20" class="form-control" name="Phone-Number" placeholder="Phone Number" required>
+                  <input type="tel" value="" data-msg-required="Please enter your Phone Number" data-msg-phone="Please enter a valid  Phone Number." maxlength="20" class="form-control" name="Phone-Number" placeholder="Phone Number*" required>
                 </div>
               </div>
               <!-- Modal Line and Variant -->
@@ -1192,12 +1120,12 @@
                 <div class="form-group col" >
                   <div class="form-check form-check-inline" style="padding-left: 45px;">
                     <label class="form-check-label text-color-light  text-4">
-                      <input class="form-check-input" type="radio" name="Side" data-msg-required="Please select at least one option." id="tabContent9Radio1" value="Single Sided" required=""> One Sided
+                      <input class="form-check-input" type="radio" name="Side" data-msg-required="Please select at least one option." id="tabContent9Radio1" value="Single Sided" required=""> One Sided*
                     </label>
                   </div>
                   <div class="form-check form-check-inline"  style="padding-left: 45px;">
                     <label class="form-check-label text-color-light text-4">
-                      <input class="form-check-input" type="radio" name="Side" data-msg-required="Please select at least one option." id="tabContent9Radio2" value="Double Sided" required=""> Double Sided
+                      <input class="form-check-input" type="radio" name="Side" data-msg-required="Please select at least one option." id="tabContent9Radio2" value="Double Sided" required=""> Double Sided*
                     </label>
                   </div>
                 </div>
@@ -1205,10 +1133,10 @@
                 <!-- Width and Height -->
               <div class="row">
                 <div class="form-group col-sm-6">
-                  <input type="number" value="" maxlength="100" class="form-control" name="Width" placeholder="Width" >
+                  <input type="number" value="" maxlength="100" class="form-control" name="Width" placeholder="Width (In Feet)" >
                 </div>
                 <div class="form-group col-sm-6">
-                  <input type="number" value=""  maxlength="100" class="form-control" name="Height" placeholder="Height">
+                  <input type="number" value=""  maxlength="100" class="form-control" name="Height" placeholder="Height (In Feet)">
                 </div>
               </div>
 
@@ -1231,14 +1159,14 @@
           <div class="col-lg-6"  style="border-radius: 0px 5px 0px 0px;  background-color: white; ">
             <div class="overflow-hidden mb-3">
              <h3 id="idIdexFormProductHeading"
-                class=" pt-5 mt-5 font-weight-semi-bold text-transform-none text-7 line-height-2 mb-0 appear-animation  text-color-dark"
+                class="  text-transform-none appear-animation  text-color-dark font-weight-bold  text-8 pb-2 mb-4 mt-4 "
                 data-appear-animation="maskUp"
                 data-appear-animation-delay="400"
               >
               3D HOLOGRAM
               </h3>
               <p id="idIdexFormProductdetail"
-              class=" pt-5  text-transform-none text-4 line-height-2 mb-0  text-color-dark"
+              class=" pt-3f  text-transform-none text-4 line-height-2 mb-0  text-color-dark"
               
             >
             When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.
@@ -1294,7 +1222,7 @@
 
     <!-- Theme Initialization Files -->
     <script src="js/theme.init.js"></script>
-    <script>
+    <script >
       // Get the modal
       var modal = document.getElementById("myModal");
       
@@ -1305,13 +1233,17 @@
       var span = document.getElementsByClassName("close")[0];
       
       // When the user clicks the button, open the modal 
+     if(btn){
       btn.onclick = function() {
         modal.style.display = "block";
       }
+     }
       
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
+      if(span){
+        span.onclick = function() {
         modal.style.display = "none";
+      }
       }
       
       // When the user clicks anywhere outside of the modal, close it

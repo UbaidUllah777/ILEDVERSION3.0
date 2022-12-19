@@ -149,6 +149,8 @@
     <script defer>
       $(function () {
         $("#footer").load("footer.html");
+        $("#modal-body").load("modalBody.html");
+
       });
     </script>
     <script src="js/common.js" defer></script>
@@ -201,85 +203,9 @@
                     <div id="myModal" class="modal">
 
                       <!-- Modal content -->
-                      <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <!-- modalbody content -->
-                       	<!-- Contact Us Section : Start -->
-                            <div class="container py-3">
-                                <div class="row">
-                                    
-                                  <div class="col-lg-12">
-                                    <h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4 " style="color:#82ba41;">GET A QUOTE</h2>
-                                    <form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
-                                      <div class="contact-form-success alert alert-success d-none mt-4">
-                                        <strong>Success!</strong> Your message has been sent to us.
-                                      </div>
-                        
-                                      <div class="contact-form-error alert alert-danger d-none mt-4">
-                                        <strong>Error!</strong> There was an error sending your message.
-                                        <span class="mail-error-message text-1 d-block"></span>
-                                      </div>
-                        
-                                      <div class="row">
-                                        <div class="form-group col-sm-6">
-                                          <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name" required>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                          <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email Address" required>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="form-group col-sm-6">
-                                          <div class="custom-select-1">
-                                              <select class="form-select form-control h-auto" data-msg-required="Please select a Model Line." name="ModelLine" required="">
-                                              <option value="">Model Line</option>
-                                              <option value="1">1</option>
-                                              <option value="2">2</option>
-                                              <option value="3">3</option>
-                                              </select>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form-group col-sm-6">
-                                          <div class="custom-select-1">
-                                              <select class="form-select form-control h-auto" data-msg-required="Please select a Variant." name="Variant" required="">
-                                              <option value="">Variant</option>
-                                              <option value="1">1</option>
-                                              <option value="2">2</option>
-                                              <option value="3">3</option>
-                                              </select>
-                                            </div>
-                                        </div>
-                                      </div>
-                        
-                                      <div class="row">
-                                        <div class="form-group col-sm-6">
-                                          <input type="number" value="" data-msg-required="Please enter Width." maxlength="100" class="form-control" name="width" placeholder="Width" required>
-                                        </div>
-                                        <div class="form-group col-sm-6">
-                                          <input type="number" value="" data-msg-required="Please enter Height." maxlength="100" class="form-control" name="height" placeholder="Height" required>
-                                        </div>
-                                      </div>
-                        
-                                      
-                                      <div class="row">
-                                        <div class="form-group col">
-                                          <textarea maxlength="5000" data-msg-required="Please enter your message." rows="6" class="form-control" name="message" placeholder="Your Message" required></textarea>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="form-group col">
-                                          <button type="submit" href="#" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1" data-loading-text="Loading...">GET A QUOTE <i class="fas fa-arrow-right ms-2"></i></button>
-                                          
-                                        
-                                        </div>
-                                      </div>
-                                    </form>
-                                  </div>
-                        
-                                </div>
-                              </div>
-                         <!-- Contact Us Section : End -->
+                      
+                      <div class="modal-content" id="modal-body">
+                      
                       </div>
                     
                     </div>
@@ -988,7 +914,8 @@
 
     <!-- Theme Initialization Files -->
     <script src="js/theme.init.js"></script>
-    <script>
+  
+    <script >
       // Get the modal
       var modal = document.getElementById("myModal");
       
@@ -999,13 +926,17 @@
       var span = document.getElementsByClassName("close")[0];
       
       // When the user clicks the button, open the modal 
+     if(btn){
       btn.onclick = function() {
         modal.style.display = "block";
       }
+     }
       
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
+      if(span){
+        span.onclick = function() {
         modal.style.display = "none";
+      }
       }
       
       // When the user clicks anywhere outside of the modal, close it
