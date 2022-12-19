@@ -26,7 +26,7 @@ $email = 'info@bxtechnologies.net';
 $debug = 0;
 
 // If contact form don't has the subject input change the value of subject here
-$subject = ( isset($_POST['subject']) ) ? $_POST['subject'] : 'Define subject in php/contact-form.php line 29';
+$subject = ( isset($_POST['subject']) ) ? $_POST['subject'] : 'New Quotation Requested';
 
 $message = '';
 
