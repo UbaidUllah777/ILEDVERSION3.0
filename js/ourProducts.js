@@ -65,19 +65,19 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/industry-factory/products/3DHOLOGRAM.jpg",
+    imageForProductPage: "img/demos/iLEDv3/products/3DHOLOGRAM.jpg",
     productImages: [
       {
-        image: "img/demos/industry-factory/product-details/3dHologram/3dHologram-1.PNG",
+        image: "img/demos/iLEDv3/product-details/3dHologram/3dHologram-1.PNG",
       },
       {
-        image: "img/demos/industry-factory/product-details/3dHologram/3dHologram-2.PNG",
+        image: "img/demos/iLEDv3/product-details/3dHologram/3dHologram-2.PNG",
       },
       {
-        image: "img/demos/industry-factory/product-details/3dHologram/3dHologram-3.PNG",
+        image: "img/demos/iLEDv3/product-details/3dHologram/3dHologram-3.PNG",
       },
       {
-        image: "img/demos/industry-factory/product-details/3dHologram/3dHologram-4.PNG",
+        image: "img/demos/iLEDv3/product-details/3dHologram/3dHologram-4.PNG",
       },
     ],
     DisplayProperties: [
@@ -271,19 +271,19 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
     imageForProductPage:
-      "img/demos/industry-factory/products/OutdoorFixedSeries.jpg",
+      "img/demos/iLEDv3/products/OutdoorFixedSeries.jpg",
     productImages: [
       {
-        image: "img/demos/industry-factory/product-details/outDoorFixedLED/outDoorFixedLED-1.PNG",
+        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-1.PNG",
       },
       {
-        image: "img/demos/industry-factory/product-details/outDoorFixedLED/outDoorFixedLED-2.PNG",
+        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-2.PNG",
       },
       {
-        image: "img/demos/industry-factory/product-details/outDoorFixedLED/outDoorFixedLED-3.PNG",
+        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-3.PNG",
       },
       {
-        image: "img/demos/industry-factory/product-details/outDoorFixedLED/outDoorFixedLED-4.PNG",
+        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-4.PNG",
       },
     ],
     DisplayProperties: [
@@ -477,19 +477,19 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
     imageForProductPage:
-      "img/demos/industry-factory/products/ULTransparentDisplay.png",
+      "img/demos/iLEDv3/products/ULTransparentDisplay.png",
     productImages: [
       {
-        image: "img/demos/industry-factory/product-details/ULTransparentLedDisplay/UL-transparent-led-display-1.png",
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-1.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/ULTransparentLedDisplay/UL-transparent-led-display-2.png",
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-2.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/ULTransparentLedDisplay/UL-transparent-led-display-3.png",
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-3.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/ULTransparentLedDisplay/UL-transparent-led-display-4.png",
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-4.png",
       },
     ],
     DisplayProperties: [
@@ -751,19 +751,19 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
     imageForProductPage:
-      "img/demos/industry-factory/products/IledSpecialTileSeries.jpg",
+      "img/demos/iLEDv3/products/IledSpecialTileSeries.jpg",
     productImages: [
       {
-        image: "img/demos/industry-factory/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-1.png",
+        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-1.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-2.png",
+        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-2.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-3.png",
+        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-3.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-4.png",
+        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-4.png",
       },
     ],
     DisplayProperties: [
@@ -969,19 +969,19 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
     imageForProductPage:
-      "img/demos/industry-factory/products/IbSeriesBlackLed.png",
+      "img/demos/iLEDv3/products/IbSeriesBlackLed.png",
     productImages: [
       {
-        image: "img/demos/industry-factory/product-details/IbSeriesBlackLed/iledscreen-blackLED-1.png",
+        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen-blackLED-1.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/IbSeriesBlackLed/iledscreen-blackLED-2.png",
+        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen-blackLED-2.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/IbSeriesBlackLed/iledscreen-blackLED-3.png",
+        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen-blackLED-3.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/IbSeriesBlackLed/iledscreen-blackLED-4.png",
+        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen-blackLED-4.png",
       },
     ],
     DisplayProperties: [
@@ -1237,19 +1237,19 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/industry-factory/products/TaxiTop.jpg",
+    imageForProductPage: "img/demos/iLEDv3/products/TaxiTop.jpg",
     productImages: [
       {
-        image: "img/demos/industry-factory/product-details/TaxiTop/TaxiTopLed-1.png",
+        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-1.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/TaxiTop/TaxiTopLed-2.png",
+        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-2.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/TaxiTop/TaxiTopLed-3.png",
+        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-3.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/TaxiTop/TaxiTopLed-4.png",
+        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-4.png",
       },
     ],
     DisplayProperties: [
@@ -1482,19 +1482,19 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/industry-factory/products/StreetPole.jpg",
+    imageForProductPage: "img/demos/iLEDv3/products/StreetPole.jpg",
     productImages: [
       {
-        image: "img/demos/industry-factory/product-details/StreetPole/streetPoleLed-1.png",
+        image: "img/demos/iLEDv3/product-details/StreetPole/streetPoleLed-1.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/StreetPole/streetPoleLed-2.png",
+        image: "img/demos/iLEDv3/product-details/StreetPole/streetPoleLed-2.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/StreetPole/streetPoleLed-3.png",
+        image: "img/demos/iLEDv3/product-details/StreetPole/streetPoleLed-3.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/StreetPole/streetPoleLed-4.png",
+        image: "img/demos/iLEDv3/product-details/StreetPole/streetPoleLed-4.png",
       },
     ],
     DisplayProperties: [
@@ -1691,20 +1691,20 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/industry-factory/products/IlexSeries.jpg",
+    imageForProductPage: "img/demos/iLEDv3/products/IlexSeries.jpg",
     productImages: [
       {
         image:
-          "img/demos/industry-factory/product-details/IlexSeries/led-ilex-series-1.png",
+          "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-1.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/IlexSeries/led-ilex-series-2.png",
+        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-2.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/IlexSeries/led-ilex-series-3.png",
+        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-3.png",
       },
       {
-        image: "img/demos/industry-factory/product-details/IlexSeries/led-ilex-series-4.png",
+        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-4.png",
       },
     ],
     DisplayProperties: [

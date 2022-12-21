@@ -60,7 +60,7 @@ ElidHeaderGetQuote.innerHTML = `GET A QUOTE <i class="fas fa-arrow-right ms-2"><
 if(ElidHeaderGetQuote2){
   ElidHeaderGetQuote2.innerHTML = `GET A QUOTE <i class="fas fa-arrow-right ms-2"></i>`;}
 
-ElidHeaderLogo.src = `img/demos/industry-factory/logo.png`;
+ElidHeaderLogo.src = `img/demos/iLEDv3/logo.png`;
 // ElidHeaderLogo.style.width = `123`;
 // ElidHeaderLogo.style.height = `23`;
 
@@ -101,7 +101,7 @@ const changeSelect=()=>{
     {
 
       ElidIdexFormProductdetail.textContent=`When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.`;
-      ElidIdexFormProductImage.src='img/demos/industry-factory/products1/3dHologram.png';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/products1/3dHologram.png';
     }
   
 
@@ -109,7 +109,7 @@ const changeSelect=()=>{
     {
 
       ElidIdexFormProductdetail.textContent=`Eiusmod ad culpa reprehenderit sint cillum voluptate amet mollit. Ad qui est aute duis. Veniam do ex nisi mollit proident. Laboris Lorem incididunt do ex. Incididunt proident nisi culpa fugiat Lorem ad non labore reprehenderit. Deserunt ullamco occaecat laborum esse sint duis et commodo adipisicing aute ad anim incididunt incididunt. Ex veniam veniam aute incididunt tempor aliquip dolore ex proident in consequat., Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.`;
-      ElidIdexFormProductImage.src='img/demos/industry-factory/products1/outDoorFixedSeries.png';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/products1/outDoorFixedSeries.png';
     }
   
 
@@ -117,7 +117,7 @@ const changeSelect=()=>{
     {
 
       ElidIdexFormProductdetail.textContent=`Veniam ut dolor excepteur ullamco proident aliqua aliquip magna duis enim. Commodo officia mollit eiusmod magna voluptate non deserunt sint enim. Et mollit qui ut duis quis voluptate incididunt cupidatat est nisi adipisicing. Voluptate non laboris quis ea dolore irure dolor occaecat nulla tempor irure. Est sint culpa ullamco minim. you just aren’t sure, give us a call.`;
-      ElidIdexFormProductImage.src='img/demos/industry-factory/products1/UL-transparent-led-display.png';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/products1/UL-transparent-led-display.png';
     }
   
 
@@ -125,7 +125,7 @@ const changeSelect=()=>{
     {
 
       ElidIdexFormProductdetail.textContent=`Laborum veniam elit proident aute sunt non quis non anim. Mollit sunt aliqua consequat in ipsum culpa consectetur veniam irure. Officia in sunt eiusmod mollit. Consequat et cupidatat exercitation duis exercitation reprehenderit do adipisicing non consequat. Et incididunt ullamco ex qui fugiat do adipisicing dolore magna nostrud ut proident commodo quis. Est dolor aliqua laboris et sit minim sunt laboris.`;
-      ElidIdexFormProductImage.src='img/demos/industry-factory/products1/ILED_Special_Tile_Series.png';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/products1/ILED_Special_Tile_Series.png';
     }
   
 
@@ -133,7 +133,7 @@ const changeSelect=()=>{
     {
 
       ElidIdexFormProductdetail.textContent=`Nostrud et laboris exercitation in veniam eiusmod anim non. Nulla cupidatat et deserunt duis et tempor tempor enim minim. Voluptate nulla pariatur in velit esse. Minim nostrud occaecat ipsum elit fugiat qui veniam minim consequat esse ea. Nisi eu duis veniam aute tempor amet dolore ex labore. Ipsum do cupidatat consequat et. Velit nulla aute esse do fugiat.`;
-      ElidIdexFormProductImage.src='img/demos/industry-factory/products1/iledscreen-black-led-2.png';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/products1/iledscreen-black-led-2.png';
     }
   
 
@@ -141,7 +141,7 @@ const changeSelect=()=>{
     {
 
       ElidIdexFormProductdetail.textContent=`asdasdasd Eiusmod id sint dolor in ullamco magna consectetur exercitation dolore non fugiat incididunt. Cupidatat irure dolore sint aliquip occaecat excepteur deserunt et laborum anim excepteur. Deserunt incididunt ea magna ad velit sint ullamco adipisicing aliqua. Amet minim duis occaecat in id amet ex magna aliqua ipsum. Exercitation amet aliquip aliqua dolore eiusmod Lorem aute. Id sint incididunt tempor proident irure aliquip.`;      
-      ElidIdexFormProductImage.src='img/demos/industry-factory/products1/TaxiTopLed.jpg';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/products1/TaxiTopLed.jpg';
     }
   
 
@@ -149,7 +149,7 @@ const changeSelect=()=>{
     {
 
       ElidIdexFormProductdetail.textContent=`Proident dolor minim duis proident ad non dolore do ut sint qui velit esse cupidatat. Incididunt laborum aute laborum cupidatat ad aliqua id. Culpa nostrud dolor Lorem consequat sunt. Ut nostrud cupidatat amet ea Lorem. Ea commodo labore veniam nisi elit non occaecat eiusmod labore. Velit est veniam esse aute amet dolore sit non excepteur. Eiusmod veniam Lorem ad anim ullamco ullamco quis irure sit ipsum.`;      
-      ElidIdexFormProductImage.src='img/demos/industry-factory/products1/streetPoleLed.jpg';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/products1/streetPoleLed.jpg';
     }
   
 
@@ -157,7 +157,7 @@ const changeSelect=()=>{
     {
 
       ElidIdexFormProductdetail.textContent=`Consequat elit fugiat eu ex minim exercitation elit eu. Ad quis do excepteur sit Lorem ea ullamco magna laborum proident fugiat amet. Nostrud consectetur est sit commodo id officia amet qui. Laborum esse incididunt sit aliqua Lorem ea. Velit consequat culpa incididunt duis enim aute elit est exercitation consequat aliquip exercitation reprehenderit. Mollit ut eu adipisicing sunt excepteur culpa proident excepteur. Ut esse deserunt elit do esse commodo mollit ea adipisicing esse sint culpa.`;      
-      ElidIdexFormProductImage.src='img/demos/industry-factory/products1/led-ilex-series.jpg';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/products1/led-ilex-series.jpg';
     }
   
   
@@ -183,7 +183,7 @@ const ElidModalFormProductImage=document.getElementById('idModalFormProductImage
     {
 
       ElidModalFormProductdetail.textContent=`When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.`;
-      ElidModalFormProductImage.src='img/demos/industry-factory/products1/3dHologram.png';
+      ElidModalFormProductImage.src='img/demos/iLEDv3/products1/3dHologram.png';
     }
   
 
@@ -191,7 +191,7 @@ const ElidModalFormProductImage=document.getElementById('idModalFormProductImage
     {
 
       ElidModalFormProductdetail.textContent=`Eiusmod ad culpa reprehenderit sint cillum voluptate amet mollit. Ad qui est aute duis. Veniam do ex nisi mollit proident. Laboris Lorem incididunt do ex. Incididunt proident nisi culpa fugiat Lorem ad non labore reprehenderit. Deserunt ullamco occaecat laborum esse sint duis et commodo adipisicing aute ad anim incididunt incididunt. Ex veniam veniam aute incididunt tempor aliquip dolore ex proident in consequat., Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.`;
-      ElidModalFormProductImage.src='img/demos/industry-factory/products1/outDoorFixedSeries.png';
+      ElidModalFormProductImage.src='img/demos/iLEDv3/products1/outDoorFixedSeries.png';
     }
   
 
@@ -199,7 +199,7 @@ const ElidModalFormProductImage=document.getElementById('idModalFormProductImage
     {
 
       ElidModalFormProductdetail.textContent=`Veniam ut dolor excepteur ullamco proident aliqua aliquip magna duis enim. Commodo officia mollit eiusmod magna voluptate non deserunt sint enim. Et mollit qui ut duis quis voluptate incididunt cupidatat est nisi adipisicing. Voluptate non laboris quis ea dolore irure dolor occaecat nulla tempor irure. Est sint culpa ullamco minim. you just aren’t sure, give us a call.`;
-      ElidModalFormProductImage.src='img/demos/industry-factory/products1/UL-transparent-led-display.png';
+      ElidModalFormProductImage.src='img/demos/iLEDv3/products1/UL-transparent-led-display.png';
     }
   
 
@@ -207,7 +207,7 @@ const ElidModalFormProductImage=document.getElementById('idModalFormProductImage
     {
 
       ElidModalFormProductdetail.textContent=`Laborum veniam elit proident aute sunt non quis non anim. Mollit sunt aliqua consequat in ipsum culpa consectetur veniam irure. Officia in sunt eiusmod mollit. Consequat et cupidatat exercitation duis exercitation reprehenderit do adipisicing non consequat. Et incididunt ullamco ex qui fugiat do adipisicing dolore magna nostrud ut proident commodo quis. Est dolor aliqua laboris et sit minim sunt laboris.`;
-      ElidModalFormProductImage.src='img/demos/industry-factory/products1/ILED_Special_Tile_Series.png';
+      ElidModalFormProductImage.src='img/demos/iLEDv3/products1/ILED_Special_Tile_Series.png';
     }
   
 
@@ -215,7 +215,7 @@ const ElidModalFormProductImage=document.getElementById('idModalFormProductImage
     {
 
       ElidModalFormProductdetail.textContent=`Nostrud et laboris exercitation in veniam eiusmod anim non. Nulla cupidatat et deserunt duis et tempor tempor enim minim. Voluptate nulla pariatur in velit esse. Minim nostrud occaecat ipsum elit fugiat qui veniam minim consequat esse ea. Nisi eu duis veniam aute tempor amet dolore ex labore. Ipsum do cupidatat consequat et. Velit nulla aute esse do fugiat.`;
-      ElidModalFormProductImage.src='img/demos/industry-factory/products1/iledscreen-black-led-2.png';
+      ElidModalFormProductImage.src='img/demos/iLEDv3/products1/iledscreen-black-led-2.png';
     }
   
 
@@ -223,7 +223,7 @@ const ElidModalFormProductImage=document.getElementById('idModalFormProductImage
     {
 
       ElidModalFormProductdetail.textContent=`asdasdasd Eiusmod id sint dolor in ullamco magna consectetur exercitation dolore non fugiat incididunt. Cupidatat irure dolore sint aliquip occaecat excepteur deserunt et laborum anim excepteur. Deserunt incididunt ea magna ad velit sint ullamco adipisicing aliqua. Amet minim duis occaecat in id amet ex magna aliqua ipsum. Exercitation amet aliquip aliqua dolore eiusmod Lorem aute. Id sint incididunt tempor proident irure aliquip.`;      
-      ElidModalFormProductImage.src='img/demos/industry-factory/products1/TaxiTopLed.jpg';
+      ElidModalFormProductImage.src='img/demos/iLEDv3/products1/TaxiTopLed.jpg';
     }
   
 
@@ -231,7 +231,7 @@ const ElidModalFormProductImage=document.getElementById('idModalFormProductImage
     {
 
       ElidModalFormProductdetail.textContent=`Proident dolor minim duis proident ad non dolore do ut sint qui velit esse cupidatat. Incididunt laborum aute laborum cupidatat ad aliqua id. Culpa nostrud dolor Lorem consequat sunt. Ut nostrud cupidatat amet ea Lorem. Ea commodo labore veniam nisi elit non occaecat eiusmod labore. Velit est veniam esse aute amet dolore sit non excepteur. Eiusmod veniam Lorem ad anim ullamco ullamco quis irure sit ipsum.`;      
-      ElidModalFormProductImage.src='img/demos/industry-factory/products1/streetPoleLed.jpg';
+      ElidModalFormProductImage.src='img/demos/iLEDv3/products1/streetPoleLed.jpg';
     }
   
 
@@ -239,7 +239,7 @@ const ElidModalFormProductImage=document.getElementById('idModalFormProductImage
     {
 
       ElidModalFormProductdetail.textContent=`Consequat elit fugiat eu ex minim exercitation elit eu. Ad quis do excepteur sit Lorem ea ullamco magna laborum proident fugiat amet. Nostrud consectetur est sit commodo id officia amet qui. Laborum esse incididunt sit aliqua Lorem ea. Velit consequat culpa incididunt duis enim aute elit est exercitation consequat aliquip exercitation reprehenderit. Mollit ut eu adipisicing sunt excepteur culpa proident excepteur. Ut esse deserunt elit do esse commodo mollit ea adipisicing esse sint culpa.`;      
-      ElidModalFormProductImage.src='img/demos/industry-factory/products1/led-ilex-series.jpg';
+      ElidModalFormProductImage.src='img/demos/iLEDv3/products1/led-ilex-series.jpg';
     }
   
   
