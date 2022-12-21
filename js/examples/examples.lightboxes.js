@@ -1,8 +1,4 @@
-/*
-Name: 			Elements - Lightboxes - Examples
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	9.8.0
-*/
+
 
 (function( $ ) {
 

@@ -1,9 +1,5 @@
 <?php
-/*
-Name: 			Newsletter Subscribe
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	9.8.0
-*/
+
 
 include('./mailchimp/mailchimp.php'); 
 

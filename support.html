@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <style>
+    .custom-post-event .post-event-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+}
+.custom-post-event .post-event-date span {
+    display: block;
+}
+.custom-secondary-font {
+    font-family: "Playfair Display", serif !important;
+}
+.custom-post-event .post-event-date span.day {
+    font-size: 1.9em;
+}
+.custom-post-event .post-event-date span {
+    display: block;
+}
+.custom-post-event .post-event-date span.year {
+    font-size: 0.9em;
+}
+.custom-margin-1 {
+    margin-left: 95px;
+}
+   
+      
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; 
+        padding-left: 100px; 
+        padding-right: 100px; 
+        padding-bottom: 100px; /* Location of the box */
+        
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(14, 13, 13); /* Fallback color */
+        background-color: rgba(6, 7, 6, 0.356); /* Black w/ opacity */
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+      }
+      
+      /* The Close Button */
+      .close {
+        color: #82ba41;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: rgb(223, 16, 16);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      </style>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>
+      Support
+    </title>
+
+    <meta name="keywords" content="WebSite Template" />
+    <meta name="description" content="Porto - Multipurpose Website Template" />
+    <meta name="author" content="okler.net" />
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png"> -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"
+    />
+
+    <!-- Web Fonts  -->
+    
+    <!-- Web Fonts  -->
+    <!-- <link
+      id="googleFonts"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CPlayfair+Display:400,700,900&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="stylesheet" id="et-builder-googlefonts-cached-css" href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=latin,latin-ext&amp;display=swap" type="text/css" media="all">
+
+
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="vendor/animate/animate.compat.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/simple-line-icons/css/simple-line-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/owl.carousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/owl.carousel/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/magnific-popup/magnific-popup.min.css"
+    />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme-elements.css" />
+    <link rel="stylesheet" href="css/theme-blog.css" />
+    <link rel="stylesheet" href="css/theme-shop.css" />
+
+    <!-- Demo CSS -->
+    <link rel="stylesheet" href="css/demos/demo-iLEDv3.css" />
+
+    <!-- Skin CSS -->
+    <link
+      id="skinCSS"
+      rel="stylesheet"
+      href="css/skins/skin-iLEDv3.css"
+    />
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <!-- Head Libs -->
+    <script src="vendor/modernizr/modernizr.min.js"></script>
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script defer>
+      $(function () {
+        $("#footer").load("footer.html");
+        $("#modal-body").load("modalBody.html");
+
+      });
+    </script>
+    <script src="js/common.js" defer></script>
+  </head>
+  <body>
+    <div class="body">
+      <header
+        id="header"
+        class="header-effect-shrink"
+        data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}"
+      >
+        <div class="header-body header-body-bottom-border border-top-0">
+          <div class="header-top">
+            <div class="container">
+              <div class="header-row">
+                <div class="header-column justify-content-start">
+                  <div class="header-row">
+                    <ul class="list list-unstyled list-inline mb-0">
+                      <li
+                        id="idHeaderSales"
+                        class="list-inline-item text-color-dark me-4 mb-0"
+                      ></li>
+                      <li
+                        id="idHeaderService"
+                        class="list-inline-item text-color-dark d-none d-sm-inline-block mb-0"
+                      ></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header-column justify-content-end">
+                  <div class="header-row">
+                    <ul
+                      class="header-social-icons social-icons social-icons-clean d-none d-md-block"
+                    >
+                      <li
+                        id="idHeaderFacebook"
+                        class="social-icons-facebook"
+                      ></li>
+                      <li
+                        id="idHeaderTwitter"
+                        class="social-icons-twitter"
+                      ></li>
+                      <li
+                        id="idHeaderInstagram"
+                        class="social-icons-instagram"
+                      ></li>
+                    </ul>
+                    
+                    <button id="idHeaderGetQuote" data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1 m-2" data-loading-text="Loading..."></button>
+                    <div id="myModal" class="modal">
+
+                      <!-- Modal content -->
+                      
+                      <div class="modal-content" id="modal-body">
+                      
+                      </div>
+                    
+                    </div>
+                    <!-- <a
+                      id="idHeaderGetQuote"
+                      href="#"
+                      class="btn custom-svg-btn-style-1 custom-svg-btn-style-1-solid custom-svg-btn-style-1-small text-color-light ms-4"
+                    >
+                    </a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-container container">
+            <div class="header-row">
+              <div class="header-column">
+                <div class="header-row">
+                  <!-- HEADER LOGO -->
+                  <div class="header-logo">
+                    <a href="index.html">
+                      <img
+                        id="idHeaderLogo"
+                        src=""
+                        class="img-fluid"
+                        width="123"
+                        height="32"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="header-column justify-content-end">
+                <div class="header-row">
+                  <div class="header-nav header-nav-links">
+                    <div
+                      class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1"
+                    >
+                      <nav class="collapse">
+                        <ul class="nav nav-pills" id="mainNav">
+                          <li>
+                            <a
+                              id="idHeaderLinkHome"
+                              href=""
+                              class="nav-link"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              id="idHeaderLinkAboutUs"
+                              href=""
+                              class="nav-link"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              id="idHeaderlinkProducts"
+                              href=""
+                              class="nav-link"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              id="idHeaderLinkMarkets"
+                              href=""
+                              class="nav-link"
+                            ></a>
+                          </li>
+                          <li>
+                            <a
+                              id="idHeaderLinkSupport"
+                              href=""
+                              class="nav-link active"
+                            ></a>
+                          </li>
+
+                          <li>
+                            <a
+                              id="idHeaderLinkContactUs"
+                              href=""
+                              class="nav-link"
+                            ></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <!-- <div class="header-nav-features">
+                  <div class="header-nav-feature header-nav-features-search d-inline-flex">
+                    <a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch">
+                      <i class="icons icon-magnifier header-nav-top-icon font-weight-bold text-4 top-2 text-color-hover-primary"></i>
+                    </a>
+                    <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed" id="headerTopSearchDropdown">
+                      <form role="search" action="page-search-results.html" method="get">
+                        <div class="simple-search input-group">
+                          <input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
+                          <button class="btn" type="submit">
+                            <i class="icons icon-magnifier header-nav-top-icon font-weight-bold text-color-dark text-4 text-color-hover-primary top-2"></i>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div> -->
+                  <button
+                    class="btn header-btn-collapse-nav"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".header-nav-main nav"
+                  >
+                    <i class="fas fa-bars"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div role="main" class="main">
+        <section
+          class="page-header page-header-modern page-header-background page-header-background-sm m-0"
+          style="
+            background-image: url(img/demos/iLEDv3/backgrounds/background-2.jpg);
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-8 order-2 order-md-1 align-self-center p-static"
+              >
+                <h1 class="font-weight-bold text-8 mb-0">Support</h1>
+              </div>
+              <div class="col-md-4 order-1 order-md-2 align-self-center">
+                <ul
+                  class="breadcrumb breadcrumb-light d-block text-md-end text-4 mb-0"
+                >
+                  <li>
+                    <a href="index.html" class="text-decoration-none">Home</a>
+                  </li>
+                  <li class="active">Support</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="section section-no-border bg-color-light m-0">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<h2 class="font-weight-bold text-color-dark mb-5">SOFTWARE DOWNLOADS</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6" >
+								<article class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5" style="position: relative;" >
+									<div class="post-event-date bg-color-primary text-center" >
+										<span class="month text-uppercase custom-secondary-font text-color-light">JAN</span>
+										<span class="day font-weight-bold text-color-light">03</span>
+										<span class="year text-color-light">2022</span>
+									</div>
+									<div class="post-event-content custom-margin-1">
+										<h4 class="font-weight-bold text-color-dark">
+											<a href="DATA_A4_V4.6.1.0.zip" class="text-decoration-none custom-secondary-font text-color-dark">
+												
+                    NovaStar A4 Receiving FirmWare
+											</a>
+										</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex odio, venenatis at tempor ut, egestas...</p>
+										<ul class="social-icons social-icons-medium">
+		    							
+		    								<li>
+		    									<a href="DATA_A4_V4.6.1.0.zip" target="_blank" title="Download" class="text-color-hover-primary"><i class="fa-solid fa-download text-color-hover-primary"></i></a>
+		    								</li>
+		     							</ul>
+									</div>
+									<hr class="solid">
+								</article>
+							</div>
+							<div class="col-lg-6">
+                <article class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5" style="position: relative;" >
+									<div class="post-event-date bg-color-primary text-center" >
+										<span class="month text-uppercase custom-secondary-font text-color-light">JAN</span>
+										<span class="day font-weight-bold text-color-light">03</span>
+										<span class="year text-color-light">2022</span>
+									</div>
+									<div class="post-event-content custom-margin-1">
+										<h4 class="font-weight-bold text-color-dark">
+											<a href="DATA_A4_V4.6.1.0.zip" class="text-decoration-none custom-secondary-font text-color-dark">
+												
+                    NovaStar A4 Receiving FirmWare
+											</a>
+										</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex odio, venenatis at tempor ut, egestas...</p>
+										<ul class="social-icons social-icons-medium">
+		    							
+		    								<li>
+		    									<a href="DATA_A4_V4.6.1.0.zip" target="_blank" title="Download" class="text-color-hover-primary"><i class="fa-solid fa-download text-color-hover-primary"></i></a>
+		    								</li>
+		     							</ul>
+									</div>
+									<hr class="solid">
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+                <article class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5" style="position: relative;" >
+									<div class="post-event-date bg-color-primary text-center" >
+										<span class="month text-uppercase custom-secondary-font text-color-light">JAN</span>
+										<span class="day font-weight-bold text-color-light">03</span>
+										<span class="year text-color-light">2022</span>
+									</div>
+									<div class="post-event-content custom-margin-1">
+										<h4 class="font-weight-bold text-color-dark">
+											<a href="DATA_A4_V4.6.1.0.zip" class="text-decoration-none custom-secondary-font text-color-dark">
+												
+                    NovaStar A4 Receiving FirmWare
+											</a>
+										</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex odio, venenatis at tempor ut, egestas...</p>
+										<ul class="social-icons social-icons-medium">
+		    							
+		    								<li>
+		    									<a href="DATA_A4_V4.6.1.0.zip" target="_blank" title="Download" class="text-color-hover-primary"><i class="fa-solid fa-download text-color-hover-primary"></i></a>
+		    								</li>
+		     							</ul>
+									</div>
+									<hr class="solid">
+								</article>
+							</div>
+							<div class="col-lg-6">
+								<article class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5" style="position: relative;" >
+									<div class="post-event-date bg-color-primary text-center" >
+										<span class="month text-uppercase custom-secondary-font text-color-light">JAN</span>
+										<span class="day font-weight-bold text-color-light">03</span>
+										<span class="year text-color-light">2022</span>
+									</div>
+									<div class="post-event-content custom-margin-1">
+										<h4 class="font-weight-bold text-color-dark">
+											<a href="DATA_A4_V4.6.1.0.zip" class="text-decoration-none custom-secondary-font text-color-dark">
+												
+                    NovaStar A4 Receiving FirmWare
+											</a>
+										</h4>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex odio, venenatis at tempor ut, egestas...</p>
+										<ul class="social-icons social-icons-medium">
+		    							
+		    								<li>
+		    									<a href="DATA_A4_V4.6.1.0.zip" target="_blank" title="Download" class="text-color-hover-primary"><i class="fa-solid fa-download text-color-hover-primary"></i></a>
+		    								</li>
+		     							</ul>
+									</div>
+									<hr class="solid">
+								</article>
+							</div>
+						</div>
+					</div>
+				</section>
+      
+      </div>
+
+
+
+
+
+
+
+
+      
+    <section class="section section-default bg-color-primary pt-5" style="margin-bottom: 0;">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+               </div>
+        </div>
+      </div>
+    </section>
+      <!-- FOOTER SECTION: START -->
+      <footer
+        id="footer"
+        class="section section-with-shape-divider border-0 custom-bg-black pt-5 pb-0 m-0"
+      ></footer>
+      <!-- FOOTER SECTION: END -->
+    </div>
+
+    <!-- Vendor -->
+    <script src="vendor/plugins/js/plugins.min.js"></script>
+    
+		<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="js/theme.js"></script>
+
+    <!-- Current Page Vendor and Views -->
+    <script src="js/views/view.contact.js"></script>
+
+    <!-- Demo -->
+    <script src="js/demos/demo-iLEDv3.js"></script>
+
+    <!-- Theme Custom -->
+    <script src="js/custom.js"></script>
+
+    <!-- Theme Initialization Files -->
+    <script src="js/theme.init.js"></script>
+    
+    <script >
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("idHeaderGetQuote");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+     if(btn){
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+     }
+      
+      // When the user clicks on <span> (x), close the modal
+      if(span){
+        span.onclick = function() {
+        modal.style.display = "none";
+      }
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+  </body>
+</html>

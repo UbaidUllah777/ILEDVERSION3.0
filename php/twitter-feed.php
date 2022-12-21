@@ -1,9 +1,5 @@
 <?php
-/*
-Name: 			Twitter Feed
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	9.8.0
-*/
+
 
 require_once('tweet-php/TweetPHP.php');
 

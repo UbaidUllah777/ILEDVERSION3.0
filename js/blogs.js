@@ -23,8 +23,8 @@ const iLEDBlogPosts = [
       "Duis cupidatat ex aute aliquip reprehenderit ex do occaecat cupidatat amet fugiat. Est ea cillum tempor cupidatat eu non. Ad cillum aliquip aliqua ullamco consectetur incididunt nostrud aute duis velit incididunt. Fugiat occaecat enim irure adipisicing exercitation proident.",
     blogPara3:
       "Sunt ea veniam adipisicing reprehenderit excepteur elit sit do dolor. Cillum occaecat adipisicing proident laborum Lorem irure velit veniam proident irure ex voluptate labore. Consequat tempor cupidatat sint deserunt in. Duis sunt duis qui eiusmod dolor voluptate sint nostrud ullamco et. Cillum esse proident eu id qui aute id sit voluptate magna irure. Cillum velit dolor mollit pariatur dolor consectetur esse enim..",
-    blogImg: "img/demos/industry-factory/blog/blog-11.jpg",
-    blogPostBigImage: "img/demos/industry-factory/blog/blog-11.jpg",
+    blogImg: "img/demos/iLEDv3/blog/blog-11.jpg",
+    blogPostBigImage: "img/demos/iLEDv3/blog/blog-11.jpg",
   },
   // 2nd Blog
   {
@@ -43,8 +43,8 @@ const iLEDBlogPosts = [
     blogPara3:
       "Proident ad non consectetur ad ad consequat labore. Eiusmod duis qui est consectetur dolore est ullamco id occaecat ullamco adipisicing velit non. Nisi esse veniam qui velit excepteur exercitation nisi quis excepteur aliquip. Dolor ad ipsum nulla sunt mollit ea ipsum laboris est laborum. Ipsum dolor aliqua reprehenderit occaecat nisi officia amet.",
 
-    blogImg: "img/demos/industry-factory/blog/blog-12.jpg",
-    blogPostBigImage: "img/demos/industry-factory/blog/blog-12.jpg",
+    blogImg: "img/demos/iLEDv3/blog/blog-12.jpg",
+    blogPostBigImage: "img/demos/iLEDv3/blog/blog-12.jpg",
   },
   // 3rd Blog
 
@@ -64,8 +64,8 @@ const iLEDBlogPosts = [
     blogPara3:
       "Proident ad non consectetur ad ad consequat labore. Eiusmod duis qui est consectetur dolore est ullamco id occaecat ullamco adipisicing velit non. Nisi esse veniam qui velit excepteur exercitation nisi quis excepteur aliquip. Dolor ad ipsum nulla sunt mollit ea ipsum laboris est laborum. Ipsum dolor aliqua reprehenderit occaecat nisi officia amet.",
 
-    blogImg: "img/demos/industry-factory/blog/blog-13.jpg",
-    blogPostBigImage: "img/demos/industry-factory/blog/blog-13.jpg",
+    blogImg: "img/demos/iLEDv3/blog/blog-13.jpg",
+    blogPostBigImage: "img/demos/iLEDv3/blog/blog-13.jpg",
   },
 
   
@@ -87,8 +87,8 @@ const iLEDBlogPosts = [
     blogPara3:
       "Proident ad non consectetur ad ad consequat labore. Eiusmod duis qui est consectetur dolore est ullamco id occaecat ullamco adipisicing velit non. Nisi esse veniam qui velit excepteur exercitation nisi quis excepteur aliquip. Dolor ad ipsum nulla sunt mollit ea ipsum laboris est laborum. Ipsum dolor aliqua reprehenderit occaecat nisi officia amet.",
 
-    blogImg: "img/demos/industry-factory/blog/blog-11.jpg",
-    blogPostBigImage: "img/demos/industry-factory/blog/blog-11.jpg",
+    blogImg: "img/demos/iLEDv3/blog/blog-11.jpg",
+    blogPostBigImage: "img/demos/iLEDv3/blog/blog-11.jpg",
   },
 
  
