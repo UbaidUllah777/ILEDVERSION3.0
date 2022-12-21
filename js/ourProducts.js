@@ -7,6 +7,7 @@ const ElidProductDetail_two = document.getElementById("idProductDetail_two");
 const ElidtagLine_one = document.getElementById("idtagLine_one");
 const ElidtagLine_two = document.getElementById("idtagLine_two");
 const ElidtagLine_three = document.getElementById("idtagLine_three");
+const ElproductDetailImages=document.getElementById("productDetailImages");
 
 //  ********* VENDERING ALL PRPERTY NAMES OF THE THREE TABLES ********
 
@@ -58,25 +59,25 @@ const ourProducts = [
     id: "3DHOLOGRAM",
     productName: "3D HOLOGRAM",
     productHeadingLine:
-      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "for 3D HOLOGRAM...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of 3D HOLOGRAM When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
     imageForProductPage: "img/demos/industry-factory/products/3DHOLOGRAM.jpg",
     productImages: [
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/3dHologram/3dHologram-1.PNG",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/3dHologram/3dHologram-2.PNG",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/3dHologram/3dHologram-3.PNG",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/3dHologram/3dHologram-4.PNG",
       },
     ],
     DisplayProperties: [
@@ -263,9 +264,9 @@ const ourProducts = [
     id: "OutDoorFixedSeries",
     productName: "Outdoor Fixed Series",
     productHeadingLine:
-      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "Outdoor Fixed Series...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of Outdoor Fixed Series When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
@@ -273,16 +274,16 @@ const ourProducts = [
       "img/demos/industry-factory/products/OutdoorFixedSeries.jpg",
     productImages: [
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/outDoorFixedLED/outDoorFixedLED-1.PNG",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/outDoorFixedLED/outDoorFixedLED-2.PNG",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/outDoorFixedLED/outDoorFixedLED-3.PNG",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/outDoorFixedLED/outDoorFixedLED-4.PNG",
       },
     ],
     DisplayProperties: [
@@ -469,9 +470,9 @@ const ourProducts = [
     id: "UlTransparentLedDisplay",
     productName: "UL TRANSPARENT LED DISPLAY",
     productHeadingLine:
-      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain ",
+      "UL TRANSPARENT LED DISPLAY...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain ",
     productDetail:
-      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of UL TRANSPARENT LED DISPLAY When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
@@ -479,16 +480,16 @@ const ourProducts = [
       "img/demos/industry-factory/products/ULTransparentDisplay.png",
     productImages: [
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/ULTransparentLedDisplay/UL-transparent-led-display-1.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/ULTransparentLedDisplay/UL-transparent-led-display-2.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/ULTransparentLedDisplay/UL-transparent-led-display-3.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/ULTransparentLedDisplay/UL-transparent-led-display-4.png",
       },
     ],
     DisplayProperties: [
@@ -743,9 +744,9 @@ const ourProducts = [
     id: "IledSpecialTileSeries",
     productName: "ILED SPECIAL TILE Series",
     productHeadingLine:
-      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "ILED SPECIAL TILE Series...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of ILED SPECIAL TILE Series When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
@@ -753,16 +754,16 @@ const ourProducts = [
       "img/demos/industry-factory/products/IledSpecialTileSeries.jpg",
     productImages: [
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-1.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-2.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-3.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-4.png",
       },
     ],
     DisplayProperties: [
@@ -961,9 +962,9 @@ const ourProducts = [
     id: "IbSeriesBlackLed",
     productName: "IB SERIES (BLACK LED)",
     productHeadingLine:
-      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "IB SERIES  Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of IB SERIES When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
@@ -971,16 +972,16 @@ const ourProducts = [
       "img/demos/industry-factory/products/IbSeriesBlackLed.png",
     productImages: [
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IbSeriesBlackLed/iledscreen-blackLED-1.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IbSeriesBlackLed/iledscreen-blackLED-2.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IbSeriesBlackLed/iledscreen-blackLED-3.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IbSeriesBlackLed/iledscreen-blackLED-4.png",
       },
     ],
     DisplayProperties: [
@@ -1230,25 +1231,25 @@ const ourProducts = [
     id: "TaxiTop",
     productName: "TAXI TOP",
     productHeadingLine:
-      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "TAXI TOP Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "detail of TAXI TOP When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
     imageForProductPage: "img/demos/industry-factory/products/TaxiTop.jpg",
     productImages: [
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/TaxiTop/TaxiTopLed-1.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/TaxiTop/TaxiTopLed-2.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/TaxiTop/TaxiTopLed-3.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/TaxiTop/TaxiTopLed-4.png",
       },
     ],
     DisplayProperties: [
@@ -1475,25 +1476,25 @@ const ourProducts = [
     id: "StreetPole",
     productName: "STREET POLE",
     productHeadingLine:
-      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "STREET POLE Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
     imageForProductPage: "img/demos/industry-factory/products/StreetPole.jpg",
     productImages: [
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/StreetPole/streetPoleLed-1.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/StreetPole/streetPoleLed-2.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/StreetPole/streetPoleLed-3.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/StreetPole/streetPoleLed-4.png",
       },
     ],
     DisplayProperties: [
@@ -1684,9 +1685,9 @@ const ourProducts = [
     id: "IlexSeries",
     productName: "ILEX SERIES",
     productHeadingLine:
-      "Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "ILEX SERIES Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "When you’re ready to invest in a fic install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Alraeady familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of ILEX SERIES When you’re ready to invest in a fic install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Alraeady familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
@@ -1694,16 +1695,16 @@ const ourProducts = [
     productImages: [
       {
         image:
-          "img/demos/industry-factory/products/ProductDetails/3dHologram1.jpg",
+          "img/demos/industry-factory/product-details/IlexSeries/led-ilex-series-1.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IlexSeries/led-ilex-series-2.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IlexSeries/led-ilex-series-3.png",
       },
       {
-        image: "",
+        image: "img/demos/industry-factory/product-details/IlexSeries/led-ilex-series-4.png",
       },
     ],
     DisplayProperties: [
@@ -1809,7 +1810,7 @@ const ourProducts = [
       {
         id: "indoorOutdoor",
         name: "Indoor/Outdoor",
-        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
       },
 
       // Operating Temprature
@@ -1959,15 +1960,71 @@ for (const singleProduct of ourProducts) {
             ElidDisplaySpecs.innerHTML += `<th>
           ${"Model " + i}
         </th>`;
+       
+         
+            i = i + 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+for (const singleProduct of ourProducts) {
+  if (ElpixelPitch) {
+    if (singleProduct.id === clickedProduct) {
+      var i = 1;
+      for (const singleProperty of singleProduct.DisplayProperties) {
+        if (singleProperty.id == "indoorOutdoor") {
+          for (singleValue of singleProperty.Values) {
+         
             ElidEngineeringSpecs.innerHTML += `<th>
         ${"Model " + i}
       </th>`;
+
+            i = i + 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+for (const singleProduct of ourProducts) {
+  if (ElpixelPitch) {
+    if (singleProduct.id === clickedProduct) {
+      var i = 1;
+      for (const singleProperty of singleProduct.DisplayProperties) {
+        if (singleProperty.id == "installation") {
+          for (singleValue of singleProperty.Values) {
+  
             ElidManufacSpecs.innerHTML += `<th>
       ${"Model " + i}
     </th>`;
             i = i + 1;
           }
         }
+      }
+    }
+  }
+}
+
+
+for (const singleProductDetail of ourProducts){
+  if(ElproductDetailImages){
+    if(singleProductDetail.id==clickedProduct){
+      for(const singleProductImage of singleProductDetail.productImages){
+        ElproductDetailImages.innerHTML+=`
+        <div>
+        <img
+          src="${singleProductImage.image}"
+          class="img-fluid"
+          alt="${singleProductDetail.productName}"
+        />
+      </div>
+        `;
       }
     }
   }
@@ -1980,6 +2037,7 @@ for (const singleProduct of ourProducts) {
       ElidProductName.textContent = `${singleProduct.productName}`;
       ElidProductHeadingLine.textContent = `${singleProduct.productHeadingLine}`;
       ElidProductDetail_one.textContent = `${singleProduct.productDetail}`;
+    
       ElidtagLine_one.textContent = `${singleProduct.tagLine_one}`;
       ElidtagLine_two.textContent = `${singleProduct.tagLine_two}`;
       ElidtagLine_three.textContent = `${singleProduct.tagLine_three}`;
@@ -2096,6 +2154,8 @@ for (const singleProduct of ourProducts) {
   }
 }
 
+
+//  ********** Product Container **********
 for (const singleProduct of ourProducts) {
   if (ElidAllProductsContainer) {
     ElidAllProductsContainer.innerHTML += `
