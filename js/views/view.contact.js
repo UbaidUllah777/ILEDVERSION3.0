@@ -1,8 +1,4 @@
-/*
-Name: 			View - Contact
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	9.8.0
-*/
+
 
 (function($) {
 

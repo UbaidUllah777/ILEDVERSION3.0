@@ -1,9 +1,5 @@
 <?php
-/*
-Name: 			Contact Form - Google Recaptcha v2
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	9.8.0
-*/
+
 
 namespace PortoContactForm;
 
