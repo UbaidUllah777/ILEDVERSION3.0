@@ -174,24 +174,53 @@ const ELidindexBlogsSection=document.getElementById('idindexBlogsSection');
         ELidindexBlogsSection.innerHTML=``;
         const lastThreeBlogs = iLEDBlogPosts.slice(-3);
         for (const singleLatestBlog of lastThreeBlogs){
-            ELidindexBlogsSection.innerHTML+=`<div class="col-md-7 col-lg-4 pe-lg-0 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="450" style="animation-delay: 450ms;">
-            <article class="card custom-post-style-1 border-color-grey-1 pt-2">
-              <header class="overlay overlay-show">
-                <img class="img-fluid" src="${singleLatestBlog.blogImg}" alt="Agile-Methodology">
-                <h4 class="font-weight-bold text-6 position-absolute bottom-0 left-0 z-index-2 ms-4 mb-4 pb-2 ps-2 pe-5 me-5">
-                  <a id="${singleLatestBlog.id}" onclick="FnClickedBlog('${singleLatestBlog.id}')" href="blog-post.html" class="text-color-light text-decoration-none">${singleLatestBlog.blogShortHeading}</a>
-                </h4>
-              </header>
-              <div class="card-body">
-                <ul class="list list-unstyled custom-font-secondary pb-1 mb-2">
-                  <li class="list-inline-item line-height-1 me-1 mb-0">${singleLatestBlog.blogPostedOnDate}</li>
-                  <li class="d-inline-block list-inline-item vertical-divider border-color-dark px-2 line-height-1 me-1">${singleLatestBlog.blogAuthor}</li>
-                </ul>
-                <p class="custom-text-size-1 mb-2">${singleLatestBlog.blogPara1}</p>
-                <a id="${singleLatestBlog.id}" onclick="FnClickedBlog('${singleLatestBlog.id}')"  href="blog-post.html" class="text-color-primary font-weight-bold text-decoration-underline custom-text-size-1">Read More...</a>
-              </div>
-            </article>
-          </div>`
+          //   ELidindexBlogsSection.innerHTML+=
+            
+          //   `<div class="col-md-7 col-lg-4 pe-lg-0 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="450" style="animation-delay: 450ms;">
+          //   <article class="card custom-post-style-3 border-color-grey-1 pt-2">
+          //     <header class="overlay overlay-show">
+          //       <img class="img-fluid" src="${singleLatestBlog.blogImg}" alt="Agile-Methodology" >
+          //       <h4 class="font-weight-bold text-6 position-absolute bottom-0 left-0 z-index-2 ms-4 mb-4 pb-2 ps-2 pe-5 me-5">
+          //         <a id="${singleLatestBlog.id}" onclick="FnClickedBlog('${singleLatestBlog.id}')" href="blog-post.html" class="text-color-light text-decoration-none">${singleLatestBlog.blogShortHeading}</a>
+          //       </h4>
+          //     </header>
+          //     <div class="card-body">
+          //       <ul class="list list-unstyled custom-font-secondary pb-1 mb-2">
+          //         <li class="list-inline-item line-height-1 me-1 mb-0">${singleLatestBlog.blogPostedOnDate}</li>
+          //         <li class="d-inline-block list-inline-item vertical-divider border-color-dark px-2 line-height-1 me-1">${singleLatestBlog.blogAuthor}</li>
+          //       </ul>
+          //       <p class="custom-text-size-1 mb-2">${singleLatestBlog.blogPara1}</p>
+          //       <a id="${singleLatestBlog.id}" onclick="FnClickedBlog('${singleLatestBlog.id}')"  href="blog-post.html" class="text-color-primary font-weight-bold text-decoration-underline custom-text-size-1">Read More...</a>
+          //     </div>
+          //   </article>
+          // </div>`
+
+
+
+
+
+
+          ELidindexBlogsSection.innerHTML+=`
+          <div class="col-md-4">
+										<article class="post post-medium border-0 pb-0 mb-5">
+											<div class="post-image">
+												<a href="blog-post.html" onclick="FnClickedBlog('${singleLatestBlog.id}')" >
+													<img  src="${singleLatestBlog.blogImg}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="">
+												</a>
+											</div>
+
+											<div class="post-content">
+
+												<h2 class="font-weight-semibold text-5 line-height-6 mt-3 mb-2"><a href="blog-post.html">${singleLatestBlog.blogShortHeading}</a></h2>
+												<p ><span id="indexBlogContent">${singleLatestBlog.blogPara1}</span><a id="${singleLatestBlog.id}" onclick="FnClickedBlog('${singleLatestBlog.id}')"  href="blog-post.html" class="text-color-primary font-weight-bold text-decoration-underline custom-text-size-1">Read More...</a>
+                        </p>
+                        
+
+											</div>
+										</article>
+									</div>
+          
+          `;
         }
 
     }
