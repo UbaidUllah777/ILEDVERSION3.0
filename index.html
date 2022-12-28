@@ -229,6 +229,61 @@
 </script>
 
 
+
+<!-- indexProducts:start -->
+<!-- 
+<script>
+  var indexProductHeadings = [
+    "",
+    1-"UL TRANSPARENT LED DISPLAY",
+    2-"ILED SPECIALL TILE SERIES",
+    3-"IB SERIES (BLACK LED)",
+    4-"TAXI TOP",
+    5-"STREET POLE",
+    6-"ILEX SERIES",
+  ];
+  var indexProductParas = [
+    "",
+    "2-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
+    "3-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
+    "4-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
+    "5-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
+    "6-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
+    "7-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
+  ];
+  var indexProductImg = [
+    "",
+    "img/demos/iLEDv3/products1/UL-transparent-led-display.png",
+    "img/demos/iLEDv3/products1/ILED_Special_Tile_Series.png",
+    "img/demos/iLEDv3/products1/iledscreen-black-led-2.png",
+    "img/demos/iLEDv3/products1/TaxiTopLed.jpg",
+    "img/demos/iLEDv3/products1/streetPoleLed.jpg",
+    "img/demos/iLEDv3/products1/led-ilex-series.jpg",
+  ];
+
+  var countProducts = 1;
+  setInterval(function () {
+    if (countProducts === indexProductHeadings.length) {
+      countProducts = 1;
+    }
+  
+    document.getElementById("idproductNameOnIndex").textContent = indexProductHeadings[countProducts];
+    document.getElementById("idPoductImageOnIndex").src = indexProductImg[countProducts] ;
+    document.getElementById("idProductParaOnIndex").textContent = indexProductParas[countProducts];
+
+    document.getElementById("idproductNameOnIndex2").textContent = indexProductHeadings[countProducts+1];
+    document.getElementById("idPoductImageOnIndex2").src = indexProductImg[countProducts+1] ;
+    document.getElementById("idProductParaOnIndex2").textContent = indexProductParas[countProducts+1];
+
+    
+    countProducts++;
+  }, 7000);
+
+
+</script> -->
+<!-- indexProducts:End -->
+
+
     <script>
       function blinker() {
         $(".time").delay(1700);
@@ -604,7 +659,7 @@
             </svg>
           </div>
           <div class="container pt-3 mt-5">
-            <div class="row justify-content-center mb-5">
+            <div class="row justify-content-center ">
               <div class="col-lg-9 col-xl-8 text-center">
                 <div class="overflow-hidden">
                   <h2
@@ -615,7 +670,7 @@
                     WHAT WE DO
                   </h2>
                 </div>
-                <div class="overflow-hidden mb-3">
+                <div class="overflow-hidden ">
                   <h4
                     class="font-weight-bold text-transform-none text-7 line-height-2 mb-0 appear-animation"
                     data-appear-animation="maskUp"
@@ -644,167 +699,532 @@
             </div>
           </div>
         </section>
-        <div  class="owl-carousel owl-theme  carousel-half-full-width-right owl-loaded owl-drag owl-carousel-init" data-plugin-options="{'items': 5, 'loop': true, 'nav': true, 'dots': false}" style="height: auto;">
-					
-          <div class="owl-stage-outer">
-            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2874px;">
-              <!-- 1st -->
-              <div class="owl-item active" style="width: 410.5px; padding-left: 5px;"><div>
-              <a id="3DHOLOGRAM" onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html" >
-                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                  <span class="thumb-info-wrapper">
-                    <img src="img/demos/iLEDv3/categories/3dHologram.png" class="img-fluid" alt="">
-                    <span class="thumb-info-title">
-                      <span class="thumb-info-inner">3D HOLOGRAM</span>
-                      <span class="thumb-info-type">3DHOLOGRAM</span>
-                    </span>
-                    <span class="thumb-info-action">
-                      <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                    </span>
-                  </span>
-                </span>
-              </a>
-            </div>
-          </div>
+       
 
-          <!-- 2nd -->
-          <div class="owl-item " style="width: 410.5px; padding-left: 5px;">
-            <div>
-              <a id="OutDoorFixedSeries" onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html" >
-                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                  <span class="thumb-info-wrapper">
-                    <img src="img/demos/iLEDv3/categories/outDoorFixedSeries.jpg" class="img-fluid" alt="">
-                    <span class="thumb-info-title">
-                      <span class="thumb-info-inner">Outdoor Fixed Series</span>
-                      <span class="thumb-info-type">Outdoor Fixed Series</span>
-                    </span>
-                    <span class="thumb-info-action">
-                      <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                    </span>
-                  </span>
-                </span>
-              </a>
-            </div>
-          </div>            
-          <!-- 3rd -->
-            <div class="owl-item" style="width: 10.5px; padding-left: 5px;">
-              <div>
-              <a id="UlTransparentLedDisplay" onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >
-                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                  <span class="thumb-info-wrapper">
-                    <img src="img/demos/iLEDv3/categories/UL-transparent-led-display.jpg" class="img-fluid" alt="">
-                    <span class="thumb-info-title">
-                      <span class="thumb-info-inner">UL Transparent LED Display</span>
-                      <span class="thumb-info-type">UL Transparent LED Display</span>
-                    </span>
-                    <span class="thumb-info-action">
-                      <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                    </span>
-                  </span>
-                </span>
-              </a>
-            </div>
-          </div>
-          <!-- 4rth -->
-          <div class="owl-item" style="width: 410.5px; padding-left: 5px;">
-              <div>
-              <a id="IledSpecialTileSeries" onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html" >
-                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                  <span class="thumb-info-wrapper">
-                    <img src="img/demos/iLEDv3/categories/ILED Special Tile Series.png" class="img-fluid" alt="">
-                    <span class="thumb-info-title">
-                      <span class="thumb-info-inner">ILED Special Tile Series</span>
-                      <span class="thumb-info-type">ILED Special Tile Series</span>
-                    </span>
-                    <span class="thumb-info-action">
-                      <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                    </span>
-                  </span>
-                </span>
-              </a>
-            </div>
-          </div>
-          <!-- 5th -->
-          <div class="owl-item" style="width: 410.5px; padding-left: 5px;">
-            <div>
-              <a id="IbSeriesBlackLed" onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html">
-                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                  <span class="thumb-info-wrapper">
-                    <img src="img/demos/iLEDv3/categories/iledscreen-black-led-2.png" class="img-fluid" alt="">
-                    <span class="thumb-info-title">
-                      <span class="thumb-info-inner">IB Series(Black LED)</span>
-                      <span class="thumb-info-type">IB Series(Black LED)</span>
-                    </span>
-                    <span class="thumb-info-action">
-                      <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                    </span>
-                  </span>
-                </span>
-              </a>
-            </div></div>
 
-            <!-- 6th -->
-            <div class="owl-item" style="width: 410.5px;  padding-left: 5px;">
-              <div>
-              <a id="TaxiTop" onclick="FnCLickedProduct('TaxiTop')"  href="products-detail.html" >
-                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                  <span class="thumb-info-wrapper">
-                    <img src="img/demos/iLEDv3/categories/TaxiTopLed.jpg" class="img-fluid" alt="">
-                    <span class="thumb-info-title">
-                      <span class="thumb-info-inner">Taxi Top</span>
-                      <span class="thumb-info-type">Taxi Top</span>
-                    </span>
-                    <span class="thumb-info-action">
-                      <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                    </span>
-                  </span>
-                </span>
-              </a>
-            </div></div>
-            <!-- 7th -->
-            <div class="owl-item" style="width: 410.5px; padding-left: 5px;">
-              <div>
-              <a id="StreetPole" onclick="FnCLickedProduct('StreetPole')"   href="products-detail.html" >
-                <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                  <span class="thumb-info-wrapper">
-                    <img src="img/demos/iLEDv3/categories/streetPoleLed.jpg" class="img-fluid" alt="">
-                    <span class="thumb-info-title">
-                      <span class="thumb-info-inner">Street Pole</span>
-                      <span class="thumb-info-type">Street Pole</span>
-                    </span>
-                    <span class="thumb-info-action">
-                      <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                    </span>
-                  </span>
-                </span>
-              </a>
-            </div></div>
-              <!-- 8th -->
-              <div class="owl-item" style="width: 410.5px;  padding-left: 5px;">
-                <div>
-                <a id="IlexSeries" onclick="FnCLickedProduct('IlexSeries')"  href="products-detail.html">
-                  <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
-                    <span class="thumb-info-wrapper">
-                      <img src="img/demos/iLEDv3/categories/led-ilex-series.jpg" class="img-fluid" alt="">
-                      <span class="thumb-info-title">
-                        <span class="thumb-info-inner">ILEX Series</span>
-                        <span class="thumb-info-type">ILEX Series</span>
-                      </span>
-                      <span class="thumb-info-action">
-                        <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
-                      </span>
-                    </span>
-                  </span>
-                </a>
-              </div></div>
-          </div></div>
-            <div class="owl-nav">
-              <button type="button" role="presentation" class="owl-prev disabled"></button>
-              <button type="button" role="presentation" class="owl-next"></button>
-            </div><div class="owl-dots disabled">
+
+<!-- new section for products :Start -->
+
+<section class="section custom-section-shape-background border-0 m-0">
+  
+  <div class="container-fluid position-relative z-index-3 mb-5" style="padding-left: 40px; padding-right: 40px;">
+    
+    
+    <div class="row ">
+      <div class="col-lg-6 pt-5">
+        <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{'items': 1, 'autoplay': true, 'autoplayTimeout': 5000, 'margin': 10, 'animateIn': 'slideInDown', 'animateOut': 'slideOutDown'}" style="height: auto;">
+          
+          
+        <div class="owl-stage-outer">
+          <div class="owl-stage" style="transform: translate3d(-447px, 0px, 0px); transition: all 0s ease 0s; width: 1341px;">
+          <div class="owl-item active" style="width: 213.5px; margin-right: 10px;">
+            <div>
+              <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <img
+                  style="height: 400px;"
+                  id="idPoductImageOnIndex"
+                    src="img/demos/iLEDv3/products1/3dHologram.png"
+                    class="img-fluid box-shadow-3 appear-animation"
+                    data-appear-animation="fadeInRightShorter"
+                    data-appear-animation-delay="200"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-lg-6 appear-animation"
+                  data-appear-animation="fadeInRightShorter"
+                  data-appear-animation-delay="500"
+                >
+                  <h2 id="idproductNameOnIndex"
+                    class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
+                  >
+                  3D HOLOGRAM
+                  </h2>
                 
+                  <p id="idProductParaOnIndex"
+                    class="custom-font-secondary custom-font-size-1 line-height-7 pb-2 mb-4"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    imperdiet libero id nisi euismod.
+                  </p>
+                 
+                  <a
+                  id="3DHOLOGRAM" onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html"
+                    class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+                  >
+                    READ MORE
+                    <svg
+                      class="ms-2"
+                      version="1.1"
+                      viewBox="0 0 15.698 8.706"
+                      width="17"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <polygon
+                        stroke="#FFF"
+                        stroke-width="0.1"
+                        fill="#FFF"
+                        points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="owl-item " style="width: 213.5px; margin-right: 10px;">
+          <div>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img 
+                style="height: 400px;"
+                id="idPoductImageOnIndex2"
+                  src="img/demos/iLEDv3/products1/UL-transparent-led-display.png"
+                  class="img-fluid box-shadow-3 appear-animation"
+                  data-appear-animation="fadeInRightShorter"
+                  data-appear-animation-delay="200"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-lg-6 appear-animation"
+                data-appear-animation="fadeInRightShorter"
+                data-appear-animation-delay="500"
+              >
+                <h2  id="idproductNameOnIndex2"
+                  class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
+                >
+                UL TRANSPARENT LED DISPLAY
+                </h2>
+                
+                <p id="idProductParaOnIndex2"
+                  class="custom-font-secondary custom-font-size-1 line-height-7 pb-2 mb-4"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  imperdiet libero id nisi euismod.
+                </p>
+               
+                <a
+                id="OutDoorFixedSeries" onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html"
+                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+                >
+                  READ MORE
+                  <svg
+                    class="ms-2"
+                    version="1.1"
+                    viewBox="0 0 15.698 8.706"
+                    width="17"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <polygon
+                      stroke="#FFF"
+                      stroke-width="0.1"
+                      fill="#FFF"
+                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="owl-item " style="width: 213.5px; margin-right: 10px;">
+          <div>
+           
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img 
+                style="height: 400px;"
+                id="idPoductImageOnIndex2"
+                  src="img/demos/iLEDv3/products1/iledscreen-black-led-2.png"
+                  class="img-fluid box-shadow-3 appear-animation"
+                  data-appear-animation="fadeInRightShorter"
+                  data-appear-animation-delay="200"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-lg-6 appear-animation"
+                data-appear-animation="fadeInRightShorter"
+                data-appear-animation-delay="500"
+              >
+                <h2  id="idproductNameOnIndex2"
+                  class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
+                >
+                IB SERIES (BLACK LED)
+                </h2>
+                
+                <p id="idProductParaOnIndex2"
+                  class="custom-font-secondary custom-font-size-1 line-height-7 pb-2 mb-4"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  imperdiet libero id nisi euismod.
+                </p>
+               
+                <a
+                id="OutDoorFixedSeries" onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html"
+                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+                >
+                  READ MORE
+                  <svg
+                    class="ms-2"
+                    version="1.1"
+                    viewBox="0 0 15.698 8.706"
+                    width="17"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <polygon
+                      stroke="#FFF"
+                      stroke-width="0.1"
+                      fill="#FFF"
+                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-item" style="width: 213.5px; margin-right: 10px;">
+          <div>
+            
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img 
+                style="height: 400px;"
+                id="idPoductImageOnIndex2"
+                  src="img/demos/iLEDv3/products1/streetPoleLed.jpg"
+                  class="img-fluid box-shadow-3 appear-animation"
+                  data-appear-animation="fadeInRightShorter"
+                  data-appear-animation-delay="200"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-lg-6 appear-animation"
+                data-appear-animation="fadeInRightShorter"
+                data-appear-animation-delay="500"
+              >
+                <h2  id="idproductNameOnIndex2"
+                  class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
+                >
+                STREET POLE
+                </h2>
+                
+                <p id="idProductParaOnIndex2"
+                  class="custom-font-secondary custom-font-size-1 line-height-7 pb-2 mb-4"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  imperdiet libero id nisi euismod.
+                </p>
+               
+                <a
+                id="OutDoorFixedSeries" onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html"
+                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+                >
+                  READ MORE
+                  <svg
+                    class="ms-2"
+                    version="1.1"
+                    viewBox="0 0 15.698 8.706"
+                    width="17"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <polygon
+                      stroke="#FFF"
+                      stroke-width="0.1"
+                      fill="#FFF"
+                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="owl-nav disabled">
+      <button type="button" role="presentation" class="owl-prev">
+
+      </button>
+      <button type="button" role="presentation" class="owl-next">
+
+      </button>
+    </div>
+  </div>
+      </div>
+      
+      <div class="col-lg-6 pt-5">
+        <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{'items': 1, 'autoplay': true, 'autoplayTimeout': 5000, 'margin': 10, 'animateIn': 'slideInDown', 'animateOut': 'slideOutDown'}" style="height: auto;">
+          
+          
+        <div class="owl-stage-outer">
+          <div class="owl-stage" style="transform: translate3d(-447px, 0px, 0px); transition: all 0s ease 0s; width: 1341px;">
+          <div class="owl-item active" style="width: 213.5px; margin-right: 10px;">
+            <div>
+              <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                  <img
+                  style="height: 400px;"
+                  id="idPoductImageOnIndex"
+                    src="img/demos/iLEDv3/products1/outDoorFixedSeries.png"
+                    class="img-fluid box-shadow-3 appear-animation"
+                    data-appear-animation="fadeInRightShorter"
+                    data-appear-animation-delay="200"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-lg-6 appear-animation"
+                  data-appear-animation="fadeInRightShorter"
+                  data-appear-animation-delay="500"
+                >
+                  <h2 id="idproductNameOnIndex"
+                    class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
+                  >
+                  OutDoor Fixed Series
+                  </h2>
+                
+                  <p id="idProductParaOnIndex"
+                    class="custom-font-secondary custom-font-size-1 line-height-7 pb-2 mb-4"
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    imperdiet libero id nisi euismod.
+                  </p>
+                 
+                  <a
+                  id="3DHOLOGRAM" onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html"
+                    class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+                  >
+                    READ MORE
+                    <svg
+                      class="ms-2"
+                      version="1.1"
+                      viewBox="0 0 15.698 8.706"
+                      width="17"
+                      xml:space="preserve"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <polygon
+                        stroke="#FFF"
+                        stroke-width="0.1"
+                        fill="#FFF"
+                        points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="owl-item " style="width: 213.5px; margin-right: 10px;">
+          <div>
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img 
+                style="height: 400px;"
+                id="idPoductImageOnIndex2"
+                  src="img/demos/iLEDv3/products1/ILED_Special_Tile_Series.png"
+                  class="img-fluid box-shadow-3 appear-animation"
+                  data-appear-animation="fadeInRightShorter"
+                  data-appear-animation-delay="200"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-lg-6 appear-animation"
+                data-appear-animation="fadeInRightShorter"
+                data-appear-animation-delay="500"
+              >
+                <h2  id="idproductNameOnIndex2"
+                  class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
+                >
+                ILED SPECIALL TILE SERIES
+                </h2>
+                
+                <p id="idProductParaOnIndex2"
+                  class="custom-font-secondary custom-font-size-1 line-height-7 pb-2 mb-4"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  imperdiet libero id nisi euismod.
+                </p>
+               
+                <a
+                id="OutDoorFixedSeries" onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html"
+                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+                >
+                  READ MORE
+                  <svg
+                    class="ms-2"
+                    version="1.1"
+                    viewBox="0 0 15.698 8.706"
+                    width="17"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <polygon
+                      stroke="#FFF"
+                      stroke-width="0.1"
+                      fill="#FFF"
+                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-item " style="width: 213.5px; margin-right: 10px;">
+          <div>
+           
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img 
+                style="height: 400px;"
+                id="idPoductImageOnIndex2"
+                  src="img/demos/iLEDv3/products1/TaxiTopLed.jpg"
+                  class="img-fluid box-shadow-3 appear-animation"
+                  data-appear-animation="fadeInRightShorter"
+                  data-appear-animation-delay="200"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-lg-6 appear-animation"
+                data-appear-animation="fadeInRightShorter"
+                data-appear-animation-delay="500"
+              >
+                <h2  id="idproductNameOnIndex2"
+                  class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
+                >
+                TAXI TOP
+                </h2>
+                
+                <p id="idProductParaOnIndex2"
+                  class="custom-font-secondary custom-font-size-1 line-height-7 pb-2 mb-4"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  imperdiet libero id nisi euismod.
+                </p>
+               
+                <a
+                id="OutDoorFixedSeries" onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html"
+                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+                >
+                  READ MORE
+                  <svg
+                    class="ms-2"
+                    version="1.1"
+                    viewBox="0 0 15.698 8.706"
+                    width="17"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <polygon
+                      stroke="#FFF"
+                      stroke-width="0.1"
+                      fill="#FFF"
+                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-item" style="width: 213.5px; margin-right: 10px;">
+          <div>
+            
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img 
+                style="height: 400px;"
+                id="idPoductImageOnIndex2"
+                  src="img/demos/iLEDv3/products1/led-ilex-series.jpg"
+                  class="img-fluid box-shadow-3 appear-animation"
+                  data-appear-animation="fadeInRightShorter"
+                  data-appear-animation-delay="200"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-lg-6 appear-animation"
+                data-appear-animation="fadeInRightShorter"
+                data-appear-animation-delay="500"
+              >
+                <h2  id="idproductNameOnIndex2"
+                  class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
+                >
+                ILEX SERIES
+                </h2>
+                
+                <p id="idProductParaOnIndex2"
+                  class="custom-font-secondary custom-font-size-1 line-height-7 pb-2 mb-4"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  imperdiet libero id nisi euismod.
+                </p>
+               
+                <a
+                id="OutDoorFixedSeries" onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html"
+                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+                >
+                  READ MORE
+                  <svg
+                    class="ms-2"
+                    version="1.1"
+                    viewBox="0 0 15.698 8.706"
+                    width="17"
+                    xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <polygon
+                      stroke="#FFF"
+                      stroke-width="0.1"
+                      fill="#FFF"
+                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="owl-nav disabled">
+      <button type="button" role="presentation" class="owl-prev">
+
+      </button>
+      <button type="button" role="presentation" class="owl-next">
+
+      </button>
+    </div>
+  </div>
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+
+
+<!-- new section for products :End -->
+            
 <!-- Our Products Section : End -->
 
 
@@ -1173,7 +1593,7 @@
               <!-- Message Button  -->
               <div class="row">
                 <div class="form-group col">
-                  <button type="submit" href="#" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1" data-loading-text="Loading...">Send Message <i class="fas fa-arrow-right ms-2"></i></button>
+                  <button type="submit" href="#" class="btn btn-modern text-color-light btn-outline btn-arrow-effect-1" data-loading-text="Loading...">Send Message <i class="fas fa-arrow-right ms-2"></i></button>
                   
                  
                 </div>
