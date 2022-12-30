@@ -1971,45 +1971,7 @@ for (const singleProduct of ourProducts) {
 }
 
 
-for (const singleProduct of ourProducts) {
-  if (ElpixelPitch) {
-    if (singleProduct.id === clickedProduct) {
-      var i = 1;
-      for (const singleProperty of singleProduct.DisplayProperties) {
-        if (singleProperty.id == "indoorOutdoor") {
-          for (singleValue of singleProperty.Values) {
-         
-            ElidEngineeringSpecs.innerHTML += `<th>
-        ${"Model " + i}
-      </th>`;
 
-            i = i + 1;
-          }
-        }
-      }
-    }
-  }
-}
-
-
-for (const singleProduct of ourProducts) {
-  if (ElpixelPitch) {
-    if (singleProduct.id === clickedProduct) {
-      var i = 1;
-      for (const singleProperty of singleProduct.DisplayProperties) {
-        if (singleProperty.id == "installation") {
-          for (singleValue of singleProperty.Values) {
-  
-            ElidManufacSpecs.innerHTML += `<th>
-      ${"Model " + i}
-    </th>`;
-            i = i + 1;
-          }
-        }
-      }
-    }
-  }
-}
 
 
 for (const singleProductDetail of ourProducts){
