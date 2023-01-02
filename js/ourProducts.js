@@ -270,16 +270,16 @@ const ourProducts = [
       "img/demos/iLEDv3/products/OutdoorFixedSeries.jpg",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-1.PNG",
+        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-2.PNG",
+        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-2.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-3.PNG",
+        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-3.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-4.PNG",
+        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-4.png",
       },
     ],
     DisplayProperties: [
