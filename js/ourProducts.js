@@ -70,10 +70,10 @@ const ourProducts = [
     imageForProductPage: "img/demos/iLEDv3/products/3DHOLOGRAM.jpg",
     productImages: [
       {
-        image: "img/demos/iLEDv3/products1/3d hologram/iledscreen - 3d hologram.jpg",
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
       },
       {
-        image: "img/demos/iLEDv3/products1/3d hologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
       },
     ],
     DisplayProperties: [
@@ -993,16 +993,16 @@ const ourProducts = [
       "img/demos/iLEDv3/products/IbSeriesBlackLed.png",
     productImages: [
       {
-        image: "img/demos/iLEDv3/products1/IB SERIES (Black led)/iledscreen - black led (1).png",
+        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen - black led (1).png",
       },
       {
-        image: "img/demos/iLEDv3/products1/IB SERIES (Black led)/iledscreen - black led (2).png",
+        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen - black led (2).png",
       },
       {
-        image: "img/demos/iLEDv3/products1/IB SERIES (Black led)/iledscreen - black led (3).png",
+        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen - black led (3).png",
       },
       {
-        image: "img/demos/iLEDv3/products1/IB SERIES (Black led)/iledscreen - black led (4).png",
+        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen - black led (4).png",
       },
     ],
     DisplayProperties: [
