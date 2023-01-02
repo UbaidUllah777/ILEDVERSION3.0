@@ -51,7 +51,9 @@ const ElidAllProductsContainer = document.getElementById(
 const NotAvailable = "N/A";
 const clickedProduct = sessionStorage.getItem("productId");
 
-//  ************* ALL PRODUCTS DATA OF ILED   **************
+
+
+//  ************* ALL PRODUCTS DATA OF ILED: START  **************
 //  ************* NEW PRODUCT CAN BE ADDED HERE   **************
 const ourProducts = [
   // 3D Hologram
@@ -1949,6 +1951,12 @@ const ourProducts = [
     ],
   },
 ];
+
+
+//  ************* ALL PRODUCTS DATA OF ILED: END  **************
+
+
+
 
 for (const singleProduct of ourProducts) {
   if (ElpixelPitch) {
