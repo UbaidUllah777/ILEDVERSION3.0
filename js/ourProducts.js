@@ -1713,13 +1713,19 @@ const ourProducts = [
     productImages: [
       {
         image:
-          "img/demos/iLEDv3/products1/iLEX Series/iLex series I/iledscreen - iLex Series I (1).jpg",
+          "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/products1/iLEX Series/iLex series I/iledscreen - iLex Series I (2).jpg",
+        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-2.jpg",
       },
       {
-        image: "img/demos/iLEDv3/products1/iLEX Series/2 - 500x500/10 copy.png",
+        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-3.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-4.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-5.png",
       },
     ],
     DisplayProperties: [
