@@ -70,16 +70,10 @@ const ourProducts = [
     imageForProductPage: "img/demos/iLEDv3/products/3DHOLOGRAM.jpg",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/3dHologram-1.PNG",
+        image: "img/demos/iLEDv3/products1/3d hologram/iledscreen - 3d hologram.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/3dHologram-2.PNG",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/3dHologram/3dHologram-3.PNG",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/3dHologram/3dHologram-4.PNG",
+        image: "img/demos/iLEDv3/products1/3d hologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
       },
     ],
     DisplayProperties: [
@@ -482,16 +476,40 @@ const ourProducts = [
       "img/demos/iLEDv3/products/ULTransparentDisplay.png",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-1.png",
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-2.png",
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-2.png.jpg",
       },
       {
         image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-3.png",
       },
       {
         image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-4.png",
+      },
+      
+      {
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-5.png",
+      },
+      
+      {
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-6.png",
+      },
+      
+      {
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-7.jpg",
+      },
+      
+      {
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-8.jpg",
+      },
+      
+      {
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-9.png",
+      },
+      
+      {
+        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-10.png",
       },
     ],
     DisplayProperties: [
@@ -756,14 +774,15 @@ const ourProducts = [
       "img/demos/iLEDv3/products/IledSpecialTileSeries.jpg",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-1.png",
+        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-2.png",
+        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-2.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-3.png",
+        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-3.jpg",
       },
+      
       {
         image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-4.png",
       },
@@ -974,16 +993,16 @@ const ourProducts = [
       "img/demos/iLEDv3/products/IbSeriesBlackLed.png",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen-blackLED-1.png",
+        image: "img/demos/iLEDv3/products1/IB SERIES (Black led)/iledscreen - black led (1).png",
       },
       {
-        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen-blackLED-2.png",
+        image: "img/demos/iLEDv3/products1/IB SERIES (Black led)/iledscreen - black led (2).png",
       },
       {
-        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen-blackLED-3.png",
+        image: "img/demos/iLEDv3/products1/IB SERIES (Black led)/iledscreen - black led (3).png",
       },
       {
-        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen-blackLED-4.png",
+        image: "img/demos/iLEDv3/products1/IB SERIES (Black led)/iledscreen - black led (4).png",
       },
     ],
     DisplayProperties: [
@@ -1697,16 +1716,13 @@ const ourProducts = [
     productImages: [
       {
         image:
-          "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-1.png",
+          "img/demos/iLEDv3/products1/iLEX Series/iLex series I/iledscreen - iLex Series I (1).jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-2.png",
+        image: "img/demos/iLEDv3/products1/iLEX Series/iLex series I/iledscreen - iLex Series I (2).jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-3.png",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-4.png",
+        image: "img/demos/iLEDv3/products1/iLEX Series/2 - 500x500/10 copy.png",
       },
     ],
     DisplayProperties: [
@@ -1715,10 +1731,10 @@ const ourProducts = [
         id: "pixelPitch",
         name: "Pixel Pitch",
         Values: [
-          { value: "P1.25" },
-          { value: "P1.56" },
-          { value: "P1.66" },
-          { value: "P2.5" },
+          { value: "P2.6" },
+          { value: "2.97" },
+          { value: "3.91" },
+          { value: "3.91" },
         ],
       },
 
