@@ -230,60 +230,6 @@
 
 
 
-<!-- indexProducts:start -->
-<!-- 
-<script>
-  var indexProductHeadings = [
-    "",
-    1-"UL TRANSPARENT LED DISPLAY",
-    2-"ILED SPECIALL TILE SERIES",
-    3-"IB SERIES (BLACK LED)",
-    4-"TAXI TOP",
-    5-"STREET POLE",
-    6-"ILEX SERIES",
-  ];
-  var indexProductParas = [
-    "",
-    "2-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
-    "3-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
-    "4-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
-    "5-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
-    "6-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
-    "7-Pariatur reprehenderit mollit aliqua deserunt aliquip sunt aliquip veniam. Duis laboris ex pariatur.",
-  ];
-  var indexProductImg = [
-    "",
-    "img/demos/iLEDv3/products1/UL-transparent-led-display.png",
-    "img/demos/iLEDv3/products1/ILED_Special_Tile_Series.png",
-    "img/demos/iLEDv3/products1/iledscreen-black-led-2.png",
-    "img/demos/iLEDv3/products1/TaxiTopLed.jpg",
-    "img/demos/iLEDv3/products1/streetPoleLed.jpg",
-    "img/demos/iLEDv3/products1/led-ilex-series.jpg",
-  ];
-
-  var countProducts = 1;
-  setInterval(function () {
-    if (countProducts === indexProductHeadings.length) {
-      countProducts = 1;
-    }
-  
-    document.getElementById("idproductNameOnIndex").textContent = indexProductHeadings[countProducts];
-    document.getElementById("idPoductImageOnIndex").src = indexProductImg[countProducts] ;
-    document.getElementById("idProductParaOnIndex").textContent = indexProductParas[countProducts];
-
-    document.getElementById("idproductNameOnIndex2").textContent = indexProductHeadings[countProducts+1];
-    document.getElementById("idPoductImageOnIndex2").src = indexProductImg[countProducts+1] ;
-    document.getElementById("idProductParaOnIndex2").textContent = indexProductParas[countProducts+1];
-
-    
-    countProducts++;
-  }, 7000);
-
-
-</script> -->
-<!-- indexProducts:End -->
-
-
     <script>
       function blinker() {
         $(".time").delay(1700);
@@ -309,6 +255,7 @@
       $(function () { 
         $("#footer").load("footer.html");
         $("#modal-body").load("modalBody.html");
+        $("#footerTop").load("footerTop.html");
 
       });
     </script>
@@ -991,7 +938,7 @@
                 </p>
                
                 <a
-                id="StreetPole" onclick="FnCLickedProduct('StreetPole')"   href="products-detail.html""
+                id="StreetPole" onclick="FnCLickedProduct('StreetPole')"   href="products-detail.html"
                   class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
                 >
                   READ MORE
@@ -1658,7 +1605,7 @@
               <!-- Message Button  -->
               <div class="row">
                 <div class="form-group col">
-                  <button type="submit" href="#" class="btn btn-modern text-color-light btn-outline btn-arrow-effect-1" data-loading-text="Loading...">Send Message <i class="fas fa-arrow-right ms-2"></i></button>
+                  <button type="submit" href="#" class="btn btn-modern  btn-secondary text-color-light btn-outline btn-arrow-effect-1" data-loading-text="Loading...">Send Message <i class="fas fa-arrow-right ms-2"></i></button>
                   
                  
                 </div>
@@ -1693,30 +1640,8 @@
       </div>
 		<!-- Contact Us Section : End -->
 
-    <section class="section section-default bg-color-primary border-0 " style="margin-bottom: 0; margin-top: 0;">
-      <div class="container">
-        <div class="row pt-5">
-          <div class="col-sm-8 align-items-center">
-            
-              <a href="mailto:info@iledscreen.com"  class="text-color-light  text-5 text-color-hover-dark" style="text-decoration: none;">
-              <i
-              class="fa-solid fa-envelope"
-              style="padding-right: 5px; "
-            >
-          </i>
-              info@iledscreen.com</a>
-               </div>
-               <div class="col-sm-4 align-items-center">
-                 <a href="tel:+8613556848438"  class="text-color-light text-5 text-color-hover-dark" style="text-decoration: none;">
-                  <i
-                  class="fa-solid fa-phone pt-2"
-                  style=" padding-right: 5px; "
-                ></i>
-                  +8613556848438</a>
-                    </div>
-               
-        </div>
-      </div>
+    <section id="footerTop" class="section section-default bg-color-primary border-0 " style="margin-bottom: 0; margin-top: 0;">
+      
     </section>
     
   
