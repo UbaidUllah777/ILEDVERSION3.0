@@ -1261,16 +1261,13 @@ const ourProducts = [
     imageForProductPage: "img/demos/iLEDv3/products/TaxiTop.jpg",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-1.png",
+        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-2.png",
+        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-2.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-3.png",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-4.png",
+        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-3.jpg",
       },
     ],
     DisplayProperties: [
