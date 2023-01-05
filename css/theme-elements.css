@@ -18471,7 +18471,7 @@ small, .small {
 
 /* Paragraphs */
 p {
-	color: #777;
+	color: #101214;
 	line-height: 26px;
 	margin: 0 0 20px;
 }
@@ -18532,7 +18532,7 @@ p.drop-caps.drop-caps-style-2:first-letter {
 
 /* Default Font Style */
 .default-font {
-	font-family: "Poppins", Arial, sans-serif !important;
+	font-family: "Roboto Condensed", Arial, sans-serif !important;
 }
 
 /* Alternative Font Style */
@@ -18551,7 +18551,7 @@ p.drop-caps.drop-caps-style-2:first-letter {
 }
 
 .alternative-font-4 {
-	font-family: 'Poppins', Arial, sans-serif !important;
+	font-family: 'Roboto Condensed', !important;
 }
 
 .alternative-font-5 {
