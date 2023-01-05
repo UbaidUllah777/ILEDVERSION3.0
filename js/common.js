@@ -173,35 +173,41 @@ const FnBaseType=(baseType)=>{
 
     ElidIdexFormProductHeading.textContent=clickedBaseType;
 
-    if(clickedBaseType== 'MONUMENT')
+    if(clickedBaseType== 'BASE TYPE')
     {
 
       ElidIdexFormProductdetail.textContent=`Digital signs are perfect for monument signs, in new or retrofit installations, of all sizes. Stax can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
-      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/base-1.jpeg';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Base type.png';
     }
   
 
-    if(clickedBaseType=='PYLON')
+    if(clickedBaseType=='CEILING')
     {
 
       ElidIdexFormProductdetail.textContent=`Digital Signs are perfect for pylon signs, new or retrofit installation, of all heights and sizes. Both products server On-premise commercial sign and off premise digital billboards very well.`;
-      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/base-1.jpeg';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - ceiling.png';
     }
   
 
-    if(clickedBaseType=='WALL SIGN')
+    if(clickedBaseType=='DOUBLE POLE')
     {
 
       ElidIdexFormProductdetail.textContent=`Digital Signs can be great additions to your sign package as wall signs, new or retrofit installation, of all sizes. They can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
-      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/base-1.jpeg';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Double-Pole.png';
     }
   
 
-    if(clickedBaseType=='BILL BOARD')
+    if(clickedBaseType=='ROAD CENTER')
     {
 
       ElidIdexFormProductdetail.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
-      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/base-1.jpeg';
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Road Center.png';
+    }
+    if(clickedBaseType=='ROOF TOP')
+    {
+
+      ElidIdexFormProductdetail.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Rooftop.png';
     }
   
 
