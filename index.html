@@ -100,8 +100,7 @@
     /> -->
 
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="stylesheet" id="et-builder-googlefonts-cached-css" href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=latin,latin-ext&amp;display=swap" type="text/css" media="all">
-
+    
 
 
     <!-- Vendor CSS -->
@@ -587,8 +586,8 @@
                 > TECHNOLOGY <br> REMODELLING <br> CREATIVITY
                 </h4>
               </div>
-              <p
-                class="custom-font-secondary text-color-dark custom-font-size-2 line-height-4 mb-0 appear-animation"
+              <p style="font-family: Orbitron;"
+                class=" custom-font-size-2 text-color-dark line-height-4 mb-0 appear-animation"
                 data-appear-animation="fadeInUpShorter"
                 data-appear-animation-delay="600"
               >
@@ -906,7 +905,7 @@
     
     <div class="row ">
       <div class="col-lg-6 pt-5">
-        <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{'items': 1, 'autoplay': true, 'autoplayTimeout': 5000, 'margin': 10, 'animateIn': 'slideInLeft', 'animateOut': 'slideOutLeft'}" style="height: auto;">
+        <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{'items': 1, 'autoplay': true, 'autoplayTimeout': 5000, 'margin': 10, 'animateIn': 'slideInLeft', 'animateOut': 'slideOutLeft'}" >
           
           
         <div class="owl-stage-outer">
@@ -918,7 +917,6 @@
               <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                   <img
-                  style="height: 400px;"
                   id="idPoductImageOnIndex"
                     src="img/demos/iLEDv3/products1/3dHologram.png"
                     class="img-fluid box-shadow-3 appear-animation"
@@ -1503,128 +1501,132 @@
 				</div>
 			  </div>
         <div class="row px-lg-5 py-5 " >
-						<div class="col-1"></div>
-          <div class="col-lg-5 bg-color-primary" style="border-radius: 5px 0px 0px 0px; ">
-           <center> <h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4 mt-4 text-color-light">Send Us a Message</h2></center>
-            <form class="contact-form form-style-3" action="php/contact-form.php" method="POST">
-              <div class="contact-form-success alert alert-success d-none mt-4">
-                <strong>Success!</strong> Your message has been sent to us.
-              </div>
-
-              <div class="contact-form-error alert alert-danger d-none mt-4">
-                <strong>Error!</strong> There was an error sending your message.
-                <span class="mail-error-message text-1 d-block"></span>
-              </div>
-                <!-- Name And Adddress -->
-              <div class="row">
-                <div class="form-group col-sm-6">
-                  <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name*" required>
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-lg-5" style=" margin-left: 15px;">
+              
+            
+              <div class="col form-group">
+                
+                    <a href="#BaseTypeData" class="btn btn-modern btn-secondary btn-effect-4" type="button" onclick="FnBaseType('MONUMENT')">MONUMENT</a>   
+                  
+                  
+                    <a href="#BaseTypeData" class="btn btn-modern btn-secondary btn-effect-4" type="button" onclick="FnBaseType('PYLON')">PYLON</a>   
+                  
+                  
+                    <a href="#BaseTypeData" class="btn btn-modern btn-secondary btn-effect-4" type="button" onclick="FnBaseType('WALL SIGN')">WALL SIGN</a>   
+                  
+                  
+                    <a href="#BaseTypeData" class="btn btn-modern btn-secondary btn-effect-4" type="button" onclick="FnBaseType('BILL BOARD')">BILL BOARD</a>   
+                  
+                
+              
+            </div>
+            </div>
+            <div class="col-1"></div>
+          </div>
+					<div class="row">
+            <div class="col-1"></div>
+            
+            <div class="col-lg-5 bg-color-primary" style="border-radius: 5px 0px 0px 0px;  margin-left: 15px;">
+             <center> <h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4 mt-4 text-color-light">Send Us a Message</h2></center>
+              <form class="contact-form form-style-3" action="php/contact-form.php" method="POST">
+                <div class="contact-form-success alert alert-success d-none mt-4">
+                  <strong>Success!</strong> Your message has been sent to us.
                 </div>
-                <div class="form-group col-sm-6">
-                  <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email Address*" required>
-                </div>
-              </div>
-              <!-- Company and Phone -->
-              <div class="row">
-                <div class="form-group col-sm-6">
-                  <input type="text" value=""  maxlength="100" class="form-control" name="Company-Name" placeholder="Your Compnay Name" >
-                </div>
-                <div class="form-group col-sm-6">
-                  <input type="tel" value="" data-msg-required="Please enter your Phone Number" data-msg-phone="Please enter a valid  Phone Number." maxlength="20" class="form-control" name="Phone-Number" placeholder="Phone Number*" required>
-                </div>
-              </div>
-              <!-- Modal Line and Variant -->
-              <div class="row">
-                <div class="form-group col-sm-6">
-                  <div class="custom-select-1" >
-                      <select id="idProductDropDown" onchange="changeSelect()" class="form-select form-control h-auto" name="Product Name" >
-                      <option value="">Please Select your Product</option>
-                      <option value="3D HOLOGRAM">3D HOLOGRAM </option>
-                      <option value="Outdoor Fixed Series">Outdoor Fixed Series</option>
-                      <option value="UL TRANSPARENT LED DISPLAY">UL TRANSPARENT LED DISPLAY</option>
-                      <option value="ILED SPECIAL TILE Series">ILED SPECIAL TILE Series</option>
-                      <option value="IB SERIES (BLACK LED)">IB SERIES (BLACK LED)</option>
-                      <option value="TAXI TOP">TAXI TOP</option>
-                      <option value="STREET POLE">STREET POLE</option>
-                      <option value="ILEX SERIES">ILEX SERIES</option>
-                      </select>
-                    </div>
+  
+                <div class="contact-form-error alert alert-danger d-none mt-4">
+                  <strong>Error!</strong> There was an error sending your message.
+                  <span class="mail-error-message text-1 d-block"></span>
                 </div>
                 
-                <div class="form-group col-sm-6">
-                  <div class="custom-select-1">
-                      <select class="form-select form-control h-auto"  name="Variant">
-                      <option value="">Please Select a Variant</option>
-                      <option value="Model 1">Model 1</option>
-                      <option value="Model 2">Model 2</option>
-                      <option value="Model 3">Model 3</option>
-                      <option value="Model 4">Model 4</option>
-                      </select>
+                  <!-- BASE TYPE DATA -->
+                  <div class="row d-none">
+                    <div class="form-group col-sm-6">
+                      <input id="BaseTypeData" type="text" value=""  class="form-control" name="Base Type">
                     </div>
-                </div>
-              </div>
-              <!-- Side -->
-              <div class="row">
-                <div class="form-group col" >
-                  <div class="form-check form-check-inline">
-                    <label class="form-check-label text-color-light  text-4">
-                      <input class="form-check-input" type="radio" name="Side" data-msg-required="Please select at least one option." id="tabContent9Radio1" value="Single Sided" required=""> One Sided*
-                    </label>
                   </div>
-                  <div class="form-check form-check-inline"  style="padding-left: 45px;">
-                    <label class="form-check-label text-color-light text-4">
-                      <input class="form-check-input" type="radio" name="Side" data-msg-required="Please select at least one option." id="tabContent9Radio2" value="Double Sided" required=""> Double Sided*
-                    </label>
+                  <!-- Name And Adddress -->
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name*" required>
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email Address*" required>
                   </div>
                 </div>
-              </div>
-                <!-- Width and Height -->
-              <div class="row">
-                <div class="form-group col-sm-6">
-                  <input type="number" value="" maxlength="100" class="form-control" name="Width" placeholder="Width (In Feet)" >
+                <!-- Company and Phone -->
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <input type="text" value=""  maxlength="100" class="form-control" name="Company-Name" placeholder="Your Compnay Name" >
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <input type="tel" value="" data-msg-required="Please enter your Phone Number" data-msg-phone="Please enter a valid  Phone Number." maxlength="20" class="form-control" name="Phone-Number" placeholder="Phone Number*" required>
+                  </div>
                 </div>
-                <div class="form-group col-sm-6">
-                  <input type="number" value=""  maxlength="100" class="form-control" name="Height" placeholder="Height (In Feet)">
+                  <!-- Width and Height -->
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <input type="number" value="" maxlength="100" class="form-control" name="Width" placeholder="Width (In Feet)" >
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <input type="number" value=""  maxlength="100" class="form-control" name="Height" placeholder="Height (In Feet)">
+                  </div>
                 </div>
-              </div>
-
-              <!-- Message -->
-              <div class="row">
-                <div class="form-group col">
-                  <textarea maxlength="5000" data-msg-required="Please enter your message." rows="6" class="form-control" name="message" placeholder="Your Message*" required></textarea>
+                
+                <!-- Side -->
+                <div class="row">
+                  <div class="form-group col" >
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label text-color-light  text-4">
+                        <input class="form-check-input" type="radio" name="Side" data-msg-required="Please select at least one option." id="tabContent9Radio1" value="Single Sided" required=""> One Sided*
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline"  style="padding-left: 45px;">
+                      <label class="form-check-label text-color-light text-4">
+                        <input class="form-check-input" type="radio" name="Side" data-msg-required="Please select at least one option." id="tabContent9Radio2" value="Double Sided" required=""> Double Sided*
+                      </label>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <!-- Message Button  -->
-              <div class="row">
-                <div class="form-group col">
-                  <button type="submit" href="#" class="btn btn-modern  btn-secondary text-color-light btn-outline btn-arrow-effect-1" data-loading-text="Loading...">Send Message <i class="fas fa-arrow-right ms-2"></i></button>
+  
+                <!-- Message -->
+                <div class="row">
+                  <div class="form-group col">
+                    <textarea maxlength="5000" data-msg-required="Please enter your message." rows="6" class="form-control" name="message" placeholder="Your Message*" required></textarea>
+                  </div>
                 </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-5"  style="border-radius: 0px 5px 0px 0px;  background-color: white; margin-left: 15px; ">
-            <div class="overflow-hidden mb-3">
-             <h3 id="idIdexFormProductHeading"
-                class="  text-transform-none appear-animation  text-color-dark font-weight-bold  text-8 pb-2 mb-4 mt-4 "
-                data-appear-animation="maskUp"
-                data-appear-animation-delay="400"
+                <!-- Message Button  -->
+                <div class="row">
+                  <div class="form-group col">
+                    <button type="submit" href="#" class="btn btn-modern  btn-secondary text-color-light btn-outline btn-arrow-effect-1" data-loading-text="Loading...">Send Message <i class="fas fa-arrow-right ms-2"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-5"  style="border-radius: 0px 5px 0px 0px;  background-color: white; margin-left: 15px; ">
+              <div class="overflow-hidden mb-3">
+               <h3 id="idIdexFormProductHeading"
+                  class="  text-transform-none appear-animation  text-color-dark font-weight-bold  text-8 pb-2 mb-4 mt-4 "
+                  data-appear-animation="maskUp"
+                  data-appear-animation-delay="400"
+                >
+                MONUMENT
+                </h3>
+                <p id="idIdexFormProductdetail"
+                class=" pt-3f  text-transform-none text-4 line-height-2 mb-0  text-color-dark"
+                
               >
-              3D HOLOGRAM
-              </h3>
-              <p id="idIdexFormProductdetail"
-              class=" pt-3f  text-transform-none text-4 line-height-2 mb-0  text-color-dark"
-              
-            >
-            When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.
-            </p>
-           <center><img id="idIdexFormProductImage" src="img/demos/iLEDv3/products1/3dHologram.png"   
-            class="img-fluid pt-5"
-            width="323"
-            height="323"
-            alt=""></center> 
-              </div>
+              Digital signs are perfect for monument signs, in new or retrofit installations, of all sizes. Stax can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.</p>
+             <center><img id="idIdexFormProductImage" src="img/demos/iLEDv3/baseType/base-1.jpeg"   
+              class="img-fluid pt-5"
+              width="323"
+              height="323"
+              alt=""></center> 
+                </div>
+            </div>
+            <div class="col-1"></div>
           </div>
-          <div class="col-1"></div>
 
         </div>
   </div>
