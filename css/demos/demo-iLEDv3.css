@@ -1,5 +1,5 @@
 body {
-		font-family: "Poppins", sans-serif;
+		font-family: "Roboto Condensed", sans-serif !important;
 }
 
 @media (min-width: 1200px) {
@@ -30,6 +30,7 @@ body {
 
 .custom-font-size-1 {
 		font-size: 1.4em !important;
+		font-weight: normal;
 }
 
 .custom-font-size-2 {
