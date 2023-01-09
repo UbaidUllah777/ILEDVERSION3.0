@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
     <style>
-    .custom-post-event .post-event-date {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 15px 20px;
-}
-.custom-post-event .post-event-date span {
-    display: block;
-}
-.custom-secondary-font {
-    font-family: "Playfair Display", serif !important;
-}
-.custom-post-event .post-event-date span.day {
-    font-size: 1.9em;
-}
-.custom-post-event .post-event-date span {
-    display: block;
-}
-.custom-post-event .post-event-date span.year {
-    font-size: 0.9em;
-}
-.custom-margin-1 {
-    margin-left: 95px;
-}
-   
-      
+      .custom-post-event .post-event-date {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px 20px;
+      }
+      .custom-post-event .post-event-date span {
+        display: block;
+      }
+      .custom-secondary-font {
+        font-family: "Playfair Display", serif !important;
+      }
+      .custom-post-event .post-event-date span.day {
+        font-size: 1.9em;
+      }
+      .custom-post-event .post-event-date span {
+        display: block;
+      }
+      .custom-post-event .post-event-date span.year {
+        font-size: 0.9em;
+      }
+      .custom-margin-1 {
+        margin-left: 95px;
+      }
+
       /* The Modal (background) */
       .modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
         z-index: 1; /* Sit on top */
-        padding-top: 100px; 
-        padding-left: 100px; 
-        padding-right: 100px; 
+        padding-top: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
         padding-bottom: 100px; /* Location of the box */
-        
+
         width: 100%; /* Full width */
         height: 100%; /* Full height */
         overflow: auto; /* Enable scroll if needed */
         background-color: rgb(14, 13, 13); /* Fallback color */
         background-color: rgba(6, 7, 6, 0.356); /* Black w/ opacity */
       }
-      
+
       /* Modal Content */
       .modal-content {
         background-color: #fefefe;
@@ -54,7 +52,7 @@
         border: 1px solid #888;
         width: 80%;
       }
-      
+
       /* The Close Button */
       .close {
         color: #82ba41;
@@ -62,21 +60,19 @@
         font-size: 28px;
         font-weight: bold;
       }
-      
+
       .close:hover,
       .close:focus {
         color: rgb(223, 16, 16);
         text-decoration: none;
         cursor: pointer;
       }
-      </style>
+    </style>
     <!-- Basic -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>
-      Support
-    </title>
+    <title>Support</title>
 
     <meta name="keywords" content="WebSite Template" />
     <meta name="description" content="Porto - Multipurpose Website Template" />
@@ -112,12 +108,14 @@
     />
 
     <!-- Web Fonts  -->
-    
-    <!-- Web Fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
+    <!-- Web Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
@@ -150,11 +148,7 @@
     <link rel="stylesheet" href="css/demos/demo-iLEDv3.css" />
 
     <!-- Skin CSS -->
-    <link
-      id="skinCSS"
-      rel="stylesheet"
-      href="css/skins/skin-iLEDv3.css"
-    />
+    <link id="skinCSS" rel="stylesheet" href="css/skins/skin-iLEDv3.css" />
 
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
@@ -171,7 +165,6 @@
         $("#footer").load("footer.html");
         $("#modal-body").load("modalBody.html");
         $("#footerTop").load("footerTop.html");
-
       });
     </script>
     <script src="js/common.js" defer></script>
@@ -219,16 +212,18 @@
                         class="social-icons-instagram"
                       ></li>
                     </ul>
-                    
-                    <button id="idHeaderGetQuote" data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1 m-2" data-loading-text="Loading..."></button>
-                    <div id="myModal" class="modal">
 
+                    <button
+                      id="idHeaderGetQuote"
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1 m-2"
+                      data-loading-text="Loading..."
+                    ></button>
+                    <div id="myModal" class="modal">
                       <!-- Modal content -->
-                      
-                      <div class="modal-content" id="modal-body">
-                      
-                      </div>
-                    
+
+                      <div class="modal-content" id="modal-body"></div>
                     </div>
                     <!-- <a
                       id="idHeaderGetQuote"
@@ -282,77 +277,105 @@
                               class="nav-link"
                             ></a>
                           </li>
-                         
-                         
+
                           <li id="idHeaderlinkProducts2" class="dropdown">
-                            <a class="dropdown-item dropdown-toggle  current-page-active" href="products.html">	
-                              Products														
-                                  <i class="fas fa-chevron-down">
-                                    </i>
+                            <a
+                              class="dropdown-item dropdown-toggle current-page-active"
+                              href="products.html"
+                            >
+                              Products
+                              <i class="fas fa-chevron-down"> </i>
                             </a>
 
                             <ul class="dropdown-menu">
-
                               <!-- 3DHOLOGRAM -->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('3DHOLOGRAM')"
+                                  href="products-detail.html"
+                                >
                                   3D Hologram
                                 </a>
                               </li>
-                              
-                               <!-- Outdoor Fixed Series -->
+
+                              <!-- Outdoor Fixed Series -->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html" >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('OutDoorFixedSeries')"
+                                  href="products-detail.html"
+                                >
                                   Outdoor Fixed Series
                                 </a>
                               </li>
-                              
-                                 <!-- UL Transparent LED Display -->
-                                 <li>
-                                  <a class="dropdown-item"  onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >
-                                    UL Transparent LED Display
-                                  </a>
-                                </li>
-                                
+
+                              <!-- UL Transparent LED Display -->
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('UlTransparentLedDisplay')"
+                                  href="products-detail.html"
+                                >
+                                  UL Transparent LED Display
+                                </a>
+                              </li>
+
                               <!-- ILED Special Tile Series -->
                               <li>
-                                <a class="dropdown-item" onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('IledSpecialTileSeries')"
+                                  href="products-detail.html"
+                                >
                                   ILED Special Tile Series
                                 </a>
                               </li>
-                              
+
                               <!-- IB Series(Black LED)-->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('IbSeriesBlackLed')"
+                                  href="products-detail.html"
+                                >
                                   IB Series(Black LED)
                                 </a>
                               </li>
-                              
+
                               <!-- Taxi Top-->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('TaxiTop')"  href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('TaxiTop')"
+                                  href="products-detail.html"
+                                >
                                   Taxi Top
                                 </a>
                               </li>
-                              
-                              
+
                               <!-- Street Pole-->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('StreetPole')"   href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('StreetPole')"
+                                  href="products-detail.html"
+                                >
                                   Street Pole
                                 </a>
                               </li>
-                              
-                              
+
                               <!-- ILEX Series-->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('IlexSeries')"  href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('IlexSeries')"
+                                  href="products-detail.html"
+                                >
                                   ILEX Series
                                 </a>
                               </li>
-                              
-                              
-                              </ul>	
+                            </ul>
                           </li>
                           <li>
                             <a
@@ -441,134 +464,192 @@
           </div>
         </section>
 
-
         <section class="section section-no-border bg-color-light m-0">
-					<div class="container">
-						<div class="row">
-							<div class="col">
-								<h2 class="font-weight-bold text-color-dark mb-5">SOFTWARE &nbsp; DOWNLOADS</h2>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-6" >
-								<article class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5" style="position: relative;" >
-									<div class="post-event-date bg-color-primary text-center" >
-										<span class="month text-uppercase custom-secondary-font text-color-light">JAN</span>
-										<span class="day font-weight-bold text-color-light">03</span>
-										<span class="year text-color-light">2022</span>
-									</div>
-									<div class="post-event-content custom-margin-1">
-										<h4 class="font-weight-bold text-color-dark">
-											<a href="DATA_A4_V4.6.1.0.zip" class="text-decoration-none custom-secondary-font text-color-dark">
-												
-                    NovaStar A4 Receiving FirmWare
-											</a>
-										</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex odio, venenatis at tempor ut, egestas...</p>
-										<ul style="list-style: none;">
-		    							
-		    								<li>
-                          <a href="DATA_A4_V4.6.1.0.zip" class="btn btn-outline  btn-primary  btn-with-arrow mb-2">Download<span><i class="fas fa-download"></i></span></a>
-		    								</li>
-		     							</ul>
-									</div>
-									<hr class="solid">
-								</article>
-							</div>
-							<div class="col-lg-6">
-                <article class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5" style="position: relative;" >
-									<div class="post-event-date bg-color-primary text-center" >
-										<span class="month text-uppercase custom-secondary-font text-color-light">JAN</span>
-										<span class="day font-weight-bold text-color-light">03</span>
-										<span class="year text-color-light">2022</span>
-									</div>
-									<div class="post-event-content custom-margin-1">
-										<h4 class="font-weight-bold text-color-dark">
-											<a href="DATA_A4_V4.6.1.0.zip" class="text-decoration-none custom-secondary-font text-color-dark">
-												
-                    NovaStar A4 Receiving FirmWare
-											</a>
-										</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex odio, venenatis at tempor ut, egestas...</p>
-                    <ul style="list-style: none;">
-		    							
+          <div class="container">
+            <div class="row">
+              <!-- <div class="col">
+                <h2 class="font-weight-bold text-color-dark mb-5">
+                  Software &nbsp; Downloads
+                </h2>
+              </div> -->
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <article
+                  class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5"
+                  style="position: relative"
+                >
+                  <div class="post-event-date bg-color-primary text-center">
+                    <span
+                      class="month text-uppercase custom-secondary-font text-color-light"
+                      >JAN</span
+                    >
+                    <span class="day font-weight-bold text-color-light"
+                      >03</span
+                    >
+                    <span class="year text-color-light">2022</span>
+                  </div>
+                  <div class="post-event-content custom-margin-1">
+                    <h4 class="font-weight-bold text-color-dark">
+                      <a
+                        href="DATA_A4_V4.6.1.0.zip"
+                        class="text-decoration-none custom-secondary-font text-color-dark"
+                      >
+                        NovaStar A4 Receiving FirmWare
+                      </a>
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis ex odio, venenatis at tempor ut, egestas...
+                    </p>
+                    <ul style="list-style: none">
                       <li>
-                        <a href="DATA_A4_V4.6.1.0.zip" class="btn btn-outline  btn-primary  btn-with-arrow mb-2">Download<span><i class="fas fa-download"></i></span></a>
+                        <a
+                          href="DATA_A4_V4.6.1.0.zip"
+                          class="btn btn-outline btn-primary btn-with-arrow mb-2"
+                          >Download<span><i class="fas fa-download"></i></span
+                        ></a>
                       </li>
-                     </ul>
-									</div>
-									<hr class="solid">
-								</article>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-6">
-                <article class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5" style="position: relative;" >
-									<div class="post-event-date bg-color-primary text-center" >
-										<span class="month text-uppercase custom-secondary-font text-color-light">JAN</span>
-										<span class="day font-weight-bold text-color-light">03</span>
-										<span class="year text-color-light">2022</span>
-									</div>
-									<div class="post-event-content custom-margin-1">
-										<h4 class="font-weight-bold text-color-dark">
-											<a href="DATA_A4_V4.6.1.0.zip" class="text-decoration-none custom-secondary-font text-color-dark">
-												
-                    NovaStar A4 Receiving FirmWare
-											</a>
-										</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex odio, venenatis at tempor ut, egestas...</p>
-                    <ul style="list-style: none;">
-		    							
+                    </ul>
+                  </div>
+                  <hr class="solid" />
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article
+                  class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5"
+                  style="position: relative"
+                >
+                  <div class="post-event-date bg-color-primary text-center">
+                    <span
+                      class="month text-uppercase custom-secondary-font text-color-light"
+                      >JAN</span
+                    >
+                    <span class="day font-weight-bold text-color-light"
+                      >03</span
+                    >
+                    <span class="year text-color-light">2022</span>
+                  </div>
+                  <div class="post-event-content custom-margin-1">
+                    <h4 class="font-weight-bold text-color-dark">
+                      <a
+                        href="DATA_A4_V4.6.1.0.zip"
+                        class="text-decoration-none custom-secondary-font text-color-dark"
+                      >
+                        NovaStar A4 Receiving FirmWare
+                      </a>
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis ex odio, venenatis at tempor ut, egestas...
+                    </p>
+                    <ul style="list-style: none">
                       <li>
-                        <a href="DATA_A4_V4.6.1.0.zip" class="btn btn-outline  btn-primary  btn-with-arrow mb-2">Download<span><i class="fas fa-download"></i></span></a>
+                        <a
+                          href="DATA_A4_V4.6.1.0.zip"
+                          class="btn btn-outline btn-primary btn-with-arrow mb-2"
+                          >Download<span><i class="fas fa-download"></i></span
+                        ></a>
                       </li>
-                     </ul>
-									</div>
-									<hr class="solid">
-								</article>
-							</div>
-							<div class="col-lg-6">
-								<article class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5" style="position: relative;" >
-									<div class="post-event-date bg-color-primary text-center" >
-										<span class="month text-uppercase custom-secondary-font text-color-light">JAN</span>
-										<span class="day font-weight-bold text-color-light">03</span>
-										<span class="year text-color-light">2022</span>
-									</div>
-									<div class="post-event-content custom-margin-1">
-										<h4 class="font-weight-bold text-color-dark">
-											<a href="DATA_A4_V4.6.1.0.zip" class="text-decoration-none custom-secondary-font text-color-dark">
-												
-                    NovaStar A4 Receiving FirmWare
-											</a>
-										</h4>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex odio, venenatis at tempor ut, egestas...</p>
-                    <ul style="list-style: none;">
-		    							
+                    </ul>
+                  </div>
+                  <hr class="solid" />
+                </article>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <article
+                  class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5"
+                  style="position: relative"
+                >
+                  <div class="post-event-date bg-color-primary text-center">
+                    <span
+                      class="month text-uppercase custom-secondary-font text-color-light"
+                      >JAN</span
+                    >
+                    <span class="day font-weight-bold text-color-light"
+                      >03</span
+                    >
+                    <span class="year text-color-light">2022</span>
+                  </div>
+                  <div class="post-event-content custom-margin-1">
+                    <h4 class="font-weight-bold text-color-dark">
+                      <a
+                        href="DATA_A4_V4.6.1.0.zip"
+                        class="text-decoration-none custom-secondary-font text-color-dark"
+                      >
+                        NovaStar A4 Receiving FirmWare
+                      </a>
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis ex odio, venenatis at tempor ut, egestas...
+                    </p>
+                    <ul style="list-style: none">
                       <li>
-                        <a href="DATA_A4_V4.6.1.0.zip" class="btn btn-outline  btn-primary  btn-with-arrow mb-2">Download<span><i class="fas fa-download"></i></span></a>
+                        <a
+                          href="DATA_A4_V4.6.1.0.zip"
+                          class="btn btn-outline btn-primary btn-with-arrow mb-2"
+                          >Download<span><i class="fas fa-download"></i></span
+                        ></a>
                       </li>
-                     </ul>
-									</div>
-									<hr class="solid">
-								</article>
-							</div>
-						</div>
-					</div>
-				</section>
-      
+                    </ul>
+                  </div>
+                  <hr class="solid" />
+                </article>
+              </div>
+              <div class="col-lg-6">
+                <article
+                  class="custom-post-event bg-color-light custom-sm-margin-bottom-2 mb-5"
+                  style="position: relative"
+                >
+                  <div class="post-event-date bg-color-primary text-center">
+                    <span
+                      class="month text-uppercase custom-secondary-font text-color-light"
+                      >JAN</span
+                    >
+                    <span class="day font-weight-bold text-color-light"
+                      >03</span
+                    >
+                    <span class="year text-color-light">2022</span>
+                  </div>
+                  <div class="post-event-content custom-margin-1">
+                    <h4 class="font-weight-bold text-color-dark">
+                      <a
+                        href="DATA_A4_V4.6.1.0.zip"
+                        class="text-decoration-none custom-secondary-font text-color-dark"
+                      >
+                        NovaStar A4 Receiving FirmWare
+                      </a>
+                    </h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Duis ex odio, venenatis at tempor ut, egestas...
+                    </p>
+                    <ul style="list-style: none">
+                      <li>
+                        <a
+                          href="DATA_A4_V4.6.1.0.zip"
+                          class="btn btn-outline btn-primary btn-with-arrow mb-2"
+                          >Download<span><i class="fas fa-download"></i></span
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <hr class="solid" />
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
-
-
-
-
-
-
-
-      
-      <section id="footerTop" class="section section-default bg-color-primary border-0 " style="margin-bottom: 0; margin-top: 0;">
-      
-      </section>
+      <section
+        id="footerTop"
+        class="section section-default bg-color-primary border-0"
+        style="margin-bottom: 0; margin-top: 0"
+      ></section>
       <!-- FOOTER SECTION: START -->
       <footer
         id="footer"
@@ -579,8 +660,8 @@
 
     <!-- Vendor -->
     <script src="vendor/plugins/js/plugins.min.js"></script>
-    
-		<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+
+    <script src="vendor/jquery.validation/jquery.validate.min.js"></script>
 
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js"></script>
@@ -596,37 +677,37 @@
 
     <!-- Theme Initialization Files -->
     <script src="js/theme.init.js"></script>
-    
-    <script >
+
+    <script>
       // Get the modal
       var modal = document.getElementById("myModal");
-      
+
       // Get the button that opens the modal
       var btn = document.getElementById("idHeaderGetQuote");
-      
+
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
-     if(btn){
-      btn.onclick = function() {
-        modal.style.display = "block";
+
+      // When the user clicks the button, open the modal
+      if (btn) {
+        btn.onclick = function () {
+          modal.style.display = "block";
+        };
       }
-     }
-      
+
       // When the user clicks on <span> (x), close the modal
-      if(span){
-        span.onclick = function() {
-        modal.style.display = "none";
+      if (span) {
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
       }
-      }
-      
+
       // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
-      }
-      </script>
+      };
+    </script>
   </body>
 </html>
