@@ -279,3 +279,40 @@
 
 
   <!--Mega  dropdown :END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+for (const singleProduct of ourProducts) {
+  if (ElpixelPitch) {
+    if (singleProduct.id === clickedProduct) {
+      var i = 1;
+      for (const singleProperty of singleProduct.DisplayProperties) {
+        if (singleProperty.id == "pixelPitch") {
+          for (singleValue of singleProperty.Values) {
+            ElidDisplaySpecs.innerHTML += `<th>
+          ${"Model " + i}
+        </th>`;
+       
+         
+            i = i + 1;
+          }
+        }
+      }
+    }
+  }
+}

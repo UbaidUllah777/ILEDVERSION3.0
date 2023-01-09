@@ -59,7 +59,7 @@ const ourProducts = [
   // 3D Hologram
   {
     id: "3DHOLOGRAM",
-    productName: "3D HOLOGRAM",
+    productName: "3D Hologram",
     productHeadingLine:
       "for 3D HOLOGRAM...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
@@ -464,7 +464,7 @@ const ourProducts = [
   // UL TRANSPARENT LED DISPLAY
   {
     id: "UlTransparentLedDisplay",
-    productName: "UL TRANSPARENT LED DISPLAY",
+    productName: "UL Transparent LED Display",
     productHeadingLine:
       "UL TRANSPARENT LED DISPLAY...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain ",
     productDetail:
@@ -762,7 +762,7 @@ const ourProducts = [
   // ILED SPECIALL TILE SERIES
   {
     id: "IledSpecialTileSeries",
-    productName: "ILED SPECIAL TILE Series",
+    productName: "ILED Special Tile Series",
     productHeadingLine:
       "ILED SPECIAL TILE Series...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
@@ -981,7 +981,7 @@ const ourProducts = [
   // IB SERIES (BLACK LED)
   {
     id: "IbSeriesBlackLed",
-    productName: "IB SERIES (BLACK LED)",
+    productName: "IB Series (BLACK LED)",
     productHeadingLine:
       "IB SERIES  Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
@@ -1250,7 +1250,7 @@ const ourProducts = [
   // TAXI TOP
   {
     id: "TaxiTop",
-    productName: "TAXI TOP",
+    productName: "Taxi Top",
     productHeadingLine:
       "TAXI TOP Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
@@ -1492,7 +1492,7 @@ const ourProducts = [
   // STREET POLE
   {
     id: "StreetPole",
-    productName: "STREET POLE",
+    productName: "Street Pole",
     productHeadingLine:
       "STREET POLE Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
@@ -1701,7 +1701,7 @@ const ourProducts = [
   // ILEX SERIES
   {
     id: "IlexSeries",
-    productName: "ILEX SERIES",
+    productName: "ILEX Series",
     productHeadingLine:
       "ILEX SERIES Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
@@ -1985,7 +1985,7 @@ for (const singleProduct of ourProducts) {
         if (singleProperty.id == "pixelPitch") {
           for (singleValue of singleProperty.Values) {
             ElidDisplaySpecs.innerHTML += `<th>
-          ${"Model " + i}
+         
         </th>`;
        
          
