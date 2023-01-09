@@ -85,7 +85,7 @@ Products
 <!-- 3DHOLOGRAM -->
 <li>
   <a class="dropdown-item"  onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html">
-    3D HOLOGRAM
+    3D Hologram
   </a>
 </li>
 
