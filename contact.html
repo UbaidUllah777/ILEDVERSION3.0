@@ -1,74 +1,89 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<style>
-	   
-		  
-		  /* The Modal (background) */
-		  .modal {
-			display: none; /* Hidden by default */
-			position: fixed; /* Stay in place */
-			z-index: 1; /* Sit on top */
-			padding-top: 100px; 
-			padding-left: 100px; 
-			padding-right: 100px; 
-			padding-bottom: 100px; /* Location of the box */
-			
-			width: 100%; /* Full width */
-			height: 100%; /* Full height */
-			overflow: auto; /* Enable scroll if needed */
-			background-color: rgb(14, 13, 13); /* Fallback color */
-			background-color: rgba(6, 7, 6, 0.356); /* Black w/ opacity */
-		  }
-		  
-		  /* Modal Content */
-		  .modal-content {
-			background-color: #fefefe;
-			margin: auto;
-			padding: 20px;
-			border: 1px solid #888;
-			width: 80%;
-		  }
-		  
-		  /* The Close Button */
-		  .close {
-			color: #82ba41;
-			float: right;
-			font-size: 28px;
-			font-weight: bold;
-		  }
-		  
-		  .close:hover,
-		  .close:focus {
-			color: rgb(223, 16, 16);
-			text-decoration: none;
-			cursor: pointer;
-		  }
-		  </style>
+  <head>
+    <style>
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 100px; /* Location of the box */
 
-		<!-- Basic -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(14, 13, 13); /* Fallback color */
+        background-color: rgba(6, 7, 6, 0.356); /* Black w/ opacity */
+      }
 
-		<title>Contact Us</title>	
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+      }
 
-		<meta name="keywords" content="WebSite Template" />
-		<meta name="description" content="Porto - Multipurpose Website Template">
-		<meta name="author" content="okler.net">
+      /* The Close Button */
+      .close {
+        color: #82ba41;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
 
-		<!-- Favicon -->
-		<!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+      .close:hover,
+      .close:focus {
+        color: rgb(223, 16, 16);
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Contact Us</title>
+
+    <meta name="keywords" content="WebSite Template" />
+    <meta name="description" content="Porto - Multipurpose Website Template" />
+    <meta name="author" content="okler.net" />
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="img/apple-touch-icon.png"> -->
 
-		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-		<link rel="manifest" href="img/site.webmanifest">
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"
+    />
 
-		<!-- Web Fonts  -->
-		
+    <!-- Web Fonts  -->
+
     <!-- Web Fonts  -->
     <!-- <link
       id="googleFonts"
@@ -77,56 +92,70 @@
       type="text/css"
     /> -->
 
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="stylesheet" id="et-builder-googlefonts-cached-css" href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=latin,latin-ext&amp;display=swap" type="text/css" media="all">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      id="et-builder-googlefonts-cached-css"
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;subset=latin,latin-ext&amp;display=swap"
+      type="text/css"
+      media="all"
+    />
 
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="vendor/animate/animate.compat.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/simple-line-icons/css/simple-line-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/owl.carousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/owl.carousel/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/magnific-popup/magnific-popup.min.css"
+    />
 
-		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
-		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
-		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme-elements.css" />
+    <link rel="stylesheet" href="css/theme-blog.css" />
+    <link rel="stylesheet" href="css/theme-shop.css" />
 
-		<!-- Theme CSS -->
-		<link rel="stylesheet" href="css/theme.css">
-		<link rel="stylesheet" href="css/theme-elements.css">
-		<link rel="stylesheet" href="css/theme-blog.css">
-		<link rel="stylesheet" href="css/theme-shop.css">
+    <!-- Demo CSS -->
+    <link rel="stylesheet" href="css/demos/demo-iLEDv3.css" />
 
-		<!-- Demo CSS -->
-		<link rel="stylesheet" href="css/demos/demo-iLEDv3.css">
+    <!-- Skin CSS -->
+    <link id="skinCSS" rel="stylesheet" href="css/skins/skin-iLEDv3.css" />
 
-		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-iLEDv3.css">
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
 
-		<!-- Theme Custom CSS -->
-		<link rel="stylesheet" href="css/custom.css">
+    <!-- Head Libs -->
+    <script src="vendor/modernizr/modernizr.min.js"></script>
 
-		<!-- Head Libs -->
-		<script src="vendor/modernizr/modernizr.min.js"></script>
-
-		<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-		type="text/javascript"
-	  ></script>
-	  <script defer>
-		$(function () {
-		  $("#footer").load("footer.html");
-		  $("#modal-body").load("modalBody.html");
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script defer>
+      $(function () {
+        $("#footer").load("footer.html");
+        $("#modal-body").load("modalBody.html");
         $("#footerTop").load("footerTop.html");
-  
-		});
-	  </script>
-	  <script src="js/common.js" defer></script>
-   
-	</head>
-	<body>
-
-		<div class="body">
-			<header
+      });
+    </script>
+    <script src="js/common.js" defer></script>
+  </head>
+  <body>
+    <div class="body">
+      <header
         id="header"
         class="header-effect-shrink"
         data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}"
@@ -138,13 +167,14 @@
                 <div class="header-column justify-content-start">
                   <div class="header-row">
                     <ul class="list list-unstyled list-inline mb-0">
-                      <li id="idHeaderSales" class="list-inline-item text-color-dark me-4 mb-0">
-                       
-                      </li>
-                      <li id="idHeaderService"
+                      <li
+                        id="idHeaderSales"
+                        class="list-inline-item text-color-dark me-4 mb-0"
+                      ></li>
+                      <li
+                        id="idHeaderService"
                         class="list-inline-item text-color-dark d-none d-sm-inline-block mb-0"
-                      >
-                      </li>
+                      ></li>
                     </ul>
                   </div>
                 </div>
@@ -153,26 +183,31 @@
                     <ul
                       class="header-social-icons social-icons social-icons-clean d-none d-md-block"
                     >
-                      <li id="idHeaderFacebook" class="social-icons-facebook">
-                       
-                      </li>
-                      <li id="idHeaderTwitter" class="social-icons-twitter">
-                       
-                      </li>
-                      <li id="idHeaderInstagram" class="social-icons-instagram">
-                       
-                      </li>
+                      <li
+                        id="idHeaderFacebook"
+                        class="social-icons-facebook"
+                      ></li>
+                      <li
+                        id="idHeaderTwitter"
+                        class="social-icons-twitter"
+                      ></li>
+                      <li
+                        id="idHeaderInstagram"
+                        class="social-icons-instagram"
+                      ></li>
                     </ul>
-					
-                    <button id="idHeaderGetQuote" data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1 m-2" data-loading-text="Loading..."></button>
-                    <div id="myModal" class="modal">
 
+                    <button
+                      id="idHeaderGetQuote"
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1 m-2"
+                      data-loading-text="Loading..."
+                    ></button>
+                    <div id="myModal" class="modal">
                       <!-- Modal content -->
-                      
-					  <div class="modal-content" id="modal-body">
-                      
-                      </div>
-                    
+
+                      <div class="modal-content" id="modal-body"></div>
                     </div>
                   </div>
                 </div>
@@ -186,7 +221,8 @@
                   <!-- HEADER LOGO -->
                   <div class="header-logo">
                     <a href="index.html">
-                      <img id="idHeaderLogo"
+                      <img
+                        id="idHeaderLogo"
                         src=""
                         class="img-fluid"
                         width="123"
@@ -204,99 +240,142 @@
                       class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1"
                     >
                       <nav class="collapse">
-                        <ul  class="nav nav-pills" id="mainNav">
+                        <ul class="nav nav-pills" id="mainNav">
                           <li>
-                            <a id="idHeaderLinkHome" href="" class="nav-link "
-                              ></a
-                            >
+                            <a
+                              id="idHeaderLinkHome"
+                              href=""
+                              class="nav-link"
+                            ></a>
                           </li>
                           <li>
-                            <a id="idHeaderLinkAboutUs" href="" class="nav-link"
-                              ></a
-                            >
+                            <a
+                              id="idHeaderLinkAboutUs"
+                              href=""
+                              class="nav-link"
+                            ></a>
                           </li>
-                         
-                          
+
                           <li id="idHeaderlinkProducts2" class="dropdown">
-                            <a class="dropdown-item dropdown-toggle  current-page-active" href="products.html">	
-                              Products														
-                                  <i class="fas fa-chevron-down">
-                                    </i>
+                            <a
+                              class="dropdown-item dropdown-toggle current-page-active"
+                              href="products.html"
+                            >
+                              Products
+                              <i class="fas fa-chevron-down"> </i>
                             </a>
 
                             <ul class="dropdown-menu">
-
                               <!-- 3DHOLOGRAM -->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('3DHOLOGRAM')"
+                                  href="products-detail.html"
+                                >
                                   3D Hologram
                                 </a>
                               </li>
-                              
-                               <!-- Outdoor Fixed Series -->
+
+                              <!-- Outdoor Fixed Series -->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html" >
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('OutDoorFixedSeries')"
+                                  href="products-detail.html"
+                                >
                                   Outdoor Fixed Series
                                 </a>
                               </li>
-                              
-                                 <!-- UL Transparent LED Display -->
-                                 <li>
-                                  <a class="dropdown-item"  onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >
-                                    UL Transparent LED Display
-                                  </a>
-                                </li>
-                                
+
+                              <!-- UL Transparent LED Display -->
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('UlTransparentLedDisplay')"
+                                  href="products-detail.html"
+                                >
+                                  UL Transparent LED Display
+                                </a>
+                              </li>
+
                               <!-- ILED Special Tile Series -->
                               <li>
-                                <a class="dropdown-item" onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('IledSpecialTileSeries')"
+                                  href="products-detail.html"
+                                >
                                   ILED Special Tile Series
                                 </a>
                               </li>
-                              
+
                               <!-- IB Series(Black LED)-->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('IbSeriesBlackLed')"
+                                  href="products-detail.html"
+                                >
                                   IB Series(Black LED)
                                 </a>
                               </li>
-                              
+
                               <!-- Taxi Top-->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('TaxiTop')"  href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('TaxiTop')"
+                                  href="products-detail.html"
+                                >
                                   Taxi Top
                                 </a>
                               </li>
-                              
-                              
+
                               <!-- Street Pole-->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('StreetPole')"   href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('StreetPole')"
+                                  href="products-detail.html"
+                                >
                                   Street Pole
                                 </a>
                               </li>
-                              
-                              
+
                               <!-- ILEX Series-->
                               <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('IlexSeries')"  href="products-detail.html">
+                                <a
+                                  class="dropdown-item"
+                                  onclick="FnCLickedProduct('IlexSeries')"
+                                  href="products-detail.html"
+                                >
                                   ILEX Series
                                 </a>
                               </li>
-                              
-                              
-                              </ul>	
+                            </ul>
                           </li>
                           <li>
-                            <a id="idHeaderLinkMarkets" href="" class="nav-link"></a></li>
-                          <li>
-                            <a id="idHeaderLinkSupport" href="" class="nav-link"
-                              ></a
-                            >
+                            <a
+                              id="idHeaderLinkMarkets"
+                              href=""
+                              class="nav-link"
+                            ></a>
                           </li>
-                         
                           <li>
-                            <a id="idHeaderLinkContactUs" href="" class="nav-link active"></a>
+                            <a
+                              id="idHeaderLinkSupport"
+                              href=""
+                              class="nav-link"
+                            ></a>
+                          </li>
+
+                          <li>
+                            <a
+                              id="idHeaderLinkContactUs"
+                              href=""
+                              class="nav-link active"
+                            ></a>
                           </li>
                         </ul>
                       </nav>
@@ -333,174 +412,319 @@
         </div>
       </header>
 
-			<div role="main" class="main">
+      <div role="main" class="main">
+        <section
+          class="page-header page-header-modern page-header-background page-header-background-sm m-0"
+          style="
+            background-image: url(img/demos/iLEDv3/backgrounds/background-2.jpg);
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-8 order-2 order-md-1 align-self-center p-static"
+              >
+                <h1 class="font-weight-bold text-8 mb-0">Contact Us</h1>
+              </div>
+              <div class="col-md-4 order-1 order-md-2 align-self-center">
+                <ul
+                  class="breadcrumb breadcrumb-light d-block text-md-end text-4 mb-0"
+                >
+                  <li>
+                    <a href="index.html" class="text-decoration-none">Home</a>
+                  </li>
+                  <li class="active">Contact</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-				<section class="page-header page-header-modern page-header-background page-header-background-sm m-0" style="background-image: url(img/demos/iLEDv3/backgrounds/background-2.jpg); background-size: cover; background-position: center;">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-8 order-2 order-md-1 align-self-center p-static">
-								<h1 class="font-weight-bold text-8 mb-0">Contact Us</h1>
-							</div>
-							<div class="col-md-4 order-1 order-md-2 align-self-center">
-								<ul class="breadcrumb breadcrumb-light d-block text-md-end text-4 mb-0">
-									<li><a href="index.html" class="text-decoration-none">Home</a></li>
-									<li class="active">Contact</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
+        <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
+        <!-- <div id="googlemaps" class="google-map m-0" style="height:500px;"></div> -->
 
-				<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-				<!-- <div id="googlemaps" class="google-map m-0" style="height:500px;"></div> -->
+        <!-- CONATCT US FORM -->
+        <div class="container py-5 my-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4">
+                Send Us a Message
+              </h2>
+              <form
+                class="contact-form custom-form-style-1"
+                action="php/contact-form.php"
+                method="POST"
+              >
+                <div
+                  class="contact-form-success alert alert-success d-none mt-4"
+                >
+                  <strong>Success!</strong> Your message has been sent to us.
+                </div>
 
-					<!-- CONATCT US FORM -->
-				<div class="container py-5 my-4">
-					<div class="row">
-						
-						<div class="col-lg-6">
-							<h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4">Send Us a Message</h2>
-							<form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
-								<div class="contact-form-success alert alert-success d-none mt-4">
-									<strong>Success!</strong> Your message has been sent to us.
-								</div>
+                <div class="contact-form-error alert alert-danger d-none mt-4">
+                  <strong>Error!</strong> There was an error sending your
+                  message.
+                  <span class="mail-error-message text-1 d-block"></span>
+                </div>
 
-								<div class="contact-form-error alert alert-danger d-none mt-4">
-									<strong>Error!</strong> There was an error sending your message.
-									<span class="mail-error-message text-1 d-block"></span>
-								</div>
+                <div class="row">
+                  <div class="form-group col-12">
+                    <input
+                      type="text"
+                      value=""
+                      data-msg-required="Please enter your name."
+                      maxlength="100"
+                      class="form-control"
+                      name="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <input
+                      type="email"
+                      value=""
+                      data-msg-required="Please enter your email address."
+                      data-msg-email="Please enter a valid email address."
+                      maxlength="100"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                </div>
 
-								<div class="row">
-									<div class="form-group col-12">
-										<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name" required>
-									</div>
-									<div class="form-group col-12">
-										<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email Address" required>
-									</div>
-								</div>
+                <div class="row">
+                  <div class="form-group col-12">
+                    <input
+                      type="tel"
+                      value=""
+                      data-msg-required="Please enter your Phone Number."
+                      maxlength="100"
+                      class="form-control"
+                      name="Phone-Number"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <input
+                      type="text"
+                      value=""
+                      data-msg-required="Please enter your Company Name."
+                      maxlength="100"
+                      class="form-control"
+                      name="Company-Name"
+                      placeholder="Company Name"
+                      required
+                    />
+                  </div>
+                </div>
 
-								
-								<div class="row">
-									<div class="form-group col-12">
-										<input type="tel" value="" data-msg-required="Please enter your Phone Number." maxlength="100" class="form-control" name="Phone-Number" placeholder="Phone Number" required>
-									</div>
-									<div class="form-group col-12">
-										<input type="text" value="" data-msg-required="Please enter your Company Name."  maxlength="100" class="form-control" name="Company-Name" placeholder="Company Name" required>
-									</div>
-								</div>
-							
+                <div class="row">
+                  <div class="form-group col">
+                    <textarea
+                      maxlength="5000"
+                      data-msg-required="Please enter your message."
+                      rows="6"
+                      class="form-control"
+                      name="message"
+                      placeholder="Your Message"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col">
+                    <button
+                      type="submit"
+                      class="btn custom-svg-btn-style-1 custom-svg-btn-style-1-solid text-color-light text-uppercase"
+                      data-loading-text="Loading..."
+                    >
+                      <svg
+                        class="custom-svg-btn-background"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 210 70"
+                        preserveAspectRatio="none"
+                      >
+                        <polygon
+                          fill="none"
+                          stroke="#D4D4D4"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          points="7,5 185,5 205,34 186,63 7,63 "
+                        />
+                      </svg>
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
 
-								
-								<div class="row">
-									<div class="form-group col">
-										<textarea maxlength="5000" data-msg-required="Please enter your message." rows="6" class="form-control" name="message" placeholder="Your Message" required></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group col">
-										<button type="submit" class="btn custom-svg-btn-style-1 custom-svg-btn-style-1-solid text-color-light text-uppercase" data-loading-text="Loading...">
-											<svg class="custom-svg-btn-background" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 210 70" preserveAspectRatio="none">
-												<polygon fill="none" stroke="#D4D4D4" stroke-width="2" stroke-miterlimit="10" points="7,5 185,5 205,34 186,63 7,63 "/>
-											</svg>
-											Send Message
-										</button>
-									</div>
-								</div>
-							</form>
-						</div>
-						
-						<div class="col-lg-6 mb-5 mb-lg-0">
-							<div class="feature-box-icon">
-								<h2 class="font-weight-bold text-transform-none text-8 pt-2 mt-2 pb-2 mb-4" style="margin-left: 5px;"><i class="fa-solid fa-location-dot" style="color: #82ba41;"></i> &nbsp; Our Locations</h2>
-							</div>
-							
-							<div class="row">
-								<div class="col">
-									<div class="feature-box feature-box-style-5">
-										
-										<div class="feature-box-info">
-											<h3 class="text-transform-none font-weight-bold custom-font-size-1 mb-3"></h3>
-											
-											<ul class="list list-unstyled ps-md-4 mb-3 px-5">
-												<li class="mb-0"><strong class="text-color-dark custom-font-size-3">Headquarters</strong></li>
-												<li class="mb-0">B26E, Building 522, Bagualing Industrial Zone Bagua 3rd Road, Futian District Shenzhen, China</li>
-												
-											</ul>
-											<ul class="list list-unstyled ps-md-4 mb-3 px-5">
-												<li class="mb-0"><strong class="text-color-dark custom-font-size-3">US Office</strong></li>
-												<li class="mb-0">3004 3RD Ln, Los Angeles California, USA </li>
-												
-											</ul>
-											<ul class="list list-unstyled ps-md-4 mb-3 px-5">
-												<li class="mb-0"><strong class="text-color-dark custom-font-size-3">Factory</strong></li>
-												<li class="mb-0">2nd Floor, Mingjinhai Industrial Park,2192 Songbai Road,Baoan District Shenzhen, China </li>
-												<li class="mb-0"></li>
-												<li class="mb-0"> </li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row py-3 my-4">
-								<div class="col-lg-6">
-									<div class="feature-box feature-box-style-5">
-										<div class="feature-box-icon">
-											<img class="icon-animated" width="42" src="img/demos/iLEDv3/icons/icon-mail.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary position-relative bottom-5'}" />
-										</div>
-										<div class="feature-box-info">
-											<h3 class="text-transform-none font-weight-bold custom-font-size-1 pb-1 mb-2">E-mail Address</h3>
-											<ul class="list list-unstyled pe-5 mb-0">
-												<li class="mb-0"><a href="mailto:email@domain.com" class="text-color-default text-color-hover-primary text-decoration-none">info@iledscreen.com</a></li>
-												<li class="mb-0"><a href="mailto:email@domain.com" class="text-color-default text-color-hover-primary text-decoration-none">sales@iledscreen.com</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-6">
-									<div class="feature-box feature-box-style-5">
-										<div class="feature-box-icon">
-											<img class="icon-animated" width="42" src="img/demos/iLEDv3/icons/icon-phone.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
-										</div>
-										<div class="feature-box-info">
-											<h3 class="text-transform-none font-weight-bold custom-font-size-1 pb-1 mb-2">Phone Number</h3>
-											<ul class="list list-unstyled pe-5 mb-0">
-												<li class="mb-0"><a href="tel:+8613556848438" class="text-color-default text-color-hover-primary text-decoration-none">+8613556848438</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								
-							</div>
-						</div>
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="feature-box-icon">
+                <h2
+                  class="font-weight-bold text-transform-none text-8 pt-2 mt-2 pb-2 mb-4"
+                  style="margin-left: 5px"
+                >
+                  <i
+                    class="fa-solid fa-location-dot"
+                    style="color: #82ba41"
+                  ></i>
+                  &nbsp; Our Locations
+                </h2>
+              </div>
 
-					</div>
-				</div>
-				<!-- OUR Locations -->
-				<div class="container py-5 my-4">
-					<div class="row">
-					</div>
-				</div>
-			</div> 
+              <div class="row">
+                <div class="col">
+                  <div class="feature-box feature-box-style-5">
+                    <div class="feature-box-info">
+                      <h3
+                        class="text-transform-none font-weight-bold custom-font-size-1 mb-3"
+                      ></h3>
 
-			<section id="footerTop" class="section section-default bg-color-primary border-0 " style="margin-bottom: 0; margin-top: 0;">
-      
-			</section>
-<!-- FOOTER SECTION: START -->
-<footer
-id="footer"
-class="section section-with-shape-divider border-0 custom-bg-black pt-5 pb-0 m-0"
->
-</footer>
-<!-- FOOTER SECTION: END -->
+                      <ul class="list list-unstyled ps-md-4 mb-3 px-5">
+                        <li class="mb-0">
+                          <strong class="text-5 text-color-dark"
+                            >Headquarters</strong
+                          >
+                        </li>
+                        <li class="mb-0">
+                          B26E, Building 522, Bagualing Industrial Zone Bagua
+                          3rd Road, Futian District Shenzhen, China
+                        </li>
+                      </ul>
+                      <ul class="list list-unstyled ps-md-4 mb-3 px-5">
+                        <li class="mb-0">
+                          <strong class="text-color-dark custom-font-size-3"
+                            >US Office</strong
+                          >
+                        </li>
+                        <li class="mb-0">
+                          3004 3RD Ln, Los Angeles California, USA
+                        </li>
+                      </ul>
+                      <ul class="list list-unstyled ps-md-4 mb-3 px-5">
+                        <li class="mb-0">
+                          <strong class="text-color-dark custom-font-size-3"
+                            >Factory</strong
+                          >
+                        </li>
+                        <li class="mb-0">
+                          2nd Floor, Mingjinhai Industrial Park,2192 Songbai
+                          Road,Baoan District Shenzhen, China
+                        </li>
+                        <li class="mb-0"></li>
+                        <li class="mb-0"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-3 my-4">
+                <div class="col-lg-6">
+                  <div class="feature-box feature-box-style-5">
+                    <div class="feature-box-icon">
+                      <img
+                        class="icon-animated"
+                        width="42"
+                        src="img/demos/iLEDv3/icons/icon-mail.svg"
+                        alt=""
+                        data-icon
+                        data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary position-relative bottom-5'}"
+                      />
+                    </div>
+                    <div class="feature-box-info">
+                      <h3
+                        class="text-transform-none font-weight-bold custom-font-size-1 pb-1 mb-2"
+                      >
+                        E-mail Address
+                      </h3>
+                      <ul class="list list-unstyled pe-5 mb-0">
+                        <li class="mb-0">
+                          <a
+                            href="mailto:email@domain.com"
+                            class="text-color-default text-color-hover-primary text-decoration-none"
+                            >info@iledscreen.com</a
+                          >
+                        </li>
+                        <li class="mb-0">
+                          <a
+                            href="mailto:email@domain.com"
+                            class="text-color-default text-color-hover-primary text-decoration-none"
+                            >sales@iledscreen.com</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-box feature-box-style-5">
+                    <div class="feature-box-icon">
+                      <img
+                        class="icon-animated"
+                        width="42"
+                        src="img/demos/iLEDv3/icons/icon-phone.svg"
+                        alt=""
+                        data-icon
+                        data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}"
+                      />
+                    </div>
+                    <div class="feature-box-info">
+                      <h3
+                        class="text-transform-none font-weight-bold custom-font-size-1 pb-1 mb-2"
+                      >
+                        Phone Number
+                      </h3>
+                      <ul class="list list-unstyled pe-5 mb-0">
+                        <li class="mb-0">
+                          <a
+                            href="tel:+8613556848438"
+                            class="text-color-default text-color-hover-primary text-decoration-none"
+                            >+8613556848438</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
+        <!-- OUR Locations -->
+        <div class="container py-5 my-4">
+          <div class="row"></div>
+        </div>
+      </div>
 
-		</div>
+      <section
+        id="footerTop"
+        class="section section-default bg-color-primary border-0"
+        style="margin-bottom: 0; margin-top: 0"
+      ></section>
+      <!-- FOOTER SECTION: START -->
+      <footer
+        id="footer"
+        class="section section-with-shape-divider border-0 custom-bg-black pt-5 pb-0 m-0"
+      ></footer>
+      <!-- FOOTER SECTION: END -->
+    </div>
 
     <!-- Vendor -->
     <script src="vendor/plugins/js/plugins.min.js"></script>
-    
-		<script src="vendor/jquery.validation/jquery.validate.min.js"></script>
+
+    <script src="vendor/jquery.validation/jquery.validate.min.js"></script>
 
     <!-- Theme Base, Components and Settings -->
     <script src="js/theme.js"></script>
@@ -516,38 +740,37 @@ class="section section-with-shape-divider border-0 custom-bg-black pt-5 pb-0 m-0
 
     <!-- Theme Initialization Files -->
     <script src="js/theme.init.js"></script>
-   
-	<script >
-		// Get the modal
-		var modal = document.getElementById("myModal");
-		
-		// Get the button that opens the modal
-		var btn = document.getElementById("idHeaderGetQuote");
-		
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-		
-		// When the user clicks the button, open the modal 
-	   if(btn){
-		btn.onclick = function() {
-		  modal.style.display = "block";
-		}
-	   }
-		
-		// When the user clicks on <span> (x), close the modal
-		if(span){
-		  span.onclick = function() {
-		  modal.style.display = "none";
-		}
-		}
-		
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		  if (event.target == modal) {
-			modal.style.display = "none";
-		  }
-		}
-		</script>
 
-	</body>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("idHeaderGetQuote");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      if (btn) {
+        btn.onclick = function () {
+          modal.style.display = "block";
+        };
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      if (span) {
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
 </html>
