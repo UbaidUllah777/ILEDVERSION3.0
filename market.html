@@ -148,6 +148,7 @@
       });
     </script>
     <script src="js/common.js" defer></script>
+    <script src="js/Markete.js" defer></script>
   </head>
   <body>
     <div class="body">
@@ -257,76 +258,95 @@
                           </li>
                          
                           
-                          <li id="idHeaderlinkProducts2" class="dropdown">
-                            <a class="dropdown-item dropdown-toggle  current-page-active" href="products.html">	
-                              Products														
-                                  <i class="fas fa-chevron-down">
-                                    </i>
-                            </a>
-
+                             
+                          <!-- Prodycts DropDown :START -->
+                          
+                          <li class="dropdown dropdown-mega">
+                            <a class="dropdown-item dropdown-toggle" href="elements.html"
+                              >Products<i class="fas fa-chevron-down"> </i
+                            ></a>
                             <ul class="dropdown-menu">
+                              <li>
+                                <div class="dropdown-mega-content">
+                                  <div class="row">
+                                    <div class="col-lg-3">
+                                        <!-- Elements 1 -->
+                                      <span class="dropdown-mega-sub-title">Indoor Display</span>
+                                      <ul class="dropdown-mega-sub-nav">
+                                        <!-- 3DHOLOGRAM -->
+                                        <li>
+                                          <a class="dropdown-item"  onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html"
+                                            >3D Hologram</a
+                                          >
+                                        </li>
+                                        <!-- Ul Transparent LED Display -->
+                                        <li>
+                                          <a class="dropdown-item"   onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >Ul Transparent LED Display</a>
+                                        </li>
 
-                              <!-- 3DHOLOGRAM -->
-                              <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html">
-                                  3D Hologram
-                                </a>
+                                      </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                      <!-- Elements 2 -->
+                                      <span class="dropdown-mega-sub-title">Fine Pixel Pitch</span>
+                                      <ul class="dropdown-mega-sub-nav">
+
+                                        <!-- ILED Special Tile Series -->
+                                        <li>
+                                          <a class="dropdown-item"  onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html"
+                                            >ILED Special Tile Series</a
+                                          >
+                                        </li>
+
+                                        <!-- IB Series -->
+                                        <li>
+                                          <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                                            >IB Series(Black LED)</a
+                                          >
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                      <!-- Elements 3 -->
+                                      <span class="dropdown-mega-sub-title">OutDoor LED</span>
+                                      <ul class="dropdown-mega-sub-nav">
+
+                                        <!-- Taxi Top -->
+                                        <li>
+                                          <a class="dropdown-item"  onclick="FnCLickedProduct('TaxiTop')"  href="products-detail.html">Taxi Top</a>
+                                        </li>
+
+                                        <!-- Street Pole -->
+                                        <li>
+                                          <a class="dropdown-item"  onclick="FnCLickedProduct('StreetPole')"   href="products-detail.html">Street Pole</a>
+                                        </li>
+
+                                      </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                      <!-- Elements 4 -->
+                                      <span class="dropdown-mega-sub-title">Staging LED</span>
+                                      <ul class="dropdown-mega-sub-nav">
+
+                                        <!-- ILEX Series -->
+                                        <li>
+                                          <a class="dropdown-item"  onclick="FnCLickedProduct('IlexSeries')"  href="products-detail.html"
+                                            >ILEX Series</a
+                                          >
+                                        </li>
+
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
                               </li>
-                              
-                               <!-- Outdoor Fixed Series -->
-                              <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html" >
-                                  Outdoor Fixed Series
-                                </a>
-                              </li>
-                              
-                                 <!-- UL Transparent LED Display -->
-                                 <li>
-                                  <a class="dropdown-item"  onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >
-                                    UL Transparent LED Display
-                                  </a>
-                                </li>
-                                
-                              <!-- ILED Special Tile Series -->
-                              <li>
-                                <a class="dropdown-item" onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html">
-                                  ILED Special Tile Series
-                                </a>
-                              </li>
-                              
-                              <!-- IB Series(Black LED)-->
-                              <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html">
-                                  IB Series(Black LED)
-                                </a>
-                              </li>
-                              
-                              <!-- Taxi Top-->
-                              <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('TaxiTop')"  href="products-detail.html">
-                                  Taxi Top
-                                </a>
-                              </li>
-                              
-                              
-                              <!-- Street Pole-->
-                              <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('StreetPole')"   href="products-detail.html">
-                                  Street Pole
-                                </a>
-                              </li>
-                              
-                              
-                              <!-- ILEX Series-->
-                              <li>
-                                <a class="dropdown-item"  onclick="FnCLickedProduct('IlexSeries')"  href="products-detail.html">
-                                  ILEX Series
-                                </a>
-                              </li>
-                              
-                              
-                              </ul>	
+                            </ul>
                           </li>
+                          
+                          <!-- Prodycts DropDown :END -->
+                          
+
+
                           <li>
                             <a
                               id="idHeaderLinkMarkets"
@@ -431,165 +451,10 @@
 					</div>
           <div class="row pb-4">
 						
-						<div class="col mb-4 mb-lg-0">
-							<div class="accordion accordion-modern-status accordion-modern-status-primary" id="accordion100">
+						<div  class="col mb-4 mb-lg-0">
+							<div class="accordion accordion-modern-status accordion-modern-status-primary accordion-modern-status-arrow" id="accordion100">
 								
-                <!-- first Industry -->
-                <div class="card card-default">
-									<div class="card-header" id="collapse100HeadingOne">
-										<h4 class="card-title m-0">
-											<a class="accordion-toggle text-color-dark font-weight-bold" data-bs-toggle="collapse" data-bs-target="#collapse100One" aria-expanded="true" aria-controls="collapse100One">
-												Sports
-											</a>
-										</h4>
-									</div>
-									<div id="collapse100One" class="collapse show" aria-labelledby="collapse100HeadingOne" data-bs-parent="#accordion100" style="">
-										<div class="card-body">
-                     
-                      <div class="row justify-content-center">
-                        <div class="col-lg-7 col-xl-6 pe-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                          <div class="owl-carousel stage-margin stage-margin-sm nav-style-1 nav-svg-arrows-1 nav-dark custom-stage-outer-box-shadow" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': true, 'margin': 20, 'stagePadding': 50}">
-                            <div>
-                              <img src="img/demos/iLEDv3/generic/generic-4.jpg" class="img-fluid" alt="" />
-                            </div>
-                            <div>
-                              <img src="img/demos/iLEDv3/generic/generic-3.jpg" class="img-fluid" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-5 col-xl-6">
-                          <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. </p>
-                          <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum. </p>
-                        
-                        </div>
-                      </div>
-										</div>
-									</div>
-								</div>
-                <!-- second Industry -->
-								<div class="card card-default">
-									<div class="card-header" id="collapse100HeadingTwo">
-										<h4 class="card-title m-0">
-											<a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapse100Two" aria-expanded="false" aria-controls="collapse100Two">
-												Retail
-											</a>
-										</h4>
-									</div>
-									<div id="collapse100Two" class="collapse" aria-labelledby="collapse100HeadingTwo" data-bs-parent="#accordion100" style="">
-										<div class="card-body">
-											<div class="row justify-content-center">
-                        <div class="col-lg-7 col-xl-6 pe-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                          <div class="owl-carousel stage-margin stage-margin-sm nav-style-1 nav-svg-arrows-1 nav-dark custom-stage-outer-box-shadow" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': true, 'margin': 20, 'stagePadding': 50}">
-                            <div>
-                              <img src="img/demos/iLEDv3/generic/generic-4.jpg" class="img-fluid" alt="" />
-                            </div>
-                            <div>
-                              <img src="img/demos/iLEDv3/generic/generic-3.jpg" class="img-fluid" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-5 col-xl-6">
-                          <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. </p>
-                          <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum. </p>
-                        
-                        </div>
-                      </div>
-                    </div>
-									</div>
-								</div>
-                <!-- third Industry -->
-								<div class="card card-default">
-									<div class="card-header" id="collapse100HeadingThree">
-										<h4 class="card-title m-0">
-											<a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapse100Three" aria-expanded="false" aria-controls="collapse100Three">
-												Entertainment & Concerts
-											</a>
-										</h4>
-									</div>
-									<div id="collapse100Three" class="collapse" aria-labelledby="collapse100HeadingThree" data-bs-parent="#accordion100">
-										<div class="card-body">
-                      <div class="row justify-content-center">
-                        <div class="col-lg-7 col-xl-6 pe-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                          <div class="owl-carousel stage-margin stage-margin-sm nav-style-1 nav-svg-arrows-1 nav-dark custom-stage-outer-box-shadow" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': true, 'margin': 20, 'stagePadding': 50}">
-                            <div>
-                              <img src="img/demos/iLEDv3/generic/generic-4.jpg" class="img-fluid" alt="" />
-                            </div>
-                            <div>
-                              <img src="img/demos/iLEDv3/generic/generic-3.jpg" class="img-fluid" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-5 col-xl-6">
-                          <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. </p>
-                          <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum. </p>
-                        
-                        </div>
-                      </div>		
-                    </div>
-									</div>
-								</div>
-                <!-- fourth Industry -->
-								<div class="card card-default">
-									<div class="card-header" id="collapse100HeadingFour">
-										<h4 class="card-title m-0">
-											<a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapse100Four" aria-expanded="false" aria-controls="collapse100Four">
-												Venue
-											</a>
-										</h4>
-									</div>
-									<div id="collapse100Four" class="collapse" aria-labelledby="collapse100HeadingFour" data-bs-parent="#accordion100" style="">
-										<div class="card-body">
-                      <div class="row justify-content-center">
-                        <div class="col-lg-7 col-xl-6 pe-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                          <div class="owl-carousel stage-margin stage-margin-sm nav-style-1 nav-svg-arrows-1 nav-dark custom-stage-outer-box-shadow" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': true, 'margin': 20, 'stagePadding': 50}">
-                            <div>
-                              <img src="img/demos/iLEDv3/generic/generic-4.jpg" class="img-fluid" alt="" />
-                            </div>
-                            <div>
-                              <img src="img/demos/iLEDv3/generic/generic-3.jpg" class="img-fluid" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-5 col-xl-6">
-                          <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. </p>
-                          <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum. </p>
-                        
-                        </div>
-                      </div>	
-                    </div>
-									</div>
-								</div>
-                <!-- fifth Industry -->
-								<div class="card card-default">
-									<div class="card-header" id="collapse100HeadingFive">
-										<h4 class="card-title m-0">
-											<a class="accordion-toggle text-color-dark font-weight-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapse100Five" aria-expanded="false" aria-controls="collapse100Five">
-                        Restaurants
-											</a>
-										</h4>
-									</div>
-									<div id="collapse100Five" class="collapse" aria-labelledby="collapse1HeadingFive" data-bs-parent="#accordion100" style="">
-										<div class="card-body">
-											<div class="row justify-content-center">
-                        <div class="col-lg-7 col-xl-6 pe-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                          <div class="owl-carousel stage-margin stage-margin-sm nav-style-1 nav-svg-arrows-1 nav-dark custom-stage-outer-box-shadow" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': true, 'margin': 20, 'stagePadding': 50}">
-                            <div>
-                              <img src="img/demos/iLEDv3/generic/generic-4.jpg" class="img-fluid" alt="" />
-                            </div>
-                            <div>
-                              <img src="img/demos/iLEDv3/generic/generic-3.jpg" class="img-fluid" alt="" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-5 col-xl-6">
-                          <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum, blandit id faucibus ac, finibus vitae dui. </p>
-                          <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Vestibulum auctor felis eget orci semper vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus, molestie nunc. In nibh ipsum. </p>
-                        
-                        </div>
-                      </div>
-                    </div>
-									</div>
-								</div>
+               
 							</div>
 
 						</div>
