@@ -2,6 +2,31 @@
 <html class="history svg video supports boxshadow csstransforms3d csstransitions backgroundcliptext webkit chrome win js sticky-header-enabled">
   <head>
     <style>
+      .series-block {
+          display: flex;
+          height: 100%;
+          box-shadow: -5px 9px 30px 0 rgb(40 40 41 / 5%);
+          -moz-box-shadow: -5px 9px 30px 0 rgba(40,40,41,.05);
+          -webkit-box-shadow: -5px 9px 30px 0 rgb(40 40 41 / 5%);
+      }
+      .series-block .series-img {
+    flex: 0 0 185px;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    background-repeat: none;
+    background-position: center right;
+    background-size: cover;
+}
+
+
+@media (max-width: 767.98px){
+.series-block .series-img {
+    background-position: center center;
+    height: 0;
+    padding-top: 75%;
+}}
+
       .parallax-background{opacity: 1;}
       #indexBlogContent
       {
@@ -15,6 +40,14 @@
       {
         overflow: hidden;
         width:300px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+       }
+
+       .ProdSectionProdPara{
+        overflow: hidden;
+        width:100%;
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
@@ -238,6 +271,7 @@
     
     <script src="js/common.js" defer></script>
     <script src="js/blogs.js" defer></script>
+    <script src="js/ourProducts.js" defer></script>
     
   </head>
   <body    data-plugin-page-transition="" data-loading-overlay="" data-plugin-options="{'hideDelay': 0, 'effect': 'pulse'}" class="alternative-font-4" data-plugin-page-transition="" data-loading-overlay="" data-plugin-options="{'hideDelay': 0, 'effect': 'pulse'}" style="">
@@ -344,89 +378,14 @@
                           </li>
 
                           
-                          <!-- Prodycts DropDown :START -->
-                          <li class="dropdown dropdown-mega">
+                          <!-- Products DropDown :START -->
+                          <li id="idHeaderLinkProducts" class="dropdown dropdown-mega">
                             <a class="dropdown-item dropdown-toggle" href="products.html"
                               >Products<i class="fas fa-chevron-down"> </i
                             ></a>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <div class="dropdown-mega-content">
-                                  <div class="row">
-                                    <div class="col-lg-3">
-                                        <!-- Elements 1 -->
-                                      <span class="dropdown-mega-sub-title">Indoor Display</span>
-                                      <ul class="dropdown-mega-sub-nav">
-                                        <!-- 3DHOLOGRAM -->
-                                        <li>
-                                          <a class="dropdown-item"  onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html"
-                                            >3D Hologram</a
-                                          >
-                                        </li>
-                                        <!-- Ul Transparent LED Display -->
-                                        <li>
-                                          <a class="dropdown-item"   onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >Ul Transparent LED Display</a>
-                                        </li>
-
-                                      </ul>
-                                    </div>
-                                    <div class="col-lg-3">
-                                      <!-- Elements 2 -->
-                                      <span class="dropdown-mega-sub-title">Fine Pixel Pitch</span>
-                                      <ul class="dropdown-mega-sub-nav">
-
-                                        <!-- ILED Special Tile Series -->
-                                        <li>
-                                          <a class="dropdown-item"  onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html"
-                                            >ILED Special Tile Series</a
-                                          >
-                                        </li>
-
-                                        <!-- IB Series -->
-                                        <li>
-                                          <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
-                                            >IB Series(Black LED)</a
-                                          >
-                                        </li>
-                                      </ul>
-                                    </div>
-                                    <div class="col-lg-3">
-                                      <!-- Elements 3 -->
-                                      <span class="dropdown-mega-sub-title">OutDoor LED</span>
-                                      <ul class="dropdown-mega-sub-nav">
-
-                                        <!-- Taxi Top -->
-                                        <li>
-                                          <a class="dropdown-item"  onclick="FnCLickedProduct('TaxiTop')"  href="products-detail.html">Taxi Top</a>
-                                        </li>
-
-                                        <!-- Street Pole -->
-                                        <li>
-                                          <a class="dropdown-item"  onclick="FnCLickedProduct('StreetPole')"   href="products-detail.html">Street Pole</a>
-                                        </li>
-
-                                      </ul>
-                                    </div>
-                                    <div class="col-lg-3">
-                                      <!-- Elements 4 -->
-                                      <span class="dropdown-mega-sub-title">Staging LED</span>
-                                      <ul class="dropdown-mega-sub-nav">
-
-                                        <!-- ILEX Series -->
-                                        <li>
-                                          <a class="dropdown-item"  onclick="FnCLickedProduct('IlexSeries')"  href="products-detail.html"
-                                            >ILEX Series</a
-                                          >
-                                        </li>
-
-                                      </ul>
-                                    </div>
-                                  </div>
-                                </div>
-                              </li>
-                            </ul>
+                            
                           </li>
-                          <!-- Prodycts DropDown :END -->
+                          <!-- Products DropDown :END -->
                           
                           <li>
                             <a id="idHeaderLinkMarkets" href="" class="nav-link"></a></li>
@@ -882,892 +841,194 @@
         </section>
 <section class="section custom-section-shape-background border-0 m-0">
   
-  <div class="container-fluid position-relative z-index-3 mb-5" style="padding-left: 40px; padding-right: 40px;">
+  <div class="container position-relative z-index-3 mb-5" style="padding-left: 40px; padding-right: 40px;">
     
     
-    <div class="row ">
-      <div class="col-lg-6 pt-5">
-        <div  class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{'items': 1, 'autoplay': true, 'autoplayTimeout': 10000, 'margin': 10, 'animateIn': 'flipInX', 'animateOut': 'flipInX' , 'nav': false, 'dots': false}" style="height: auto;">
-          
-          
-        <div class="owl-stage-outer">
-          <div class="owl-stage" style="transform: translate3d(-447px, 0px, 0px); transition: all 0s ease 0s; width: 1341px;">
-          
-            <!-- 3D HOLOGRAM -->
-            <div class="owl-item active" style="width: 213.5px; margin-right: 10px;">
-            <div>
-              <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                  <img
-                  
-                  id="idPoductImageOnIndex"
-                    src="img/demos/iLEDv3/products1/3dHologram.png"
-                    class="img-fluid box-shadow-3 appear-animation"
-                    data-appear-animation="fadeInRightShorter"
-                    data-appear-animation-delay="200"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="col-lg-6 appear-animation"
-                  data-appear-animation="fadeInRightShorter"
-                  data-appear-animation-delay="500"
-                >
-                  <h2 id="idproductNameOnIndex"
-                    class="text-color-primary font-weight-medium positive-ls-3 text-3 mb-0"
-                  >
-                  3D Hologram
-                  </h2>
-                
-                  <p id="idProductParaOnIndex"
-                    class=" indexBlogContent custom-font-secondary custom-font-size-1 line-height-7 mb-5"
-                  >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.
-                  </p>
+   <div class="row">
 
-                  <div class="row pt-2 pb-0">
-                    <div class="col pb-0">
-                      <p class="pb-0 text-3" style="margin-bottom: 0px;"> <span class="text-color-primary">3D Hologram</span>  Specifications</p>
-                    </div>
-                  </div>
-                  <!-- Hr -->
-                    <div class="container-fluid pt-0">
-                      <div class="row">
-                        <div class="col" style="padding-left: 0; padding-right: 0;">
-                          <hr class="mt-2 mb-2 ">
-                        </div>
-                      </div>
-                    </div>
-                      
-                    <div class="row pt-2">
-                      <div class="col-6">
-                        <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
-                      </div>
-                      <div class="col-6">
-                        <p class="text-color-dark text-3" style="font-weight: bolder;">0.93 - 3.1 mm  </p>
-                      
-                      </div>
-                    </div>
-                    
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="text-color-dark text-3 pb-0" style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
-                      </div>
-                      <div class="col-6">
-                        <p class="text-color-dark text-3" style="font-weight: bolder;">16:9</p>
-                      
-                      </div>
-                    </div>
-                    
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
-                      </div>
-                      <div class="col-6">
-                        <p class="text-color-dark text-3" style="font-weight: bolder;">Front </p>
-                      
-                      </div>
-                    </div>
-                 
-                  <a
-                  id="3DHOLOGRAM" onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html"
-                    class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                  >
-                    READ MORE
-                    <svg
-                      class="ms-2"
-                      version="1.1"
-                      viewBox="0 0 15.698 8.706"
-                      width="17"
-                      xml:space="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <polygon
-                        stroke="#FFF"
-                        stroke-width="0.1"
-                        fill="#FFF"
-                        points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- UL TRANSPARENT LED DISPLAY -->
-        <div class="owl-item " style="width: 213.5px; margin-right: 10px;">
-          <div>
-            <div class="row align-items-center justify-content-center">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img 
-                
-                id="idPoductImageOnIndex2"
-                  src="img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-1.jpg"
-                  class="img-fluid box-shadow-3 appear-animation"
-                  data-appear-animation="fadeInRightShorter"
-                  data-appear-animation-delay="200"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-lg-6 appear-animation"
-                data-appear-animation="fadeInRightShorter"
-                data-appear-animation-delay="500"
-              >
-                <h2  id="idproductNameOnIndex2"
-                  class="text-color-primary font-weight-medium positive-ls-3 text-3 mb-0"
-                >
-                UL Transparent LED Display
-                </h2>
-                
-                <p id="idProductParaOnIndex2"
-                  class=" indexBlogContent custom-font-secondary custom-font-size-1 line-height-7 mb-5"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.
-                </p>
-                <div class="row pt-2 pb-0">
-                  <div class="col pb-0">
-                    <p class="pb-0 text-3" style="margin-bottom: 0px;"> <span class="text-color-primary">UL Transparent LED Display</span>  Specifications</p>
-                  </div>
-                </div>
-                <!-- Hr -->
-                  <div class="container-fluid pt-0">
-                    <div class="row">
-                      <div class="col" style="padding-left: 0; padding-right: 0;">
-                        <hr class="mt-2 mb-2 ">
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="row pt-2">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">0.93 - 3.1 mm  </p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3 pb-0" style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">16:9</p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Front </p>
-                    
-                    </div>
-                  </div>
-               
-                <a
-                id="UlTransparentLedDisplay" onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" 
-                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                >
-                  READ MORE
-                  <svg
-                    class="ms-2"
-                    version="1.1"
-                    viewBox="0 0 15.698 8.706"
-                    width="17"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <polygon
-                      stroke="#FFF"
-                      stroke-width="0.1"
-                      fill="#FFF"
-                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                    />
-                  </svg>
-                </a>
-              </div>
+    <!-- Left Side Products -->
+    <div class="col-lg-6 pt-5">
+      <div class="card border-0 border-radius-0 ">
+        <div class="card-body">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+             <div class="series-block">
+              <div id="ProdSectionProdImage1"  class="series-img" style="background-image: url(img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg);padding-right: 0;"></div>
+             </div>
             </div>
-          </div>
-        </div>
-
-        <!-- IB SERIES (BLACK LED) -->
-        <div class="owl-item " style="width: 213.5px; margin-right: 10px;">
-          <div>
-            <div class="row align-items-center justify-content-center">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img 
-                
-                id="idPoductImageOnIndex2"
-                  src="img/demos/iLEDv3/products1/iledscreen-black-led-2.png"
-                  class="img-fluid box-shadow-3 appear-animation"
-                  data-appear-animation="fadeInRightShorter"
-                  data-appear-animation-delay="200"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-lg-6 appear-animation"
-                data-appear-animation="fadeInRightShorter"
-                data-appear-animation-delay="500"
-              >
-                <h2  id="idproductNameOnIndex2"
-                  class="text-color-primary font-weight-medium positive-ls-3 text-3 mb-0"
-                >
-                IB Series (Black LED)
-                </h2>
-                
-                <p id="idProductParaOnIndex2"
-                  class=" indexBlogContent custom-font-secondary custom-font-size-1 line-height-7 mb-5"
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                imperdiet libero id nisi euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                imperdiet libero id nisi euismod.
-                </p>
-                <div class="row pt-2 pb-0">
-                  <div class="col pb-0">
-                    <p class="pb-0 text-3" style="margin-bottom: 0px;"> <span class="text-color-primary">IB Series(Black LED)</span>  Specifications</p>
-                  </div>
-                </div>
-                <!-- Hr -->
-                  <div class="container-fluid pt-0">
-                    <div class="row">
-                      <div class="col" style="padding-left: 0; padding-right: 0;">
-                        <hr class="mt-2 mb-2 ">
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="row pt-2">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">0.93 - 3.1 mm  </p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3 pb-0"  style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">16:9</p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Front </p>
-                    
-                    </div>
-                  </div>
-               
-                <a
-                id="IbSeriesBlackLed" onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
-                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                >
-                  READ MORE
-                  <svg
-                    class="ms-2"
-                    version="1.1"
-                    viewBox="0 0 15.698 8.706"
-                    width="17"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <polygon
-                      stroke="#FFF"
-                      stroke-width="0.1"
-                      fill="#FFF"
-                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- STREET POLE -->
-        <div class="owl-item" style="width: 213.5px; margin-right: 10px;">
-          <div>
-            <div class="row align-items-center justify-content-center">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img 
-                
-                id="idPoductImageOnIndex2"
-                  src="img/demos/iLEDv3/products1/streetPoleLed.jpg"
-                  class="img-fluid box-shadow-3 appear-animation"
-                  data-appear-animation="fadeInRightShorter"
-                  data-appear-animation-delay="200"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-lg-6 appear-animation"
-                data-appear-animation="fadeInRightShorter"
-                data-appear-animation-delay="500"
-              >
-                <h2  id="idproductNameOnIndex2"
-                  class="text-color-primary font-weight-medium positive-ls-3 text-3 mb-0"
-                >
-                Street Pole
-                </h2>
-                
-                <p id="idProductParaOnIndex2"
-                  class="indexBlogContent custom-font-secondary custom-font-size-1 line-height-7 mb-5"
-                >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                imperdiet libero id nisi euismod.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                imperdiet libero id nisi euismod.
-                </p>
-               
-                <div class="row pt-2 pb-0">
-                  <div class="col pb-0">
-                    <p class="pb-0 text-3" style="margin-bottom: 0px;"> <span class="text-color-primary">Street Pole</span>  Specifications</p>
-                  </div>
-                </div>
-                <!-- Hr -->
-                  <div class="container-fluid pt-0">
-                    <div class="row">
-                      <div class="col" style="padding-left: 0; padding-right: 0;">
-                        <hr class="mt-2 mb-2 ">
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="row pt-2">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">0.93 - 3.1 mm  </p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3 pb-0" style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">16:9</p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Front </p>
-                    
-                    </div>
-                  </div>
-
-                <a
-                id="StreetPole" onclick="FnCLickedProduct('StreetPole')"   href="products-detail.html"
-                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                >
-                  READ MORE
-                  <svg
-                    class="ms-2"
-                    version="1.1"
-                    viewBox="0 0 15.698 8.706"
-                    width="17"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <polygon
-                      stroke="#FFF"
-                      stroke-width="0.1"
-                      fill="#FFF"
-                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="owl-nav disabled">
-      <button type="button" role="presentation" class="owl-prev">
-
-      </button>
-      <button type="button" role="presentation" class="owl-next">
-
-      </button>
-    </div>
-  </div>
-      </div>
-      
-      <div class="col-lg-6 pt-5">
-        <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{'items': 1, 'autoplay': true, 'autoplayTimeout': 10000, 'margin': 10, 'animateIn': 'flipInX', 'animateOut': 'flipInX', 'nav': false, 'dots': false}" style="height: auto;">
-          
-          
-        <div class="owl-stage-outer">
-          <div class="owl-stage" style="transform: translate3d(-447px, 0px, 0px); transition: all 0s ease 0s; width: 1341px;">
-           
-            <!-- OutDoor Fixed Series -->
-            <div class="owl-item active" style="width: 213.5px; margin-right: 10px;">
-            <div>
-              <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                  <img
-                  
-                  id="idPoductImageOnIndex"
-                    src="img/demos/iLEDv3/products1/outDoorFixedSeries.png"
-                    class="img-fluid box-shadow-3 appear-animation"
-                    data-appear-animation="fadeInRightShorter"
-                    data-appear-animation-delay="200"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="col-lg-6 appear-animation"
-                  data-appear-animation="fadeInRightShorter"
-                  data-appear-animation-delay="500"
-                >
-                  <h2 id="idproductNameOnIndex"
-                    class="text-color-primary font-weight-medium positive-ls-3 text-3 mb-0"
-                  >
-                  OutDoor Fixed Series
-                  </h2>
-                
-                  <p id="idProductParaOnIndex"
-                    class="indexBlogContent custom-font-secondary custom-font-size-1 line-height-7 mb-5"
-                  >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    imperdiet libero id nisi euismod.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    imperdiet libero id nisi euismod.
-                  </p>
-
-                  <div class="row pt-2 pb-0">
-                    <div class="col pb-0">
-                      <p class="pb-0 text-3" style="margin-bottom: 0px;"> <span class="text-color-primary">OutDoor Fixed Series</span>  Specifications</p>
-                    </div>
-                  </div>
-                  <!-- Hr -->
-                    <div class="container-fluid pt-0">
-                      <div class="row">
-                        <div class="col" style="padding-left: 0; padding-right: 0;">
-                          <hr class="mt-2 mb-2 ">
-                        </div>
-                      </div>
-                    </div>
-                      
-                    <div class="row pt-2">
-                      <div class="col-6">
-                        <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
-                      </div>
-                      <div class="col-6">
-                        <p class="text-color-dark text-3" style="font-weight: bolder;">0.93 - 3.1 mm  </p>
-                      
-                      </div>
-                    </div>
-                    
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="text-color-dark text-3 pb-0" style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
-                      </div>
-                      <div class="col-6">
-                        <p class="text-color-dark text-3" style="font-weight: bolder;">16:9</p>
-                      
-                      </div>
-                    </div>
-                    
-                    <div class="row">
-                      <div class="col-6">
-                        <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
-                      </div>
-                      <div class="col-6">
-                        <p class="text-color-dark text-3" style="font-weight: bolder;">Front </p>
-                      
-                      </div>
-                    </div>
-                 
-                  <a
-                  id="OutDoorFixedSeries" onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html" 
-                    class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                  >
-                    READ MORE
-                    <svg
-                      class="ms-2"
-                      version="1.1"
-                      viewBox="0 0 15.698 8.706"
-                      width="17"
-                      xml:space="preserve"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <polygon
-                        stroke="#FFF"
-                        stroke-width="0.1"
-                        fill="#FFF"
-                        points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-          </div>
-        </div>
-
-        <!-- ILED SPECIALL TILE SERIES -->
-        <div class="owl-item " style="width: 213.5px; margin-right: 10px;">
-          <div>
-            <div class="row align-items-center justify-content-center">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img 
-                
-                id="idPoductImageOnIndex2"
-                  src="img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-2.jpg"
-                  class="img-fluid box-shadow-3 appear-animation"
-                  data-appear-animation="fadeInRightShorter"
-                  data-appear-animation-delay="200"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-lg-6 appear-animation"
-                data-appear-animation="fadeInRightShorter"
-                data-appear-animation-delay="500"
-              >
-                <h2  id="idproductNameOnIndex2"
-                  class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
-                >
-                ILED Special Tile Series
-                </h2>
-                
-                <p id="idProductParaOnIndex2"
-                  class="indexBlogContent custom-font-secondary custom-font-size-1 line-height-7 mb-5"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.
-                </p>
-
-                <div class="row pt-2 pb-0">
-                  <div class="col pb-0">
-                    <p class="pb-0 text-3" style="margin-bottom: 0px;"> <span class="text-color-primary">ILED Special Tile Series</span>  Specifications</p>
-                  </div>
-                </div>
-                <!-- Hr -->
-                  <div class="container-fluid pt-0">
-                    <div class="row">
-                      <div class="col" style="padding-left: 0; padding-right: 0;">
-                        <hr class="mt-2 mb-2 ">
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="row pt-2">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">0.93 - 3.1 mm  </p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3 pb-0" style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">16:9</p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Front </p>
-                    
-                    </div>
-                  </div>
-               
-                <a
-                id="IledSpecialTileSeries" onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html" 
-                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                >
-                  READ MORE
-                  <svg
-                    class="ms-2"
-                    version="1.1"
-                    viewBox="0 0 15.698 8.706"
-                    width="17"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <polygon
-                      stroke="#FFF"
-                      stroke-width="0.1"
-                      fill="#FFF"
-                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- TAXI TOP -->
-        <div class="owl-item " style="width: 213.5px; margin-right: 10px;">
-          <div>
-            <div class="row align-items-center justify-content-center">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img 
-                
-                id="idPoductImageOnIndex2"
-                  src="img/demos/iLEDv3/products1/TaxiTopLed.jpg"
-                  class="img-fluid box-shadow-3 appear-animation"
-                  data-appear-animation="fadeInRightShorter"
-                  data-appear-animation-delay="200"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-lg-6 appear-animation"
-                data-appear-animation="fadeInRightShorter"
-                data-appear-animation-delay="500"
-              >
-                <h2  id="idproductNameOnIndex2"
-                  class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
-                >
-                Taxi Top
-                </h2>
-                
-                <p id="idProductParaOnIndex2"
-                  class="indexBlogContent custom-font-secondary custom-font-size-1 line-height-7 mb-5"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.orem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.
-                </p>
-                <div class="row pt-2 pb-0">
-                  <div class="col pb-0">
-                    <p class="pb-0 text-3" style="margin-bottom: 0px;"> <span class="text-color-primary">Taxi Top</span>  Specifications</p>
-                  </div>
-                </div>
-                <!-- Hr -->
-                  <div class="container-fluid pt-0">
-                    <div class="row">
-                      <div class="col" style="padding-left: 0; padding-right: 0;">
-                        <hr class="mt-2 mb-2 ">
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="row pt-2">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">0.93 - 3.1 mm  </p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3 pb-0" style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">16:9</p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Front </p>
-                    
-                    </div>
-                  </div>
-               
-                <a
-                id="TaxiTop" onclick="FnCLickedProduct('TaxiTop')"  href="products-detail.html"
-                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                >
-                  READ MORE
-                  <svg
-                    class="ms-2"
-                    version="1.1"
-                    viewBox="0 0 15.698 8.706"
-                    width="17"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <polygon
-                      stroke="#FFF"
-                      stroke-width="0.1"
-                      fill="#FFF"
-                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- ILEX SERIES -->
-        <div class="owl-item" style="width: 213.5px; margin-right: 10px;">
-          <div>
             
-            <div class="row align-items-center justify-content-center">
-              <div class="col-lg-6 mb-4 mb-lg-0">
-                <img 
-                
-                id="idPoductImageOnIndex2"
-                  src="img/demos/iLEDv3/products1/led-ilex-series.jpg"
-                  class="img-fluid box-shadow-3 appear-animation"
-                  data-appear-animation="fadeInRightShorter"
-                  data-appear-animation-delay="200"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-lg-6 appear-animation"
-                data-appear-animation="fadeInRightShorter"
-                data-appear-animation-delay="500"
-              >
-                <h2  id="idproductNameOnIndex2"
-                  class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0"
-                >
-                Ilex Series
-                </h2>
-                
-                <p id="idProductParaOnIndex2"
-                  class="indexBlogContent custom-font-secondary custom-font-size-1 line-height-7 mb-5"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  imperdiet libero id nisi euismod.
-                </p>
-                <div class="row pt-2 pb-0">
-                  <div class="col pb-0">
-                    <p class="pb-0 text-3" style="margin-bottom: 0px;"> <span class="text-color-primary">ILEX Series</span>  Specifications</p>
-                  </div>
-                </div>
-                <!-- Hr -->
-                  <div class="container-fluid pt-0">
-                    <div class="row">
-                      <div class="col" style="padding-left: 0; padding-right: 0;">
-                        <hr class="mt-2 mb-2 ">
-                      </div>
-                    </div>
-                  </div>
-                    
-                  <div class="row pt-2">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">0.93 - 3.1 mm  </p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3 pb-0" style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">16:9</p>
-                    
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="col-6">
-                      <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
-                    </div>
-                    <div class="col-6">
-                      <p class="text-color-dark text-4" style="font-weight: bolder;">Front </p>
-                    
-                    </div>
-                  </div>
-               
-                <a
-                id="IlexSeries" onclick="FnCLickedProduct('IlexSeries')"  href="products-detail.html"
-                  class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                >
-                  READ MORE
-                  <svg
-                    class="ms-2"
-                    version="1.1"
-                    viewBox="0 0 15.698 8.706"
-                    width="17"
-                    xml:space="preserve"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <polygon
-                      stroke="#FFF"
-                      stroke-width="0.1"
-                      fill="#FFF"
-                      points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                    />
-                  </svg>
-                </a>
+            <div
+            class="col-lg-6" style="padding-left: 0;">
+            <h2 id="ProdSectionProdHeading1" class="card-title mb-1 text-4 font-weight-bold">iHD Series</h2>
+            <p id="ProdSectionProdPara1"  class="card-text ProdSectionProdPara">Detail of iHD Series When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.</p>
+            
+            <div class="row pt-2 pb-0">
+              <div class="col pb-0">
+                <p class="pb-0 text-3 text-color-primary text-4" style="margin-bottom: 0px;">Specifications</p>
               </div>
             </div>
+            <!-- Hr -->
+              <div class="container-fluid pt-0">
+                <div class="row">
+                  <div class="col" style="padding-left: 0; padding-right: 0;">
+                    <hr class="mt-2 mb-2 ">
+                  </div>
+                </div>
+              </div>
+                
+              <div class="row pt-2">
+                <div class="col-6">
+                  <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
+                </div>
+                <div class="col-6">
+                  <p id="ProdSectionProdPixelPitch1" class="text-color-dark text-3" style="font-weight: bolder;">0.93 - 3.1 mm  </p>
+                
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-6">
+                  <p class="text-color-dark text-3 pb-0" style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
+                </div>
+                <div class="col-6">
+                  <p  id="ProdSectionProdPixelAspRatio1" class="text-color-dark text-3" style="font-weight: bolder;">16:9</p>
+                
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-6">
+                  <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
+                </div>
+                <div class="col-6">
+                  <p  id="ProdSectionProdInstallService1" class="text-color-dark text-3" style="font-weight: bolder;">Front </p>
+                
+                </div>
+              </div>
+           
+            <a 
+            id="ProdSectionProdReadMore1" onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html"
+              class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+            >
+              READ MORE
+              <svg
+                class="ms-2"
+                version="1.1"
+                viewBox="0 0 15.698 8.706"
+                width="17"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <polygon
+                  stroke="#FFF"
+                  stroke-width="0.1"
+                  fill="#FFF"
+                  points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                />
+              </svg>
+            </a>
           </div>
+
+          </div>
+         
         </div>
       </div>
-    </div>
-    <div class="owl-nav disabled">
-      <button type="button" role="presentation" class="owl-prev d">
 
-      </button>
-      <button type="button" role="presentation" class="owl-next">
-
-      </button>
     </div>
-  </div>
+
+    <!-- Right Side Products -->
+    <div class="col-lg-6 pt-5">
+      <div class="card border-0 border-radius-0 ">
+        <div class="card-body">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 mb-4 mb-lg-0" style="padding-right: 0;">
+              <div class="series-block">
+               <div id="ProdSectionProdImage2" class="series-img" style="background-image: url(img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLEDOnIndex.jpg); padding-right: 0;"></div>
+              </div>
+             </div>
+            
+            <div
+            class="col-lg-6" >
+            <h2 id="ProdSectionProdHeading2" class="card-title mb-1 text-4 font-weight-bold">Shelf Led Ribbon</h2>
+            <p id="ProdSectionProdPara2"  class="card-text ProdSectionProdPara">Detail of Shelf Led Ribbon When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.</p>
+            
+            <div class="row pt-2 pb-0">
+              <div class="col pb-0">
+                <p class="pb-0 text-3 text-color-primary text-4" style="margin-bottom: 0px;">Specifications</p>
+              </div>
+            </div>
+            <!-- Hr -->
+              <div class="container-fluid pt-0">
+                <div class="row">
+                  <div class="col" style="padding-left: 0; padding-right: 0;">
+                    <hr class="mt-2 mb-2 ">
+                  </div>
+                </div>
+              </div>
+                
+              <div class="row pt-2">
+                <div class="col-6">
+                  <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
+                </div>
+                <div class="col-6">
+                  <p id="ProdSectionProdPixelPitch2" class="text-color-dark text-3" style="font-weight: bolder;">3-4</p>
+                
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-6">
+                  <p class="text-color-dark text-3 pb-0" style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
+                </div>
+                <div class="col-6">
+                  <p  id="ProdSectionProdPixelAspRatio2" class="text-color-dark text-3" style="font-weight: bolder;">17:9</p>
+                
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-6">
+                  <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
+                </div>
+                <div class="col-6">
+                  <p  id="ProdSectionProdInstallService2" class="text-color-dark text-3" style="font-weight: bolder;">Front </p>
+                
+                </div>
+              </div>
+           
+            <a 
+            id="ProdSectionProdReadMore2" onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html"
+              class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
+            >
+              READ MORE
+              <svg
+                class="ms-2"
+                version="1.1"
+                viewBox="0 0 15.698 8.706"
+                width="17"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <polygon
+                  stroke="#FFF"
+                  stroke-width="0.1"
+                  fill="#FFF"
+                  points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
+                />
+              </svg>
+            </a>
+          </div>
+
+          </div>
+         
+        </div>
       </div>
+
     </div>
+
+   </div>
    
   </div>
 </section>            
