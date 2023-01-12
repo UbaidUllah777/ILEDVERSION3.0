@@ -1,3 +1,4 @@
+
 const ElidHeaderSales = document.getElementById("idHeaderSales");
 const ElidHeaderService = document.getElementById("idHeaderService");
 const ElidHeaderFacebook = document.getElementById("idHeaderFacebook");
@@ -8,7 +9,7 @@ const ElidHeaderGetQuote2 = document.getElementById("idHeaderGetQuote2");
 const ElidHeaderLogo = document.getElementById("idHeaderLogo");
 const ElidHeaderLinkHome = document.getElementById("idHeaderLinkHome");
 const ElidHeaderLinkAboutUs = document.getElementById("idHeaderLinkAboutUs");
-const ElidHeaderlinkProducts = document.getElementById("idHeaderlinkProducts");
+const ElidHeaderlinkProducts = document.getElementById("idHeaderLinkProducts");
 const ElidHeaderLinkMarkets = document.getElementById("idHeaderLinkMarkets");
 const ElidHeaderLinkSupport = document.getElementById("idHeaderLinkSupport");
 const ElidHeaderLinkContactUs = document.getElementById(
@@ -26,15 +27,21 @@ var product_IB_SERIES="IB SERIES (BLACK LED)"
 var product_TAXI_TOP="TAXI TOP"
 var product_STREET_POLE="STREET POLE"
 var product_ILEX_SERIES="ILEX SERIES"
+
+
 // Rendering Header Elements
-ElidHeaderSales.innerHTML = `
-Sales:
-<a
-  href="tel:+8613556848438"
-  class="text-color-dark text-color-hover-primary text-decoration-none"
-  ><strong>+8613556848438</strong></a
->
-`;
+
+// ElidHeaderSales.innerHTML = `
+// Sales:
+// <a
+//   href="tel:+8613556848438"
+//   class="text-color-dark text-color-hover-primary text-decoration-none"
+//   ><strong>+8613556848438</strong></a
+// >
+// `;
+ElidHeaderSales.innerHTML = ``;
+
+
 
 ElidHeaderService.innerHTML = ``;
 ElidHeaderFacebook.innerHTML = ` <a
@@ -73,75 +80,216 @@ ElidHeaderLinkAboutUs.href = `about-us.html`;
 
 // am not using thisdynamically  bcz of some bug 
 if (ElidHeaderlinkProducts){
-  ElidHeaderlinkProducts.innerHTML+= ``;
-ElidHeaderlinkProducts.innerHTML=`<a class="dropdown-item dropdown-toggle  current-page-active" href="products.html">	
-Products														
-    <i class="fas fa-chevron-down">
-      </i>
-</a>
+  ElidHeaderlinkProducts.innerHTML+= `
+  <ul class="dropdown-menu">
+  <li>
+    <div class="dropdown-mega-content">
+      <div class="row">
 
-<ul class="dropdown-menu">
+         <!-- INDOOR LED DISPLAY -->
+        <div class="col-lg-2">
+           
+          <span class="dropdown-mega-sub-title">INDOOR LED DISPLAY</span>
+          <ul class="dropdown-mega-sub-nav">
+            <!-- 1- iHD Series -->
+            <li>
+              <a class="dropdown-item"  onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html"
+                >iHD Series</a
+              >
+            </li>
+            <!-- 2- Shelf Led Ribbon -->
+            <li>
+              <a class="dropdown-item"   onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >Shelf Led Ribbon</a>
+            </li>
+            
+            <!-- 3- Indoor Fixed Led Display -->
+            <li>
+              <a class="dropdown-item"   onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >Indoor Fixed Led Display</a>
+            </li>
+            
+            <!-- 4- Indoor Flexible Series -->
+            <li>
+              <a class="dropdown-item"   onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >Indoor Flexible Series</a>
+            </li>
 
-<!-- 3DHOLOGRAM -->
-<li>
-  <a class="dropdown-item"  onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html">
-    3D Hologram
-  </a>
-</li>
+            <!-- 5- Indoor Floor Standing -->
+            <li>
+              <a class="dropdown-item"   onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >Indoor Floor Standing</a>
+            </li>
 
- <!-- Outdoor Fixed Series -->
-<li>
-  <a class="dropdown-item"  onclick="FnCLickedProduct('OutDoorFixedSeries')"  href="products-detail.html" >
-    Outdoor Fixed Series
-  </a>
-</li>
+          </ul>
+        </div>
 
-   <!-- UL Transparent LED Display -->
-   <li>
-    <a class="dropdown-item"  onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >
-      UL Transparent LED Display
-    </a>
+        <!-- OUTDOOR LED DISPLAY -->
+        <div class="col-lg-3">
+          <span class="dropdown-mega-sub-title">OUTDOOR LED DISPLAY</span>
+          <ul class="dropdown-mega-sub-nav">
+
+            <!-- 1- Outdoor Fixed Led Display -->
+            <li>
+              <a class="dropdown-item"  onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html"
+                >Outdoor Fixed Led Display</a
+              >
+            </li>
+
+            <!-- 2- Outdoor Diecast Videowall -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Outdoor Diecast Videowall</a
+              >
+            </li>
+
+            <!-- 3- Outdoor Floor Standing -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Outdoor Floor Standing</a
+              >
+            </li>
+
+            <!-- 4- Outdoor Taxitop Display -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Outdoor Taxitop Display</a
+              >
+            </li>
+
+            <!-- 5- Perimeter led display -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Perimeter led display</a
+              >
+            </li>
+
+            <!-- 6- Scoreboard Led Display -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Scoreboard Led Display</a
+              >
+            </li>
+
+
+          </ul>
+        </div>
+
+        
+        <!-- CREATIVE iLED SERIES -->
+        <div class="col-lg-2">
+          <span class="dropdown-mega-sub-title">CREATIVE iLED SERIES</span>
+          <ul class="dropdown-mega-sub-nav">
+
+            <!-- 1- Sperical Led Ball -->
+            <li>
+              <a class="dropdown-item"  onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html"
+                >Sperical Led Ball</a
+              >
+            </li>
+
+            <!-- 2- Square Led Display -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Square Led Display</a
+              >
+            </li>
+
+            <!-- 3- Round led Display -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Round led Display</a
+              >
+            </li>
+
+            <!-- 4- Street Pole Display -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Street Pole Display</a
+              >
+            </li>
+
+          </ul>
+        </div>
+
+        
+        <!-- STAGING iLED SOLUTION -->
+        <div class="col-lg-2">
+          <span class="dropdown-mega-sub-title">STAGING iLED SOLUTION</span>
+          <ul class="dropdown-mega-sub-nav">
+
+            <!-- 1- iLex Series I -->
+            <li>
+              <a class="dropdown-item"  onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html"
+                >iLex Series I</a
+              >
+            </li>
+
+            <!-- 2- iLex Series II -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >iLex Series II</a
+              >
+            </li>
+
+            <!-- 3- iOmni Series I -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >iOmni Series I</a
+              >
+            </li>
+
+            <!-- 4- iOmni Series II -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >iOmni Series II</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+
+        
+        <!-- CUSTOMIZED iLED SOLUTION -->
+        <div class="col-lg-3">
+          <span class="dropdown-mega-sub-title">CUSTOMIZED iLED SOLUTION</span>
+          <ul class="dropdown-mega-sub-nav">
+
+            <!-- 1- Mobile Digital Signage -->
+            <li>
+              <a class="dropdown-item"  onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html"
+                >Mobile Digital Signage</a
+              >
+            </li>
+
+            <!-- 2- Gas Petrol Led Display -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Gas Petrol Led Display</a
+              >
+            </li>
+
+            <!-- 3- Single Line Led Display -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Single Line Led Display</a
+              >
+            </li>
+
+            <!-- 4- Bespoke Led Display -->
+            <li>
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+                >Bespoke Led Display</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+
+        
+      </div>
+    </div>
   </li>
+</ul>
   
-<!-- ILED Special Tile Series -->
-<li>
-  <a class="dropdown-item" onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html">
-    ILED Special Tile Series
-  </a>
-</li>
+  `;
 
-<!-- IB Series(Black LED)-->
-<li>
-  <a class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html">
-    IB Series(Black LED)
-  </a>
-</li>
-
-<!-- Taxi Top-->
-<li>
-  <a class="dropdown-item"  onclick="FnCLickedProduct('TaxiTop')"  href="products-detail.html">
-    Taxi Top
-  </a>
-</li>
-
-
-<!-- Street Pole-->
-<li>
-  <a class="dropdown-item"  onclick="FnCLickedProduct('StreetPole')"   href="products-detail.html">
-    Street Pole
-  </a>
-</li>
-
-
-<!-- ILEX Series-->
-<li>
-  <a class="dropdown-item"  onclick="FnCLickedProduct('IlexSeries')"  href="products-detail.html">
-    ILEX Series
-  </a>
-</li>
-
-
-</ul>`;
 }
 
 
@@ -302,3 +450,4 @@ const ElidModalFormProductImage=document.getElementById('idModalFormProductImage
   
   }
 }
+

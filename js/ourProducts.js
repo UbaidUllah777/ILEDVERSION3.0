@@ -56,18 +56,25 @@ const clickedProduct = sessionStorage.getItem("productId");
 //  ************* ALL PRODUCTS DATA OF ILED: START  **************
 //  ************* NEW PRODUCT CAN BE ADDED HERE   **************
 const ourProducts = [
-  // 3D Hologram
+
+//Indoor Led Display-PRODUCTS : START
+
+  // iHD Series
   {
-    id: "3DHOLOGRAM",
-    productName: "3D Hologram",
+    id: "iHDSeries",
+    productName: "iHD Series",
     productHeadingLine:
-      "for 3D HOLOGRAM...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "for iHD Series...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "Detail of 3D HOLOGRAM When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of iHD Series When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/iLEDv3/products/3DHOLOGRAM.jpg",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
     productImages: [
       {
         image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
@@ -255,31 +262,637 @@ const ourProducts = [
     ],
   },
 
-  // Outdoor Fixed Series
+  // Shelf Led Ribbon
   {
-    id: "OutDoorFixedSeries",
-    productName: "Outdoor Fixed Series",
+    id: "ShelfLedRibbon",
+    productName: "Shelf Led Ribbon",
     productHeadingLine:
-      "Outdoor Fixed Series...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "for Shelf Led Ribbon...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "Detail of Outdoor Fixed Series When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of Shelf Led Ribbon When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage:
-      "img/demos/iLEDv3/products/OutdoorFixedSeries.jpg",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-1.jpg",
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-2.jpg",
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+  
+  // Indoor Fixed Led Display
+  {
+    id: "IndoorFixedLedDisplay",
+    productName: "Indoor Fixed Led Display",
+    productHeadingLine:
+      "for Indoor Fixed Led Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Indoor Fixed Led Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-3.jpg",
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+  
+  // Indoor Flexible Series
+  {
+    id: "IndoorFlexibleSeries",
+    productName: "Indoor Flexible Series",
+    productHeadingLine:
+      "for Indoor Flexible Series...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Indoor Flexible Series When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/outDoorFixedLED/outDoorFixedLED-4.png",
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+  
+  // Indoor Floor Standing
+  {
+    id: "IndoorFloorStanding",
+    productName: "Indoor Floor Standing",
+    productHeadingLine:
+      "for Indoor Floor Standing...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Indoor Floor Standing When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
       },
     ],
     DisplayProperties: [
@@ -461,55 +1074,37 @@ const ourProducts = [
     ],
   },
 
-  // UL TRANSPARENT LED DISPLAY
+  // OUTDOOR LED DISPLAY - PRODUCTS : START
+
+  
+  //Outdoor Fixed Led Display
   {
-    id: "UlTransparentLedDisplay",
-    productName: "UL Transparent LED Display",
+    id: "OutdoorFixedLedDisplay",
+    productName: "Outdoor Fixed Led Display",
     productHeadingLine:
-      "UL TRANSPARENT LED DISPLAY...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain ",
+      "for Outdoor Fixed Led Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "Detail of UL TRANSPARENT LED DISPLAY When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of Outdoor Fixed Led Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage:
-      "img/demos/iLEDv3/products/ULTransparentDisplay.png",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/OutdoorFixedLedDisplay/outDoorFixedLEDOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-1.jpg",
+        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/OutdoorFixedLedDisplay/outDoorFixedLED-1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-2.png.jpg",
+        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/OutdoorFixedLedDisplay/outDoorFixedLED-2.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-3.png",
+        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/OutdoorFixedLedDisplay/outDoorFixedLED-3.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-4.png",
-      },
-      
-      {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-5.png",
-      },
-      
-      {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-6.png",
-      },
-      
-      {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-7.jpg",
-      },
-      
-      {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-8.jpg",
-      },
-      
-      {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-9.png",
-      },
-      
-      {
-        image: "img/demos/iLEDv3/product-details/ULTransparentLedDisplay/UL-transparent-led-display-10.png",
+        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/OutdoorFixedLedDisplay/outDoorFixedLED-4.png",
       },
     ],
     DisplayProperties: [
@@ -517,12 +1112,7 @@ const ourProducts = [
       {
         id: "pixelPitch",
         name: "Pixel Pitch",
-        Values: [
-          { value: "P3.91" },
-          { value: "P3.91" },
-          { value: "P7.82" },
-          { value: "P7.82" },
-        ],
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
       },
 
       // Resolution
@@ -530,10 +1120,9 @@ const ourProducts = [
         id: "resolution",
         name: "Resolution",
         Values: [
-          { value: NotAvailable },
-          { value: NotAvailable },
-          { value: NotAvailable },
-          { value: NotAvailable },
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
         ],
       },
 
@@ -542,10 +1131,9 @@ const ourProducts = [
         id: "brightness",
         name: "Brightness",
         Values: [
-          { value: "2500nits" },
-          { value: "1200nits" },
-          { value: "4500nits" },
-          { value: "2500nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
         ],
       },
 
@@ -554,273 +1142,9 @@ const ourProducts = [
         id: "refreshRate",
         name: "Refresh Rate",
         Values: [
-          { value: "1920Hz, 3840Hz" },
-          { value: " 1920Hz, 3840Hz" },
-          { value: " 1920Hz, 3840Hz" },
-          { value: " 1920Hz, 3840Hz" },
-        ],
-      },
-
-      // Contrast 5000
-      {
-        id: "contrast5000",
-        name: "Contrast_5000",
-        Values: [
           { value: NotAvailable },
           { value: NotAvailable },
           { value: NotAvailable },
-          { value: NotAvailable },
-        ],
-      },
-
-      // Color Depth
-      {
-        id: "colorDepth",
-        name: "Color Depth",
-        Values: [
-          { value: "14bit" },
-          { value: "14bit" },
-          { value: "14bit" },
-          { value: "14bit" },
-        ],
-      },
-
-      // Viewing Angle
-      {
-        id: "viewingAngle",
-        name: "Viewing Angle",
-        Values: [
-          { value: "160/120" },
-          { value: "160/120" },
-          { value: "160/120" },
-          { value: "160/120" },
-        ],
-      },
-
-      // Diode Type
-      {
-        id: "diodeType",
-        name: "Diode Type",
-        Values: [
-          { value: "SMD" },
-          { value: "SMD" },
-          { value: "SMD" },
-          { value: "SMD" },
-        ],
-      },
-
-      //    ************ENGINEERING TABLE*************
-
-      // Indoor/Outdoor
-      {
-        id: "indoorOutdoor",
-        name: "Indoor/Outdoor",
-        Values: [
-          { value: "Indoor" },
-          { value: "Indoor" },
-          { value: "Indoor" },
-          { value: "Indoor" },
-        ],
-      },
-
-      // Operating Temprature
-      {
-        id: "operatingTemprature",
-        name: "Operating Temprature",
-        Values: [
-          { value: "-10 ~ 100  F" },
-          { value: "-10 ~ 100  F" },
-          { value: "-10 ~ 100  F" },
-          { value: "-10 ~ 100  F" },
-        ],
-      },
-
-      // Operating Humidity
-      {
-        id: "operatingHumidity",
-        name: "Operating Humidity",
-        Values: [
-          { value: "40%" },
-          { value: "40%" },
-          { value: "40%" },
-          { value: "40%" },
-        ],
-      },
-
-      // Enviroment Rating
-      {
-        id: "enviromentRating",
-        name: "Enviroment Rating",
-        Values: [
-          { value: "Ip45" },
-          { value: "Ip45" },
-          { value: "Ip45" },
-          { value: "Ip45" },
-        ],
-      },
-
-      // Weight
-      {
-        id: "weight",
-        name: "Weight",
-        Values: [
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-        ],
-      },
-
-      // Weight Metric
-      {
-        id: "weightMetric",
-        name: "Weight Metric",
-        Values: [
-          { value: "13Kg" },
-          { value: "13Kg" },
-          { value: "13Kg" },
-          { value: "13Kg" },
-        ],
-      },
-
-      // Dimensions
-      {
-        id: "dimensions",
-        name: "Dimensions",
-        Values: [
-          { value: "1.64ft*1.64ft" },
-          { value: "1.64ft*1.64ft" },
-          { value: "1.64ft*1.64ft" },
-          { value: "1.64ft*1.64ft" },
-        ],
-      },
-
-      // Dimensions Metric
-      {
-        id: "dimensionsMetric",
-        name: "Dimensions Metric",
-        Values: [
-          { value: "OEM" },
-          { value: "OEM" },
-          { value: "OEM" },
-          { value: "OEM" },
-        ],
-      },
-
-      //  Panel Power
-      {
-        id: "panelPower",
-        name: "Panel Power",
-        Values: [
-          { value: "800/250" },
-          { value: "800/250" },
-          { value: "800/250" },
-          { value: "800/250" },
-        ],
-      },
-
-      //    ************Manufacturing AND BUILD TABLE*************
-
-      // Dimensions Metric
-      {
-        id: "installation",
-        name: "Installation",
-        Values: [
-          { value: "Back Side" },
-          { value: "Back Side" },
-          { value: "Back Side" },
-          { value: "Back Side" },
-        ],
-      },
-
-      // Operating VoltageAC
-      {
-        id: "operatingVoltageAC",
-        name: "Operating VoltageAC",
-        Values: [
-          { value: "AC 100 – 240V" },
-          { value: "AC 100 – 240V" },
-          { value: "AC 100 – 240V" },
-          { value: "AC 100 – 240V" },
-        ],
-      },
-
-      // Certifiations
-      {
-        id: "certifiations",
-        name: "Certifiations",
-        Values: [
-          { value: "CE" },
-          { value: "CE" },
-          { value: "CE" },
-          { value: "CE" },
-        ],
-      },
-    ],
-  },
-
-  // ILED SPECIALL TILE SERIES
-  {
-    id: "IledSpecialTileSeries",
-    productName: "ILED Special Tile Series",
-    productHeadingLine:
-      "ILED SPECIAL TILE Series...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
-    productDetail:
-      "Detail of ILED SPECIAL TILE Series When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
-    tagLine_one: "Slim",
-    tagLine_two: "Ultra-thin",
-    tagLine_three: "Easy to Handle",
-    imageForProductPage:
-      "img/demos/iLEDv3/products/IledSpecialTileSeries.jpg",
-    productImages: [
-      {
-        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-1.jpg",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-2.jpg",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-3.jpg",
-      },
-      
-      {
-        image: "img/demos/iLEDv3/product-details/IledSpecialTileSeries/ILED_Special_Tile_Series-4.png",
-      },
-    ],
-    DisplayProperties: [
-      // Pixel Pitch
-      {
-        id: "pixelPitch",
-        name: "Pixel Pitch",
-        Values: [{ value: "P1.95" }, { value: "P2.5" }, { value: "P2.6" }],
-      },
-
-      // Resolution
-      {
-        id: "resolution",
-        name: "Resolution",
-        Values: [{ value: "65746" }, { value: "32873" }, { value: "100800" }],
-      },
-
-      // Brightness
-      {
-        id: "brightness",
-        name: "Brightness",
-        Values: [
-          { value: "800nits" },
-          { value: "800nits" },
-          { value: "800nits" },
-        ],
-      },
-
-      // Refresh Rate
-      {
-        id: "refreshRate",
-        name: "Refresh Rate",
-        Values: [
-          { value: "1920Hz, 3840Hz" },
-          { value: "1920Hz, 3840Hz" },
-          { value: "1920Hz, 3840Hz" },
         ],
       },
 
@@ -829,489 +1153,6 @@ const ourProducts = [
         id: "contrast5000",
         name: "Contrast_5000",
         Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
-      },
-
-      // Color Depth
-      {
-        id: "colorDepth",
-        name: "Color Depth",
-        Values: [{ value: "16bit" }, { value: "16bit" }, { value: "16bit" }],
-      },
-
-      // Viewing Angle
-      {
-        id: "viewingAngle",
-        name: "Viewing Angle",
-        Values: [
-          { value: "140/140" },
-          { value: "140/140" },
-          { value: "140/140" },
-        ],
-      },
-
-      // Diode Type
-      {
-        id: "diodeType",
-        name: "Diode Type",
-        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
-      },
-
-      //    ************ENGINEERING TABLE*************
-
-      // Indoor/Outdoor
-      {
-        id: "indoorOutdoor",
-        name: "Indoor/Outdoor",
-        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
-      },
-
-      // Operating Temprature
-      {
-        id: "operatingTemprature",
-        name: "Operating Temprature",
-        Values: [
-          { value: "-10 ~ 80 F" },
-          { value: "-10 ~ 80 F" },
-          { value: "-10 ~ 80 F" },
-        ],
-      },
-
-      // Operating Humidity
-      {
-        id: "operatingHumidity",
-        name: "Operating Humidity",
-        Values: [{ value: "40%" }, { value: "40%" }, { value: "40%" }],
-      },
-
-      // Enviroment Rating
-      {
-        id: "enviromentRating",
-        name: "Enviroment Rating",
-        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
-      },
-
-      // Weight
-      {
-        id: "weight",
-        name: "Weight",
-        Values: [
-          { value: "8.8/6.61/7.7Ib" },
-          { value: "8.8/6.61/7.7Ib" },
-          { value: "8.8/6.61/7.7Ib" },
-        ],
-      },
-
-      // Weight Metric
-      {
-        id: "weightMetric",
-        name: "Weight Metric",
-        Values: [
-          { value: "4/3/3.5Kg" },
-          { value: "4/3/3.5Kg" },
-          { value: "4/3/3.5Kg" },
-        ],
-      },
-
-      // Dimensions
-      {
-        id: "dimensions",
-        name: "Dimensions",
-        Values: [
-          { value: "28”x2.36”x1.18” " },
-          { value: "28”x2.36”x1.18” " },
-          { value: "28”x2.36”x1.18” " },
-        ],
-      },
-
-      // Dimensions Metric
-      {
-        id: "dimensionsMetric",
-        name: "Dimensions Metric",
-        Values: [
-          { value: "1000/500/750" },
-          { value: "1000/500/750" },
-          { value: "1000/500/750" },
-        ],
-      },
-
-      // Dimensions Metric
-      {
-        id: "panelPower",
-        name: "Panel Power",
-        Values: [
-          { value: "100/80/90" },
-          { value: "100/80/90" },
-          { value: "100/80/90" },
-        ],
-      },
-
-      //    ************Manufacturing AND BUILD TABLE*************
-
-      // Dimensions Metric
-      {
-        id: "installation",
-        name: "Installation",
-        Values: [
-          { value: "Back side" },
-          { value: "Back side" },
-          { value: "Back side" },
-        ],
-      },
-
-      // Operating VoltageAC
-      {
-        id: "operatingVoltageAC",
-        name: "Operating VoltageAC",
-        Values: [
-          { value: "AC 100 – 240V" },
-          { value: "AC 100 – 240V" },
-          { value: "AC 100 – 240V" },
-        ],
-      },
-
-      // Certifiations
-      {
-        id: "certifiations",
-        name: "Certifiations",
-        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
-      },
-    ],
-  },
-
-  // IB SERIES (BLACK LED)
-  {
-    id: "IbSeriesBlackLed",
-    productName: "IB Series (BLACK LED)",
-    productHeadingLine:
-      "IB SERIES  Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
-    productDetail:
-      "Detail of IB SERIES When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
-    tagLine_one: "Slim",
-    tagLine_two: "Ultra-thin",
-    tagLine_three: "Easy to Handle",
-    imageForProductPage:
-      "img/demos/iLEDv3/products/IbSeriesBlackLed.png",
-    productImages: [
-      {
-        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen - black led (1).png",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen - black led (2).png",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen - black led (3).png",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/IbSeriesBlackLed/iledscreen - black led (4).png",
-      },
-    ],
-    DisplayProperties: [
-      // Pixel Pitch
-      {
-        id: "pixelPitch",
-        name: "Pixel Pitch",
-        Values: [
-          { value: "P1.25" },
-          { value: "P1.56" },
-          { value: "P1.66" },
-          { value: "P2.5" },
-        ],
-      },
-
-      // Resolution
-      {
-        id: "resolution",
-        name: "Resolution",
-        Values: [
-          { value: "160×120" },
-          { value: "128×96" },
-          { value: "120×90" },
-          { value: "104×78" },
-        ],
-      },
-
-      // Brightness
-      {
-        id: "brightness",
-        name: "Brightness",
-        Values: [
-          { value: "800nits" },
-          { value: "800nits" },
-          { value: "800nits" },
-          { value: "800nits" },
-        ],
-      },
-
-      // Refresh Rate
-      {
-        id: "refreshRate",
-        name: "Refresh Rate",
-        Values: [
-          { value: "3840Hz" },
-          { value: "3840Hz" },
-          { value: "3840Hz" },
-          { value: "3840Hz" },
-        ],
-      },
-
-      // Contrast 5000
-      {
-        id: "contrast5000",
-        name: "Contrast_5000",
-        Values: [
-          { value: "5000:1" },
-          { value: "5000:1" },
-          { value: "5000:1" },
-          { value: "5000:1" },
-        ],
-      },
-
-      // Color Depth
-      {
-        id: "colorDepth",
-        name: "Color Depth",
-        Values: [
-          { value: "14bit" },
-          { value: "14bit" },
-          { value: "14bit" },
-          { value: "14bit" },
-        ],
-      },
-
-      // Viewing Angle
-      {
-        id: "viewingAngle",
-        name: "Viewing Angle",
-        Values: [
-          { value: "160/160" },
-          { value: "160/160" },
-          { value: "160/160" },
-          { value: "160/160" },
-        ],
-      },
-
-      // Diode Type
-      {
-        id: "diodeType",
-        name: "Diode Type",
-        Values: [
-          { value: "SMD" },
-          { value: "SMD" },
-          { value: "SMD" },
-          { value: "SMD" },
-        ],
-      },
-
-      //    ************ENGINEERING TABLE*************
-
-      // Indoor/Outdoor
-      {
-        id: "indoorOutdoor",
-        name: "Indoor/Outdoor",
-        Values: [
-          { value: "Indoor" },
-          { value: "Indoor" },
-          { value: "Indoor" },
-          { value: "Indoor" },
-        ],
-      },
-
-      // Operating Temprature
-      {
-        id: "operatingTemprature",
-        name: "Operating Temprature",
-        Values: [
-          { value: "-10 ~ 80 F " },
-          { value: "-10 ~ 80 F " },
-          { value: "-10 ~ 80 F " },
-          { value: "-10 ~ 80 F " },
-        ],
-      },
-
-      // Operating Humidity
-      {
-        id: "operatingHumidity",
-        name: "Operating Humidity",
-        Values: [
-          { value: "40%" },
-          { value: "40%" },
-          { value: "40%" },
-          { value: "40%" },
-        ],
-      },
-
-      // Enviroment Rating
-      {
-        id: "enviromentRating",
-        name: "Enviroment Rating",
-        Values: [
-          { value: "Ip45" },
-          { value: "Ip45" },
-          { value: "Ip45" },
-          { value: "Ip45" },
-        ],
-      },
-
-      // Weight
-      {
-        id: "weight",
-        name: "Weight",
-        Values: [
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-        ],
-      },
-
-      // Weight Metric
-      {
-        id: "weightMetric",
-        name: "Weight Metric",
-        Values: [
-          { value: "32Kg" },
-          { value: "32Kg" },
-          { value: "32Kg" },
-          { value: "32Kg" },
-        ],
-      },
-
-      // Dimensions
-      {
-        id: "dimensions",
-        name: "Dimensions",
-        Values: [
-          { value: "1.31ft*1.00ft" },
-          { value: "1.31ft*1.00ft" },
-          { value: "1.31ft*1.00ft" },
-          { value: "1.31ft*1.00ft" },
-        ],
-      },
-
-      // Dimensions Metric
-      {
-        id: "dimensionsMetric",
-        name: "Dimensions Metric",
-        Values: [
-          { value: "OEM" },
-          { value: "OEM" },
-          { value: "OEM" },
-          { value: "OEM" },
-        ],
-      },
-
-      // power panel
-      {
-        id: "panelPower",
-        name: "Panel Power",
-        Values: [
-          { value: "1600" },
-          { value: "1600" },
-          { value: "1600" },
-          { value: "1600" },
-        ],
-      },
-
-      //    ************Manufacturing AND BUILD TABLE*************
-
-      // Dimensions Metric
-      {
-        id: "installation",
-        name: "Installation",
-        Values: [
-          { value: "Back side" },
-          { value: "Back side" },
-          { value: "Back side" },
-          { value: "Back side" },
-        ],
-      },
-
-      // Operating VoltageAC
-      {
-        id: "operatingVoltageAC",
-        name: "Operating VoltageAC",
-        Values: [
-          { value: "AC 100 – 240V" },
-          { value: "AC 100 – 240V" },
-          { value: "AC 100 – 240V" },
-          { value: "AC 100 – 240V" },
-        ],
-      },
-
-      // Certifiations
-      {
-        id: "certifiations",
-        name: "Certifiations",
-        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
-      },
-    ],
-  },
-
-  // TAXI TOP
-  {
-    id: "TaxiTop",
-    productName: "Taxi Top",
-    productHeadingLine:
-      "TAXI TOP Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
-    productDetail:
-      "detail of TAXI TOP When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
-    tagLine_one: "Slim",
-    tagLine_two: "Ultra-thin",
-    tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/iLEDv3/products/TaxiTop.jpg",
-    productImages: [
-      {
-        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-1.jpg",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-2.jpg",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/TaxiTop/TaxiTopLed-3.jpg",
-      },
-    ],
-    DisplayProperties: [
-      // Pixel Pitch
-      {
-        id: "pixelPitch",
-        name: "Pixel Pitch",
-        Values: [{ value: "P2.5" }, { value: "P3" }, { value: "P4" }],
-      },
-
-      // Resolution
-      {
-        id: "resolution",
-        name: "Resolution",
-        Values: [
-          { value: "160x160" },
-          { value: "128x96" },
-          { value: "120x90" },
-        ],
-      },
-
-      // Brightness
-      {
-        id: "brightness",
-        name: "Brightness",
-        Values: [
-          { value: "1500nits" },
-          { value: "800nits" },
-          { value: "800nits" },
-        ],
-      },
-
-      // Refresh Rate
-      {
-        id: "refreshRate",
-        name: "Refresh Rate",
-        Values: [{ value: "1920Hz" }, { value: "1920Hz" }, { value: "1920Hz" }],
-      },
-
-      // Contrast 5000
-      {
-        id: "contrast5000",
-        name: "Contrast_5000",
-        Values: [{ value: "3000:1" }, { value: "3000:1" }, { value: "3000:1" }],
       },
 
       // Color Depth
@@ -1345,24 +1186,14 @@ const ourProducts = [
       {
         id: "indoorOutdoor",
         name: "Indoor/Outdoor",
-        Values: [
-          { value: "Outdoor" },
-          { value: "Outdoor" },
-          { value: "Outdoor" },
-          { value: "Outdoor" },
-        ],
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
       },
 
       // Operating Temprature
       {
         id: "operatingTemprature",
         name: "Operating Temprature",
-        Values: [
-          { value: "-10 ~ 100 F" },
-          { value: "-10 ~ 100 F" },
-          { value: "-10 ~ 100 F" },
-          { value: "-10 ~ 100 F" },
-        ],
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
       },
 
       // Operating Humidity
@@ -1370,10 +1201,9 @@ const ourProducts = [
         id: "operatingHumidity",
         name: "Operating Humidity",
         Values: [
-          { value: "100%" },
-          { value: "100%" },
-          { value: "100%" },
-          { value: "100%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
         ],
       },
 
@@ -1381,36 +1211,21 @@ const ourProducts = [
       {
         id: "enviromentRating",
         name: "Enviroment Rating",
-        Values: [
-          { value: "Ip65" },
-          { value: "Ip65" },
-          { value: "Ip65" },
-          { value: "Ip65" },
-        ],
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
       },
 
       // Weight
       {
         id: "weight",
         name: "Weight",
-        Values: [
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-        ],
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
       },
 
       // Weight Metric
       {
         id: "weightMetric",
         name: "Weight Metric",
-        Values: [
-          { value: "32Kg" },
-          { value: "32Kg" },
-          { value: "32Kg" },
-          { value: "32Kg" },
-        ],
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
       },
 
       // Dimensions
@@ -1418,10 +1233,9 @@ const ourProducts = [
         id: "dimensions",
         name: "Dimensions",
         Values: [
-          { value: "1.31ft*1.00ft" },
-          { value: "1.31ft*1.00ft" },
-          { value: "1.31ft*1.00ft" },
-          { value: "1.31ft*1.00ft" },
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
         ],
       },
 
@@ -1429,24 +1243,14 @@ const ourProducts = [
       {
         id: "dimensionsMetric",
         name: "Dimensions Metric",
-        Values: [
-          { value: "OEM" },
-          { value: "OEM" },
-          { value: "OEM" },
-          { value: "OEM" },
-        ],
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
       },
 
-      // Power panel
+      // Dimensions Metric
       {
         id: "panelPower",
         name: "Panel Power",
-        Values: [
-          { value: "1600" },
-          { value: "1600" },
-          { value: "1600" },
-          { value: "1600" },
-        ],
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
       },
 
       //    ************Manufacturing AND BUILD TABLE*************
@@ -1456,10 +1260,9 @@ const ourProducts = [
         id: "installation",
         name: "Installation",
         Values: [
-          { value: "Back side" },
-          { value: "Back side" },
-          { value: "Back side" },
-          { value: "Back side" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
         ],
       },
 
@@ -1471,7 +1274,6 @@ const ourProducts = [
           { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
-          { value: "AC 100 – 240V" },
         ],
       },
 
@@ -1479,40 +1281,34 @@ const ourProducts = [
       {
         id: "certifiations",
         name: "Certifiations",
-        Values: [
-          { value: "CE" },
-          { value: "CE" },
-          { value: "CE" },
-          { value: "CE" },
-        ],
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
       },
     ],
   },
+  
 
-  // STREET POLE
+  // Outdoor Diecast Videowall
   {
-    id: "StreetPole",
-    productName: "Street Pole",
+    id: "OutdoorDiecastVideowall",
+    productName: "Outdoor Diecast Videowall",
     productHeadingLine:
-      "STREET POLE Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "for Outdoor Diecast Videowall...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "Detail of When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of Outdoor Diecast Videowall When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/iLEDv3/products/StreetPole.jpg",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/StreetPole/streetPoleLed-1.png",
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/StreetPole/streetPoleLed-2.png",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/StreetPole/streetPoleLed-3.png",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/StreetPole/streetPoleLed-4.png",
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
       },
     ],
     DisplayProperties: [
@@ -1520,14 +1316,18 @@ const ourProducts = [
       {
         id: "pixelPitch",
         name: "Pixel Pitch",
-        Values: [{ value: "P3" }, { value: "P4" }, { value: "P5" }],
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
       },
 
       // Resolution
       {
         id: "resolution",
         name: "Resolution",
-        Values: [{ value: "64x63 " }, { value: "80x40" }, { value: "64x32" }],
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
       },
 
       // Brightness
@@ -1535,9 +1335,9 @@ const ourProducts = [
         id: "brightness",
         name: "Brightness",
         Values: [
-          { value: "4200nits" },
-          { value: "5000nits" },
-          { value: "5500nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
         ],
       },
 
@@ -1545,7 +1345,11 @@ const ourProducts = [
       {
         id: "refreshRate",
         name: "Refresh Rate",
-        Values: [{ value: "1920Hz" }, { value: "1920Hz" }, { value: "1920Hz" }],
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
       },
 
       // Contrast 5000
@@ -1559,7 +1363,7 @@ const ourProducts = [
       {
         id: "colorDepth",
         name: "Color Depth",
-        Values: [{ value: "16bit" }, { value: "16bit" }, { value: "16bit" }],
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
       },
 
       // Viewing Angle
@@ -1586,50 +1390,46 @@ const ourProducts = [
       {
         id: "indoorOutdoor",
         name: "Indoor/Outdoor",
-        Values: [
-          { value: "Outdoor" },
-          { value: "Outdoor" },
-          { value: "Outdoor" },
-        ],
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
       },
 
       // Operating Temprature
       {
         id: "operatingTemprature",
         name: "Operating Temprature",
-        Values: [
-          { value: "-10 ~ 100 F" },
-          { value: "-10 ~ 100 F" },
-          { value: "-10 ~ 100 F" },
-        ],
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
       },
 
       // Operating Humidity
       {
         id: "operatingHumidity",
         name: "Operating Humidity",
-        Values: [{ value: "100%" }, { value: "100%" }, { value: "100%" }],
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
       },
 
       // Enviroment Rating
       {
         id: "enviromentRating",
         name: "Enviroment Rating",
-        Values: [{ value: "Ip65" }, { value: "Ip65" }, { value: "Ip65" }],
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
       },
 
       // Weight
       {
         id: "weight",
         name: "Weight",
-        Values: [{ value: "99Ib" }, { value: "99Ib" }, { value: "99Ib" }],
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
       },
 
       // Weight Metric
       {
         id: "weightMetric",
         name: "Weight Metric",
-        Values: [{ value: "45Kg" }, { value: "45Kg" }, { value: "45Kg" }],
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
       },
 
       // Dimensions
@@ -1637,9 +1437,9 @@ const ourProducts = [
         id: "dimensions",
         name: "Dimensions",
         Values: [
-          { value: "2.2ft*4.4ft" },
-          { value: "1.96*3.9ft" },
-          { value: "2.8*4.85ft" },
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
         ],
       },
 
@@ -1647,22 +1447,14 @@ const ourProducts = [
       {
         id: "dimensionsMetric",
         name: "Dimensions Metric",
-        Values: [
-          { value: "676*1352mm" },
-          { value: "600*1200mm" },
-          { value: "868*1480mm" },
-        ],
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
       },
 
       // Dimensions Metric
       {
         id: "panelPower",
         name: "Panel Power",
-        Values: [
-          { value: "400W-1200W" },
-          { value: "400W-1200W" },
-          { value: "400W-1200W" },
-        ],
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
       },
 
       //    ************Manufacturing AND BUILD TABLE*************
@@ -1672,9 +1464,828 @@ const ourProducts = [
         id: "installation",
         name: "Installation",
         Values: [
-          { value: "Back side" },
-          { value: "Back side" },
-          { value: "Back side" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+  
+
+  // Outdoor Floor Standing
+  {
+    id: "OutdoorFloorStanding",
+    productName: "Outdoor Floor Standing",
+    productHeadingLine:
+      "for Outdoor Floor Standing...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Outdoor Floor Standing When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+    
+
+  //Outdoor Taxitop Display
+  {
+    id: "OutdoorTaxitopDisplay",
+    productName: "Outdoor Taxitop Display",
+    productHeadingLine:
+      "for Outdoor Taxitop Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Outdoor Taxitop Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/Taxitop/TaxiTopForIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/Taxitop/TaxiTop-1.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/Taxitop/TaxiTop-2.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/Taxitop/TaxiTop-3.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+    
+
+  // Perimeter Led Display
+  {
+    id: "PerimeterLedDisplay",
+    productName: "Perimeter Led Display",
+    productHeadingLine:
+      "for Perimeter Led Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Perimeter Led Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+    
+
+  //Scoreboard Led Display
+  {
+    id: "ScoreboardLedDisplay",
+    productName: "Scoreboard Led Display",
+    productHeadingLine:
+      "for Scoreboard Led Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Scoreboard Led Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/SCOREBOARDLEDDISPLAY/SCOREBOARDLEDDISPLAYForIndex.png",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/SCOREBOARDLEDDISPLAY/SCOREBOARDLEDDISPLAY-1.png",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/SCOREBOARDLEDDISPLAY/SCOREBOARDLEDDISPLAY-2.png",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
         ],
       },
 
@@ -1698,34 +2309,33 @@ const ourProducts = [
     ],
   },
 
-  // ILEX SERIES
+
+  // CREATIVE iLED SERIES:START
+
+    
+
+  // Sperical Led Ball
   {
-    id: "IlexSeries",
-    productName: "ILEX Series",
+    id: "SpericalLedBall",
+    productName: "Sperical Led Ball",
     productHeadingLine:
-      "ILEX SERIES Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "for Sperical Led Ball...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "Detail of ILEX SERIES When you’re ready to invest in a fic install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Alraeady familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of Sperical Led Ball When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-    imageForProductPage: "img/demos/iLEDv3/products/IlexSeries.jpg",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
     productImages: [
       {
-        image:
-          "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-1.jpg",
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-2.jpg",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-3.jpg",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-4.jpg",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/IlexSeries/led-ilex-series-5.png",
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
       },
     ],
     DisplayProperties: [
@@ -1733,12 +2343,7 @@ const ourProducts = [
       {
         id: "pixelPitch",
         name: "Pixel Pitch",
-        Values: [
-          { value: "P2.6" },
-          { value: "2.97" },
-          { value: "3.91" },
-          { value: "3.91" },
-        ],
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
       },
 
       // Resolution
@@ -1746,10 +2351,9 @@ const ourProducts = [
         id: "resolution",
         name: "Resolution",
         Values: [
-          { value: "160×120" },
-          { value: "128x96" },
-          { value: "120x90" },
-          { value: "104x78" },
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
         ],
       },
 
@@ -1758,10 +2362,9 @@ const ourProducts = [
         id: "brightness",
         name: "Brightness",
         Values: [
-          { value: "800nits" },
-          { value: "800nits" },
-          { value: "800nits" },
-          { value: "1000nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
         ],
       },
 
@@ -1770,10 +2373,9 @@ const ourProducts = [
         id: "refreshRate",
         name: "Refresh Rate",
         Values: [
-          { value: "3840Hz" },
-          { value: "3840Hz" },
-          { value: "3840Hz" },
-          { value: "3840Hz" },
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
         ],
       },
 
@@ -1781,24 +2383,14 @@ const ourProducts = [
       {
         id: "contrast5000",
         name: "Contrast_5000",
-        Values: [
-          { value: "5000:1" },
-          { value: "5000:1" },
-          { value: "5000:1" },
-          { value: "5000:1" },
-        ],
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
       },
 
       // Color Depth
       {
         id: "colorDepth",
         name: "Color Depth",
-        Values: [
-          { value: "14bit" },
-          { value: "14bit" },
-          { value: "14bit" },
-          { value: "14bit" },
-        ],
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
       },
 
       // Viewing Angle
@@ -1806,10 +2398,9 @@ const ourProducts = [
         id: "viewingAngle",
         name: "Viewing Angle",
         Values: [
-          { value: "160/160" },
-          { value: "160/160" },
-          { value: "160/160" },
-          { value: "160/160" },
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
         ],
       },
 
@@ -1817,12 +2408,7 @@ const ourProducts = [
       {
         id: "diodeType",
         name: "Diode Type",
-        Values: [
-          { value: "SMD" },
-          { value: "SMD" },
-          { value: "SMD" },
-          { value: "SMD" },
-        ],
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
       },
 
       //    ************ENGINEERING TABLE*************
@@ -1831,19 +2417,14 @@ const ourProducts = [
       {
         id: "indoorOutdoor",
         name: "Indoor/Outdoor",
-        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
       },
 
       // Operating Temprature
       {
         id: "operatingTemprature",
         name: "Operating Temprature",
-        Values: [
-          { value: "-10 ~ 800 F" },
-          { value: "-10 ~ 800 F" },
-          { value: "-10 ~ 800 F" },
-          { value: "-10 ~ 800 F" },
-        ],
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
       },
 
       // Operating Humidity
@@ -1851,10 +2432,9 @@ const ourProducts = [
         id: "operatingHumidity",
         name: "Operating Humidity",
         Values: [
-          { value: "40%" },
-          { value: "40%" },
-          { value: "40%" },
-          { value: "40%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
         ],
       },
 
@@ -1862,36 +2442,21 @@ const ourProducts = [
       {
         id: "enviromentRating",
         name: "Enviroment Rating",
-        Values: [
-          { value: "Ip45" },
-          { value: "Ip45" },
-          { value: "Ip45" },
-          { value: "Ip45" },
-        ],
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
       },
 
       // Weight
       {
         id: "weight",
         name: "Weight",
-        Values: [
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-          { value: "70.5Ib" },
-        ],
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
       },
 
       // Weight Metric
       {
         id: "weightMetric",
         name: "Weight Metric",
-        Values: [
-          { value: "32Kg" },
-          { value: "32Kg" },
-          { value: "32Kg" },
-          { value: "32Kg" },
-        ],
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
       },
 
       // Dimensions
@@ -1899,10 +2464,9 @@ const ourProducts = [
         id: "dimensions",
         name: "Dimensions",
         Values: [
-          { value: "1.31ft*1.00ft" },
-          { value: "1.31ft*1.00ft" },
-          { value: "1.31ft*1.00ft" },
-          { value: "1.31ft*1.00ft" },
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
         ],
       },
 
@@ -1910,24 +2474,14 @@ const ourProducts = [
       {
         id: "dimensionsMetric",
         name: "Dimensions Metric",
-        Values: [
-          { value: "OEM" },
-          { value: "OEM" },
-          { value: "OEM" },
-          { value: "OEM" },
-        ],
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
       },
 
       // Dimensions Metric
       {
         id: "panelPower",
         name: "Panel Power",
-        Values: [
-          { value: "1600" },
-          { value: "1600" },
-          { value: "1600" },
-          { value: "1600" },
-        ],
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
       },
 
       //    ************Manufacturing AND BUILD TABLE*************
@@ -1937,10 +2491,9 @@ const ourProducts = [
         id: "installation",
         name: "Installation",
         Values: [
-          { value: "Back side" },
-          { value: "Back side" },
-          { value: "Back side" },
-          { value: "Back side" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
         ],
       },
 
@@ -1952,6 +2505,209 @@ const ourProducts = [
           { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+
+
+  // Square Led Display
+  {
+    id: "SquareLedDisplay",
+    productName: "Square Led Display",
+    productHeadingLine:
+      "for Square Led Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Square Led Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
           { value: "AC 100 – 240V" },
         ],
       },
@@ -1960,15 +2716,2056 @@ const ourProducts = [
       {
         id: "certifiations",
         name: "Certifiations",
-        Values: [
-          { value: "CE" },
-          { value: "CE" },
-          { value: "CE" },
-          { value: "CE" },
-        ],
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
       },
     ],
   },
+
+
+  // Round Led Display
+  {
+    id: "RoundLedDisplay",
+    productName: "Round Led Display",
+    productHeadingLine:
+      "for Round Led Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Round Led Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+
+
+  // Street Pole Display
+  {
+    id: "StreetPoleDisplay",
+    productName: "Street Pole Display",
+    productHeadingLine:
+      "for Street Pole Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Street Pole Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+  
+
+  // STAGING iLED SOLUTION:START
+
+  
+
+
+  // iLex Series I
+  {
+    id: "iLexSeriesI",
+    productName: "iLex Series I",
+    productHeadingLine:
+      "for iLex Series I...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of iLex Series I When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+
+  // iLex Series II
+  {
+    id: "iLexSeriesII",
+    productName: "iLex Series II",
+    productHeadingLine:
+      "for iLex Series II...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of iLex Series II When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+
+  // iOmni Series I
+  {
+    id: "iOmniSeriesI",
+    productName: "iOmni Series I",
+    productHeadingLine:
+      "for iOmni Series I...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of iOmni Series I When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+
+  // iOmni Series II
+  {
+    id: "iOmniSeriesII",
+    productName: "iOmni Series II",
+    productHeadingLine:
+      "for iOmni Series II...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of iOmni Series II When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+
+  // CUSTOMIZED iLED SOLUTION:START
+
+
+
+  // Mobile Digital Signage
+  {
+    id: "MobileDigitalSignage",
+    productName: "Mobile Digital Signage",
+    productHeadingLine:
+      "for Mobile Digital Signage...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Mobile Digital Signage When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+
+  // Gas Petrol Led Display
+  {
+    id: "GasPetrolLedDisplay",
+    productName: "Gas Petrol Led Display",
+    productHeadingLine:
+      "for Gas Petrol Led Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Gas Petrol Led Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+
+  // Single Line Led Display
+  {
+    id: "SingleLineLedDisplay",
+    productName: "Single Line Led Display",
+    productHeadingLine:
+      "for Single Line Led Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Single Line Led Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+
+  // Bespoke Led Display
+  {
+    id: "BespokeLedDisplay",
+    productName: "Bespoke Led Display",
+    productHeadingLine:
+      "for Bespoke Led Display...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+    productDetail:
+      "Detail of Bespoke Led Display When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+    tagLine_one: "Slim",
+    tagLine_two: "Ultra-thin",
+    tagLine_three: "Easy to Handle",
+// this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    pixelPitch:"1-2",
+    aspectRatio:"0.93 - 3.1 mm ",
+    installAndService:"Front",
+    productImages: [
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+      },
+    ],
+    DisplayProperties: [
+      // Pixel Pitch
+      {
+        id: "pixelPitch",
+        name: "Pixel Pitch",
+        Values: [{ value: "50A" }, { value: "70A" }, { value: "43A" }],
+      },
+
+      // Resolution
+      {
+        id: "resolution",
+        name: "Resolution",
+        Values: [
+          { value: "500000" },
+          { value: "1200000" },
+          { value: "100800" },
+        ],
+      },
+
+      // Brightness
+      {
+        id: "brightness",
+        name: "Brightness",
+        Values: [
+          { value: "1600nits" },
+          { value: "1600nits" },
+          { value: "1600nits" },
+        ],
+      },
+
+      // Refresh Rate
+      {
+        id: "refreshRate",
+        name: "Refresh Rate",
+        Values: [
+          { value: NotAvailable },
+          { value: NotAvailable },
+          { value: NotAvailable },
+        ],
+      },
+
+      // Contrast 5000
+      {
+        id: "contrast5000",
+        name: "Contrast_5000",
+        Values: [{ value: "5000:1" }, { value: "5000:1" }, { value: "5000:1" }],
+      },
+
+      // Color Depth
+      {
+        id: "colorDepth",
+        name: "Color Depth",
+        Values: [{ value: "14bit" }, { value: "14bit" }, { value: "14bit" }],
+      },
+
+      // Viewing Angle
+      {
+        id: "viewingAngle",
+        name: "Viewing Angle",
+        Values: [
+          { value: "140/140" },
+          { value: "140/140" },
+          { value: "140/140" },
+        ],
+      },
+
+      // Diode Type
+      {
+        id: "diodeType",
+        name: "Diode Type",
+        Values: [{ value: "SMD" }, { value: "SMD" }, { value: "SMD" }],
+      },
+
+      //    ************ENGINEERING TABLE*************
+
+      // Indoor/Outdoor
+      {
+        id: "indoorOutdoor",
+        name: "Indoor/Outdoor",
+        Values: [{ value: "Indoor" }, { value: "Indoor" }, { value: "Indoor" }],
+      },
+
+      // Operating Temprature
+      {
+        id: "operatingTemprature",
+        name: "Operating Temprature",
+        Values: [{ value: "10/35" }, { value: "-20/60" }, { value: "-20/60" }],
+      },
+
+      // Operating Humidity
+      {
+        id: "operatingHumidity",
+        name: "Operating Humidity",
+        Values: [
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+          { value: "0 to 70%" },
+        ],
+      },
+
+      // Enviroment Rating
+      {
+        id: "enviromentRating",
+        name: "Enviroment Rating",
+        Values: [{ value: "Ip45" }, { value: "Ip45" }, { value: "Ip45" }],
+      },
+
+      // Weight
+      {
+        id: "weight",
+        name: "Weight",
+        Values: [{ value: "3.6Lb" }, { value: "2.5LB" }, { value: "2.4LB" }],
+      },
+
+      // Weight Metric
+      {
+        id: "weightMetric",
+        name: "Weight Metric",
+        Values: [{ value: "1.65Kg" }, { value: "1.7KG" }, { value: "1.6KG" }],
+      },
+
+      // Dimensions
+      {
+        id: "dimensions",
+        name: "Dimensions",
+        Values: [
+          { value: "1.6ft*1.6ft*0.3FT" },
+          { value: "2.29*2.29*0.32FT" },
+          { value: "1.41*0.43*0.36FT" },
+        ],
+      },
+
+      // Dimensions Metric
+      {
+        id: "dimensionsMetric",
+        name: "Dimensions Metric",
+        Values: [{ value: "OEM" }, { value: "OEM" }, { value: "OEM" }],
+      },
+
+      // Dimensions Metric
+      {
+        id: "panelPower",
+        name: "Panel Power",
+        Values: [{ value: "550" }, { value: "550" }, { value: "550" }],
+      },
+
+      //    ************Manufacturing AND BUILD TABLE*************
+
+      // Dimensions Metric
+      {
+        id: "installation",
+        name: "Installation",
+        Values: [
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+          { value: "Back Maintenance" },
+        ],
+      },
+
+      // Operating VoltageAC
+      {
+        id: "operatingVoltageAC",
+        name: "Operating VoltageAC",
+        Values: [
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+          { value: "AC 100 – 240V" },
+        ],
+      },
+
+      // Certifiations
+      {
+        id: "certifiations",
+        name: "Certifiations",
+        Values: [{ value: "CE" }, { value: "CE" }, { value: "CE" }],
+      },
+    ],
+  },
+
+
+
+
 ];
 
 
@@ -1980,7 +4777,7 @@ const ourProducts = [
 for (const singleProduct of ourProducts) {
   if (ElpixelPitch) {
     if (singleProduct.id === clickedProduct) {
-      var i = 1;
+      var TableHeadCounts = 1;
       for (const singleProperty of singleProduct.DisplayProperties) {
         if (singleProperty.id == "pixelPitch") {
           for (singleValue of singleProperty.Values) {
@@ -1989,7 +4786,7 @@ for (const singleProduct of ourProducts) {
         </th>`;
        
          
-            i = i + 1;
+        TableHeadCounts = TableHeadCounts + 1;
           }
         }
       }
@@ -2144,7 +4941,7 @@ for (const singleProduct of ourProducts) {
 }
 
 
-//  ********** Product Container **********
+//  ********** Product Container:START **********
 for (const singleProduct of ourProducts) {
   if (ElidAllProductsContainer) {
     ElidAllProductsContainer.innerHTML += `
@@ -2198,3 +4995,96 @@ for (const singleProduct of ourProducts) {
   </div>`;
   }
 }
+
+//  ********** Product Container:END **********
+
+
+
+
+// Two Products On Index Page:START
+
+function printProducts() {
+  const ElProdSectionProdImage1=document.getElementById("ProdSectionProdImage1");
+  const ElProdSectionProdImage2=document.getElementById("ProdSectionProdImage2");
+
+  const ElProdSectionProdHeading1=document.getElementById("ProdSectionProdHeading1") 
+  const ElProdSectionProdHeading2=document.getElementById("ProdSectionProdHeading2")
+
+  const ElProdSectionProdPara1=document.getElementById("ProdSectionProdPara1");
+  const ElProdSectionProdPara2=document.getElementById("ProdSectionProdPara2");
+
+  const ElProdSectionProdPixelPitch1=document.getElementById("ProdSectionProdPixelPitch1");
+  const ElProdSectionProdPixelPitch2=document.getElementById("ProdSectionProdPixelPitch2");
+
+  const ElProdSectionProdPixelAspRatio1=document.getElementById("ProdSectionProdPixelAspRatio1");
+  const ElProdSectionProdPixelAspRatio2=document.getElementById("ProdSectionProdPixelAspRatio2");
+  
+  const ElProdSectionProdInstallService1=document.getElementById("ProdSectionProdInstallService1");
+  const ElProdSectionProdInstallService2=document.getElementById("ProdSectionProdInstallService2");
+
+  const ElProdSectionProdReadMore1=document.getElementById("ProdSectionProdReadMore1");
+  const ElProdSectionProdReadMore2=document.getElementById("ProdSectionProdReadMore2");
+
+  if(ElProdSectionProdHeading1){
+    let productsCounter = 0;
+    const intervalId = setInterval(function() {
+      // exit the interval if all products have been printed
+      if (productsCounter >= ourProducts.length) {
+        clearInterval(intervalId);
+        productsCounter = 0;
+        printProducts();
+        return;
+      }
+      // print the current product name and the next product name
+
+      ElProdSectionProdImage1.style=`background-image: url(${ourProducts[productsCounter].imageForProductPage}); padding-right: 0;`;
+      ElProdSectionProdHeading1.textContent=`${ourProducts[productsCounter].productName}`
+      ElProdSectionProdPara1.textContent=`${ourProducts[productsCounter].productDetail}`
+      ElProdSectionProdPixelPitch1.textContent=`${ourProducts[productsCounter].pixelPitch}`;
+      ElProdSectionProdPixelAspRatio1.textContent=`${ourProducts[productsCounter].aspectRatio}`;
+      ElProdSectionProdInstallService1.textContent=`${ourProducts[productsCounter].installAndService}`;
+      ElProdSectionProdReadMore1.setAttribute("onclick", `FnCLickedProduct('${ourProducts[productsCounter].id}')`);
+
+      if(productsCounter+1< ourProducts.length)
+      {
+        ElProdSectionProdImage2.style=`background-image: url(${ourProducts[productsCounter+1].imageForProductPage}); padding-right: 0;`;
+        ElProdSectionProdHeading2.textContent=`${ ourProducts[productsCounter+1].productName}`
+        ElProdSectionProdPara2.textContent=`${ ourProducts[productsCounter+1].productDetail}`
+        ElProdSectionProdPixelPitch2.textContent=`${ourProducts[productsCounter+1].pixelPitch}`;
+        ElProdSectionProdInstallService2.textContent=`${ourProducts[productsCounter+1].installAndService}`;
+        ElProdSectionProdPixelAspRatio2.textContent=`${ourProducts[productsCounter+1].aspectRatio}`;
+        ElProdSectionProdReadMore2.setAttribute("onclick", `FnCLickedProduct('${ourProducts[productsCounter+1].id}')`);
+       
+      }
+
+
+      // increment the counter by 2
+     let UpdatedNumner= productsCounter += 2;
+      console.log(UpdatedNumner);
+    }, 5000);
+
+  }
+}
+
+printProducts();
+
+
+// Two Products On Index Page:END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
