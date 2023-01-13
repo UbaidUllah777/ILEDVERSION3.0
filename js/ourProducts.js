@@ -70,11 +70,11 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-// this is also for showing product on indexPage
+     // this is also for showing product on indexPage
     imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
-    installAndService:"Front",
+    installAndService:"Back",
     productImages: [
       {
         image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
@@ -267,7 +267,7 @@ const ourProducts = [
     id: "ShelfLedRibbon",
     productName: "Shelf Led Ribbon",
     productHeadingLine:
-      "for Shelf Led Ribbon...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "for Shelf Led Ribbon...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain for Shelf Led Ribbon...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
       "Detail of Shelf Led Ribbon When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
@@ -4962,9 +4962,52 @@ for (const singleProduct of ourProducts) {
                 >${singleProduct.productName}</a
               >
             </h4>
-            <p class="card-text mb-0">
+            <p class="card-text ProdSectionProdPara  mb-0">
               ${singleProduct.productHeadingLine}
             </p>
+            <div class="row pt-2 pb-0">
+            <div class="col pb-0">
+              <p class="pb-0 text-3 text-color-primary text-4" style="margin-bottom: 0px;">Specifications</p>
+            </div>
+          </div>
+          <!-- Hr -->
+            <div class="container-fluid pt-0">
+              <div class="row">
+                <div class="col" style="padding-left: 0; padding-right: 0;">
+                  <hr class="mt-2 mb-2 ">
+                </div>
+              </div>
+            </div>
+              
+            <div class="row pt-2">
+              <div class="col-6">
+                <p class="text-color-dark text-3" style="font-weight: bolder;">Pixel Pitch :  </p>
+              </div>
+              <div class="col-6">
+                <p id="ProdSectionProdPixelPitch1" class="text-color-dark text-3" style="font-weight: bolder;">${singleProduct.pixelPitch}  </p>
+              
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-6">
+                <p class="text-color-dark text-3 pb-0" style="font-weight: bolder; margin-bottom: 0px;">Aspect Ratio :  </p>
+              </div>
+              <div class="col-6">
+                <p  id="ProdSectionProdPixelAspRatio1" class="text-color-dark text-3" style="font-weight: bolder;">${singleProduct.aspectRatio}</p>
+              
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-6">
+                <p class="text-color-dark text-3" style="font-weight: bolder;">Install & Service :  </p>
+              </div>
+              <div class="col-6">
+                <p  id="ProdSectionProdInstallService1" class="text-color-dark text-3" style="font-weight: bolder;">${singleProduct.installAndService}</p>
+              
+              </div>
+            </div>
             <a  id="${singleProduct.id}" onclick="FnCLickedProduct('${singleProduct.id}') "href="products-detail.html" class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
             >
               VIEW MORE
@@ -4999,7 +5042,6 @@ for (const singleProduct of ourProducts) {
 
 
 // Two Products On Index Page:START
-
 function printProducts() {
   const ElProdSectionProdImage1=document.getElementById("ProdSectionProdImage1");
   const ElProdSectionProdImage2=document.getElementById("ProdSectionProdImage2");
@@ -5061,10 +5103,7 @@ function printProducts() {
 
   }
 }
-
 printProducts();
-
-
 // Two Products On Index Page:END
 
 

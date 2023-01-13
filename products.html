@@ -2,7 +2,13 @@
 <html>
   <head>
     <style>
-   
+     .ProdSectionProdPara{
+        overflow: hidden;
+        width:100%;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+       }
       
       /* The Modal (background) */
       .modal {
@@ -357,6 +363,8 @@
           </div>
         </section>
 
+
+        <!-- PRODUCTS CONTAINER:START -->
         <section class="section section-with-shape-divider border-0 m-0">
           <div class="container pb-1 mt-4 mb-5">
             <div class="row justify-content-center pb-3 mb-5">
@@ -396,260 +404,14 @@
               data-appear-animation="fadeInUpShorter"
               data-appear-animation-delay="800"
             >
-              <!-- <div class="col-md-6 col-lg-4 mb-4">
-                <article>
-                  <div class="card border-0 border-radius-0 box-shadow-1">
-                    <div class="card-body p-4 z-index-1">
-                      <a href="products-detail.html">
-                        <img
-                          class="card-img-top border-radius-0 mb-4"
-                          src="img/demos/iLEDv3/products/product-2.jpg"
-                          alt="Product Name"
-                        />
-                      </a>
-                      <div class="card-body p-0">
-                        <h4 class="card-title mb-3 text-5 font-weight-semibold">
-                          <a
-                            class="text-color-dark text-color-hover-primary text-decoration-none"
-                            href="products-detail.html"
-                            >Product Name</a
-                          >
-                        </h4>
-                        <p class="card-text mb-0">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nunc viverra lo...
-                        </p>
-                        <a
-                          href="products-detail.html"
-                          class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                        >
-                          VIEW MORE
-                          <svg
-                            class="ms-2"
-                            version="1.1"
-                            viewBox="0 0 15.698 8.706"
-                            width="17"
-                            xml:space="preserve"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <polygon
-                              stroke="#FFF"
-                              stroke-width="0.1"
-                              fill="#FFF"
-                              points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4">
-                <article>
-                  <div class="card border-0 border-radius-0 box-shadow-1">
-                    <div class="card-body p-4 z-index-1">
-                      <a href="products-detail.html">
-                        <img
-                          class="card-img-top border-radius-0 mb-4"
-                          src="img/demos/iLEDv3/products/product-3.jpg"
-                          alt="Product Name"
-                        />
-                      </a>
-                      <div class="card-body p-0">
-                        <h4 class="card-title mb-3 text-5 font-weight-semibold">
-                          <a
-                            class="text-color-dark text-color-hover-primary text-decoration-none"
-                            href="products-detail.html"
-                            >Product Name</a
-                          >
-                        </h4>
-                        <p class="card-text mb-0">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nunc viverra lo...
-                        </p>
-                        <a
-                          href="products-detail.html"
-                          class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                        >
-                          VIEW MORE
-                          <svg
-                            class="ms-2"
-                            version="1.1"
-                            viewBox="0 0 15.698 8.706"
-                            width="17"
-                            xml:space="preserve"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <polygon
-                              stroke="#FFF"
-                              stroke-width="0.1"
-                              fill="#FFF"
-                              points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <article>
-                  <div class="card border-0 border-radius-0 box-shadow-1">
-                    <div class="card-body p-4 z-index-1">
-                      <a href="products-detail.html">
-                        <img
-                          class="card-img-top border-radius-0 mb-4"
-                          src="img/demos/iLEDv3/products/product-4.jpg"
-                          alt="Product Name"
-                        />
-                      </a>
-                      <div class="card-body p-0">
-                        <h4 class="card-title mb-3 text-5 font-weight-semibold">
-                          <a
-                            class="text-color-dark text-color-hover-primary text-decoration-none"
-                            href="products-detail.html"
-                            >Product Name</a
-                          >
-                        </h4>
-                        <p class="card-text mb-0">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nunc viverra lo...
-                        </p>
-                        <a
-                          href="products-detail.html"
-                          class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                        >
-                          VIEW MORE
-                          <svg
-                            class="ms-2"
-                            version="1.1"
-                            viewBox="0 0 15.698 8.706"
-                            width="17"
-                            xml:space="preserve"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <polygon
-                              stroke="#FFF"
-                              stroke-width="0.1"
-                              fill="#FFF"
-                              points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
-                <article>
-                  <div class="card border-0 border-radius-0 box-shadow-1">
-                    <div class="card-body p-4 z-index-1">
-                      <a href="products-detail.html">
-                        <img
-                          class="card-img-top border-radius-0 mb-4"
-                          src="img/demos/iLEDv3/products/product-5.jpg"
-                          alt="Product Name"
-                        />
-                      </a>
-                      <div class="card-body p-0">
-                        <h4 class="card-title mb-3 text-5 font-weight-semibold">
-                          <a
-                            class="text-color-dark text-color-hover-primary text-decoration-none"
-                            href="products-detail.html"
-                            >Product Name</a
-                          >
-                        </h4>
-                        <p class="card-text mb-0">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nunc viverra lo...
-                        </p>
-                        <a
-                          href="products-detail.html"
-                          class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                        >
-                          VIEW MORE
-                          <svg
-                            class="ms-2"
-                            version="1.1"
-                            viewBox="0 0 15.698 8.706"
-                            width="17"
-                            xml:space="preserve"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <polygon
-                              stroke="#FFF"
-                              stroke-width="0.1"
-                              fill="#FFF"
-                              points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <article>
-                  <div class="card border-0 border-radius-0 box-shadow-1">
-                    <div class="card-body p-4 z-index-1">
-                      <a href="products-detail.html">
-                        <img
-                          class="card-img-top border-radius-0 mb-4"
-                          src="img/demos/iLEDv3/products/product-6.jpg"
-                          alt="Product Name"
-                        />
-                      </a>
-                      <div class="card-body p-0">
-                        <h4 class="card-title mb-3 text-5 font-weight-semibold">
-                          <a
-                            class="text-color-dark text-color-hover-primary text-decoration-none"
-                            href="products-detail.html"
-                            >Product Name</a
-                          >
-                        </h4>
-                        <p class="card-text mb-0">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Nunc viverra lo...
-                        </p>
-                        <a
-                          href="products-detail.html"
-                          class="custom-read-more btn btn-link d-inline-flex align-items-center font-weight-semibold text-decoration-none ps-0"
-                        >
-                          VIEW MORE
-                          <svg
-                            class="ms-2"
-                            version="1.1"
-                            viewBox="0 0 15.698 8.706"
-                            width="17"
-                            xml:space="preserve"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <polygon
-                              stroke="#FFF"
-                              stroke-width="0.1"
-                              fill="#FFF"
-                              points="11.354,0 10.646,0.706 13.786,3.853 0,3.853 0,4.853 13.786,4.853 10.646,8 11.354,8.706 15.698,4.353 "
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div> -->
+              
             </div>
           </div>
         </section>
+        <!-- PRODUCTS CONTAINER:END -->
 
+
+        <!-- CALL to action Get Your Next Project Done! START -->
         <section
           class="section section-height-3 overlay overlay-show overlay-color-primary overlay-op-8 border-0 m-0"
           style="
@@ -698,7 +460,11 @@
             </div>
           </div>
         </section>
+        
+        <!-- CALL to action Get Your Next Project Done! END -->
 
+
+        <!-- The Highest Quality:START -->
         <div class="container py-4 my-5">
           <div class="row py-3">
             <div class="col-lg-6">
@@ -769,6 +535,8 @@
             </div>
           </div>
         </div>
+        <!-- The Highest Quality:END -->
+
       </div>
 
 
