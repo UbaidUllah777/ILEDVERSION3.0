@@ -78,7 +78,6 @@ ElidHeaderLinkHome.href = `index.html`;
 ElidHeaderLinkAboutUs.textContent = `About Us`;
 ElidHeaderLinkAboutUs.href = `about-us.html`;
 
-// am not using thisdynamically  bcz of some bug 
 if (ElidHeaderlinkProducts){
   ElidHeaderlinkProducts.innerHTML+= `
   <ul class="dropdown-menu">
@@ -93,28 +92,28 @@ if (ElidHeaderlinkProducts){
           <ul class="dropdown-mega-sub-nav">
             <!-- 1- iHD Series -->
             <li>
-              <a class="dropdown-item"  onclick="FnCLickedProduct('3DHOLOGRAM')" href="products-detail.html"
+              <a class="dropdown-item"  onclick="FnCLickedProduct('iHDSeries')" href="products-detail.html"
                 >iHD Series</a
               >
             </li>
             <!-- 2- Shelf Led Ribbon -->
             <li>
-              <a class="dropdown-item"   onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >Shelf Led Ribbon</a>
+              <a class="dropdown-item"   onclick="FnCLickedProduct('ShelfLedRibbon')"   href="products-detail.html" >Shelf Led Ribbon</a>
             </li>
             
             <!-- 3- Indoor Fixed Led Display -->
             <li>
-              <a class="dropdown-item"   onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >Indoor Fixed Led Display</a>
+              <a class="dropdown-item"   onclick="FnCLickedProduct('IndoorFixedLedDisplay')"   href="products-detail.html" >Indoor Fixed Led Display</a>
             </li>
             
             <!-- 4- Indoor Flexible Series -->
             <li>
-              <a class="dropdown-item"   onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >Indoor Flexible Series</a>
+              <a class="dropdown-item"   onclick="FnCLickedProduct('IndoorFlexibleSeries')"   href="products-detail.html" >Indoor Flexible Series</a>
             </li>
 
             <!-- 5- Indoor Floor Standing -->
             <li>
-              <a class="dropdown-item"   onclick="FnCLickedProduct('UlTransparentLedDisplay')"   href="products-detail.html" >Indoor Floor Standing</a>
+              <a class="dropdown-item"   onclick="FnCLickedProduct('IndoorFloorStanding')"   href="products-detail.html" >Indoor Floor Standing</a>
             </li>
 
           </ul>
@@ -127,42 +126,42 @@ if (ElidHeaderlinkProducts){
 
             <!-- 1- Outdoor Fixed Led Display -->
             <li>
-              <a class="dropdown-item"  onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html"
+              <a class="dropdown-item"  onclick="FnCLickedProduct('OutdoorFixedLedDisplay')" href="products-detail.html"
                 >Outdoor Fixed Led Display</a
               >
             </li>
 
             <!-- 2- Outdoor Diecast Videowall -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('OutdoorDiecastVideowall')" href="products-detail.html"
                 >Outdoor Diecast Videowall</a
               >
             </li>
 
             <!-- 3- Outdoor Floor Standing -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('OutdoorFloorStanding')" href="products-detail.html"
                 >Outdoor Floor Standing</a
               >
             </li>
 
             <!-- 4- Outdoor Taxitop Display -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('OutdoorTaxitopDisplay')" href="products-detail.html"
                 >Outdoor Taxitop Display</a
               >
             </li>
 
             <!-- 5- Perimeter led display -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('PerimeterLedDisplay')" href="products-detail.html"
                 >Perimeter led display</a
               >
             </li>
 
             <!-- 6- Scoreboard Led Display -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('ScoreboardLedDisplay')" href="products-detail.html"
                 >Scoreboard Led Display</a
               >
             </li>
@@ -179,28 +178,28 @@ if (ElidHeaderlinkProducts){
 
             <!-- 1- Sperical Led Ball -->
             <li>
-              <a class="dropdown-item"  onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html"
+              <a class="dropdown-item"  onclick="FnCLickedProduct('SpericalLedBall')" href="products-detail.html"
                 >Sperical Led Ball</a
               >
             </li>
 
             <!-- 2- Square Led Display -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('SquareLedDisplay')" href="products-detail.html"
                 >Square Led Display</a
               >
             </li>
 
             <!-- 3- Round led Display -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('RoundLedDisplay')" href="products-detail.html"
                 >Round led Display</a
               >
             </li>
 
             <!-- 4- Street Pole Display -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('StreetPoleDisplay')" href="products-detail.html"
                 >Street Pole Display</a
               >
             </li>
@@ -216,28 +215,28 @@ if (ElidHeaderlinkProducts){
 
             <!-- 1- iLex Series I -->
             <li>
-              <a class="dropdown-item"  onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html"
+              <a class="dropdown-item"  onclick="FnCLickedProduct('iLexSeriesI')" href="products-detail.html"
                 >iLex Series I</a
               >
             </li>
 
             <!-- 2- iLex Series II -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('iLexSeriesII')" href="products-detail.html"
                 >iLex Series II</a
               >
             </li>
 
             <!-- 3- iOmni Series I -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('iOmniSeriesI')" href="products-detail.html"
                 >iOmni Series I</a
               >
             </li>
 
             <!-- 4- iOmni Series II -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('iOmniSeriesII')" href="products-detail.html"
                 >iOmni Series II</a
               >
             </li>
@@ -253,28 +252,28 @@ if (ElidHeaderlinkProducts){
 
             <!-- 1- Mobile Digital Signage -->
             <li>
-              <a class="dropdown-item"  onclick="FnCLickedProduct('IledSpecialTileSeries')" href="products-detail.html"
+              <a class="dropdown-item"  onclick="FnCLickedProduct('MobileDigitalSignage')" href="products-detail.html"
                 >Mobile Digital Signage</a
               >
             </li>
 
             <!-- 2- Gas Petrol Led Display -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('GasPetrolLedDisplay')" href="products-detail.html"
                 >Gas Petrol Led Display</a
               >
             </li>
 
             <!-- 3- Single Line Led Display -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('SingleLineLedDisplay')" href="products-detail.html"
                 >Single Line Led Display</a
               >
             </li>
 
             <!-- 4- Bespoke Led Display -->
             <li>
-              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('IbSeriesBlackLed')" href="products-detail.html"
+              <a class="dropdown-item"  class="dropdown-item"  onclick="FnCLickedProduct('BespokeLedDisplay')" href="products-detail.html"
                 >Bespoke Led Display</a
               >
             </li>
@@ -310,22 +309,32 @@ const FnCLickedProduct = (CLickedProductId) => {
 const FnBaseType=(baseType)=>{
   sessionStorage.setItem("BaseType",baseType);
   const ElBaseTypeData=document.getElementById("BaseTypeData");
+  const ElBaseTypeDataModal=document.getElementById("BaseTypeDataModal");
   clickedBaseType=sessionStorage.getItem("BaseType");
   ElBaseTypeData.setAttribute("value", clickedBaseType);
+  ElBaseTypeDataModal.setAttribute("value", clickedBaseType);
 
   const ElidIdexFormProductHeading=document.getElementById('idIdexFormProductHeading');
   const ElidIdexFormProductdetail=document.getElementById('idIdexFormProductdetail');
   const ElidIdexFormProductImage=document.getElementById('idIdexFormProductImage');
 
+  
+  const ElidIdexFormProductHeadingModal=document.getElementById('idIdexFormProductHeadingModal');
+  const ElidIdexFormProductdetailModal=document.getElementById('idIdexFormProductdetailModal');
+  const ElidIdexFormProductImageModal=document.getElementById('idIdexFormProductImageModal');
+
   if(ElidIdexFormProductHeading){
 
     ElidIdexFormProductHeading.textContent=clickedBaseType;
+    ElidIdexFormProductHeadingModal.textContent=clickedBaseType;
 
     if(clickedBaseType== 'BASE TYPE')
     {
 
       ElidIdexFormProductdetail.textContent=`Digital signs are perfect for monument signs, in new or retrofit installations, of all sizes. Stax can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
       ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Base type.png';
+      ElidIdexFormProductdetailModal.textContent=`Digital signs are perfect for monument signs, in new or retrofit installations, of all sizes. Stax can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
+      ElidIdexFormProductImageModal.src='img/demos/iLEDv3/baseType/iledscreen - Base type.png';
     }
   
 
@@ -334,6 +343,8 @@ const FnBaseType=(baseType)=>{
 
       ElidIdexFormProductdetail.textContent=`Digital Signs are perfect for pylon signs, new or retrofit installation, of all heights and sizes. Both products server On-premise commercial sign and off premise digital billboards very well.`;
       ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - ceiling.png';
+      ElidIdexFormProductdetailModal.textContent=`Digital Signs are perfect for pylon signs, new or retrofit installation, of all heights and sizes. Both products server On-premise commercial sign and off premise digital billboards very well.`;
+      ElidIdexFormProductImageModal.src='img/demos/iLEDv3/baseType/iledscreen - ceiling.png';
     }
   
 
@@ -342,6 +353,8 @@ const FnBaseType=(baseType)=>{
 
       ElidIdexFormProductdetail.textContent=`Digital Signs can be great additions to your sign package as wall signs, new or retrofit installation, of all sizes. They can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
       ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Double-Pole.png';
+      ElidIdexFormProductdetailModal.textContent=`Digital Signs can be great additions to your sign package as wall signs, new or retrofit installation, of all sizes. They can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
+      ElidIdexFormProductImageModal.src='img/demos/iLEDv3/baseType/iledscreen - Double-Pole.png';
     }
   
 
@@ -350,12 +363,16 @@ const FnBaseType=(baseType)=>{
 
       ElidIdexFormProductdetail.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
       ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Road Center.png';
+      ElidIdexFormProductdetailModal.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
+      ElidIdexFormProductImageModal.src='img/demos/iLEDv3/baseType/iledscreen - Road Center.png';
     }
     if(clickedBaseType=='ROOF TOP')
     {
 
       ElidIdexFormProductdetail.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
       ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Rooftop.png';
+      ElidIdexFormProductdetailModal.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
+      ElidIdexFormProductImageModal.src='img/demos/iLEDv3/baseType/iledscreen - Rooftop.png';
     }
   
 

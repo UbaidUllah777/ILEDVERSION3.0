@@ -274,16 +274,13 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/inDoorLedDisplay/SHELFRIBBONDISPLAY/ShelfLedDisplayForIndex.png",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+        image: "img/demos/iLEDv3/AllProducts/inDoorLedDisplay/SHELFRIBBONDISPLAY/ShelfLedDisplay-1.png",
       },
     ],
     DisplayProperties: [
@@ -5060,7 +5057,6 @@ function printProducts() {
 
       // increment the counter by 2
      let UpdatedNumner= productsCounter += 2;
-      console.log(UpdatedNumner);
     }, 5000);
 
   }
