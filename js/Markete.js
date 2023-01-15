@@ -8,7 +8,7 @@ const ourMarkets=[
         marketeImgForIndex:'img/demos/iLEDv3/marketes/for index/Restaurant.jpg',
         marketeImagesForMarketePage:[
             {Image:'img/demos/iLEDv3/marketes/for index/Restaurant.jpg'},
-            {Image:'img/demos/iLEDv3/marketes/for index/Restaurant.jpg'},
+            {Image:'img/demos/iLEDv3/marketes/for index/Venue.jpg'},
             {Image:'img/demos/iLEDv3/marketes/for index/Restaurant.jpg'},
         ]
 
@@ -155,7 +155,7 @@ for(const singleMarkete of ourMarkets){
           <div class="card-body">
             <div class="row justify-content-center">
             <div class="col-lg-7 col-xl-6 pe-lg-4 mb-4 mb-lg-0" >
-            <div style="opacity:1" id="marketeImages${accCount}" class="owl-carousel stage-margin stage-margin-sm nav-style-1 nav-svg-arrows-1 nav-dark custom-stage-outer-box-shadow" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}}, 'autoplay': true, 'autoplayTimeout': 1000, 'autoplayHoverPause': false, 'dots': true, 'nav': true, 'loop': true, 'margin': 20, 'stagePadding': 50}">
+            <div  id="marketeImages${accCount}" class="owl-carousel stage-margin stage-margin-sm nav-primary nav-svg-arrows-1 nav-dark custom-stage-outer-box-shadow" data-plugin-options="">
              
             
             </div>
@@ -177,7 +177,7 @@ for(const singleMarkete of ourMarkets){
         for (const singleMarketeImage of singleMarkete.marketeImagesForMarketePage){
             if(ElmarketeImages){
               ElmarketeImages.innerHTML+=`
-              <div>
+              <div >
               <img src="${singleMarketeImage.Image}" class="img-fluid" alt="" />
             </div>
               `;
@@ -186,6 +186,40 @@ for(const singleMarkete of ourMarkets){
         }
         accCount++;
     }
+    $('.owl-carousel').owlCarousel({
+
+        responsive: {
+            0:{items: 1},
+             476: {items: 1},
+              768: {items: 1},
+               992: {items: 1}, 
+               1200: {items: 1}
+        },
+        autoplay: false,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: false,
+        dots: false,
+        nav: true,
+        loop: false,
+        margin: 20,
+        stagePadding: 50,
+        height:20,
+
+        // loop:true,
+        // margin:10,
+        // nav:true,
+        // responsive:{
+        //     0:{
+        //         items:1
+        //     },
+        //     600:{
+        //         items:1
+        //     },
+        //     1000:{
+        //         items:1
+        //     }
+        // }
+    });
 }
 
 
