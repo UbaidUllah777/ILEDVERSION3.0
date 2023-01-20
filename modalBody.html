@@ -54,12 +54,12 @@
           
           <div class="col-lg-6 bg-color-primary" style="border-radius: 5px 0px 0px 0px;  margin-left: 15px;">
            <center> <h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4 mt-4 text-color-light">Send Us a Message</h2></center>
-            <form class="contact-form form-style-3 px-3" action="php/contact-form.php" method="POST">
-              <div class="contact-form-success alert alert-success d-none mt-4">
+            <form id="contact-form" class="contact-form form-style-3 px-3" action="php/contact-form.php" method="POST">
+              <div id="success-message" class="contact-form-success alert alert-success d-none mt-4">
                 <strong>Success!</strong> Your message has been sent to us.
               </div>
 
-              <div class="contact-form-error alert alert-danger d-none mt-4">
+              <div id="error-message" class="contact-form-error alert alert-danger d-none mt-4">
                 <strong>Error!</strong> There was an error sending your message.
                 <span class="mail-error-message text-1 d-block"></span>
               </div>

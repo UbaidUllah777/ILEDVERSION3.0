@@ -311,28 +311,78 @@ const FnBaseType=(baseType)=>{
   const ElBaseTypeData=document.getElementById("BaseTypeData");
   const ElBaseTypeDataModal=document.getElementById("BaseTypeDataModal");
   clickedBaseType=sessionStorage.getItem("BaseType");
-  ElBaseTypeData.setAttribute("value", clickedBaseType);
-  ElBaseTypeDataModal.setAttribute("value", clickedBaseType);
 
+  if(ElBaseTypeData){
+    ElBaseTypeData.setAttribute("value", clickedBaseType);
+  }
+if(ElBaseTypeDataModal)
+{
+  ElBaseTypeDataModal.setAttribute("value", clickedBaseType);
+}
   const ElidIdexFormProductHeading=document.getElementById('idIdexFormProductHeading');
   const ElidIdexFormProductdetail=document.getElementById('idIdexFormProductdetail');
   const ElidIdexFormProductImage=document.getElementById('idIdexFormProductImage');
+
+ 
 
   
   const ElidIdexFormProductHeadingModal=document.getElementById('idIdexFormProductHeadingModal');
   const ElidIdexFormProductdetailModal=document.getElementById('idIdexFormProductdetailModal');
   const ElidIdexFormProductImageModal=document.getElementById('idIdexFormProductImageModal');
 
-  if(ElidIdexFormProductHeading){
+  if(ElidIdexFormProductHeading && ElidIdexFormProductdetail &&  ElidIdexFormProductImage){
 
     ElidIdexFormProductHeading.textContent=clickedBaseType;
-    ElidIdexFormProductHeadingModal.textContent=clickedBaseType;
 
     if(clickedBaseType== 'BASE TYPE')
     {
 
       ElidIdexFormProductdetail.textContent=`Digital signs are perfect for monument signs, in new or retrofit installations, of all sizes. Stax can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
       ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Base type.png';
+        }
+  
+
+    if(clickedBaseType=='CEILING')
+    {
+
+      ElidIdexFormProductdetail.textContent=`Digital Signs are perfect for pylon signs, new or retrofit installation, of all heights and sizes. Both products server On-premise commercial sign and off premise digital billboards very well.`;
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - ceiling.png';
+      }
+  
+
+    if(clickedBaseType=='DOUBLE POLE')
+    {
+
+      ElidIdexFormProductdetail.textContent=`Digital Signs can be great additions to your sign package as wall signs, new or retrofit installation, of all sizes. They can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Double-Pole.png';
+        }
+  
+
+    if(clickedBaseType=='ROAD CENTER')
+    {
+
+      ElidIdexFormProductdetail.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Road Center.png';
+      }
+    if(clickedBaseType=='ROOF TOP')
+    {
+
+      ElidIdexFormProductdetail.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
+      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Rooftop.png';
+     }
+  
+
+  
+  
+  }
+  
+  if(ElidIdexFormProductHeadingModal && ElidIdexFormProductdetailModal &&  ElidIdexFormProductImageModal){
+
+    ElidIdexFormProductHeadingModal.textContent=clickedBaseType;
+
+    if(clickedBaseType== 'BASE TYPE')
+    {
+
       ElidIdexFormProductdetailModal.textContent=`Digital signs are perfect for monument signs, in new or retrofit installations, of all sizes. Stax can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
       ElidIdexFormProductImageModal.src='img/demos/iLEDv3/baseType/iledscreen - Base type.png';
     }
@@ -341,8 +391,6 @@ const FnBaseType=(baseType)=>{
     if(clickedBaseType=='CEILING')
     {
 
-      ElidIdexFormProductdetail.textContent=`Digital Signs are perfect for pylon signs, new or retrofit installation, of all heights and sizes. Both products server On-premise commercial sign and off premise digital billboards very well.`;
-      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - ceiling.png';
       ElidIdexFormProductdetailModal.textContent=`Digital Signs are perfect for pylon signs, new or retrofit installation, of all heights and sizes. Both products server On-premise commercial sign and off premise digital billboards very well.`;
       ElidIdexFormProductImageModal.src='img/demos/iLEDv3/baseType/iledscreen - ceiling.png';
     }
@@ -351,8 +399,6 @@ const FnBaseType=(baseType)=>{
     if(clickedBaseType=='DOUBLE POLE')
     {
 
-      ElidIdexFormProductdetail.textContent=`Digital Signs can be great additions to your sign package as wall signs, new or retrofit installation, of all sizes. They can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
-      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Double-Pole.png';
       ElidIdexFormProductdetailModal.textContent=`Digital Signs can be great additions to your sign package as wall signs, new or retrofit installation, of all sizes. They can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.`;
       ElidIdexFormProductImageModal.src='img/demos/iLEDv3/baseType/iledscreen - Double-Pole.png';
     }
@@ -361,16 +407,12 @@ const FnBaseType=(baseType)=>{
     if(clickedBaseType=='ROAD CENTER')
     {
 
-      ElidIdexFormProductdetail.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
-      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Road Center.png';
       ElidIdexFormProductdetailModal.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
       ElidIdexFormProductImageModal.src='img/demos/iLEDv3/baseType/iledscreen - Road Center.png';
     }
     if(clickedBaseType=='ROOF TOP')
     {
 
-      ElidIdexFormProductdetail.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
-      ElidIdexFormProductImage.src='img/demos/iLEDv3/baseType/iledscreen - Rooftop.png';
       ElidIdexFormProductdetailModal.textContent=`NEXT digital billboards use the same hardened and engineered technology as our commercial displays and provide exceptional value for independent billboard owner and operators. NEXT can provide full turnkey installation services including but not limited to engineering, structure fabrication, installation, and long term service contracts.`;
       ElidIdexFormProductImageModal.src='img/demos/iLEDv3/baseType/iledscreen - Rooftop.png';
     }

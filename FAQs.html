@@ -146,7 +146,7 @@
     <script defer>
       $(function () {
         $("#footer").load("footer.html");
-        $("#modal-body").load("modalBody.html");
+        // $("#modal-body").load("modalBody.html");
         $("#footerTop").load("footerTop.html");
 
       });
@@ -204,6 +204,161 @@
                       
                       <div class="modal-content" id="modal-body">
                       
+<!-- modalbody content -->
+  <!-- Contact Us Section : Start -->
+  <div class="container-fluid " style="background-color: black;">
+    <div class="row justify-content-center pt-4 mt-5 ">
+      <div class="col-lg-8 text-center">
+        <div class="overflow-hidden">
+        <h2
+          class="text-color-primary font-weight-medium positive-ls-3 text-4 mb-0 appear-animation"
+          data-appear-animation="maskUp"
+          data-appear-animation-delay="200"
+        >
+          Looking For Signage Solutions!
+        </h2>
+        </div>
+        <div class="overflow-hidden ">
+        <h3
+          class="font-weight-bold text-transform-none text-9 line-height-2 mb-0 appear-animation text-color-light"
+          data-appear-animation="maskUp"
+          data-appear-animation-delay="400"
+        >
+          Let's FulFill Your Digital Signage Needs
+        </h3>
+        </div>
+  
+      </div>
+      </div>
+      <div class="row px-lg-5 py-5 " >
+        <div class="row">
+          <div class="col-lg-6" style="padding-left: 18px;">
+            
+          
+            <div class=" form-group">
+              
+                  <a href="#BaseTypeData" class="btn btn-modern btn-secondary px-1 btn-lg btn-effect-4 mt-1 text-2 bg-color-hover-primary" type="button" onclick="FnBaseType('BASE TYPE')">BASE TYPE</a>   
+                
+                
+                  <a href="#BaseTypeData" class="btn btn-modern btn-secondary  px-1 btn-lg btn-effect-4 mt-1 text-2  bg-color-hover-primary" type="button" onclick="FnBaseType('CEILING')">CEILING</a>   
+                
+                
+                  <a href="#BaseTypeData" class="btn btn-modern btn-secondary  px-1 btn-lg btn-effect-4 mt-1 text-2 bg-color-hover-primary " type="button" onclick="FnBaseType('DOUBLE POLE')">DOUBLE POLE</a>   
+                
+                  <a href="#BaseTypeData" class="btn btn-modern btn-secondary px-1  btn-lg btn-effect-4 mt-1 text-2  bg-color-hover-primary" type="button" onclick="FnBaseType('ROAD CENTER')">ROAD CENTER</a> 
+
+                  
+                  <a href="#BaseTypeData" class="btn btn-modern btn-secondary px-1  btn-lg btn-effect-4 mt-1 text-2 bg-color-hover-primary " type="button" onclick="FnBaseType('ROOF TOP')">ROOF TOP</a> 
+                
+              
+            
+          </div>
+          </div>
+        </div>
+        <div class="row">
+          
+          <div class="col-lg-6 bg-color-primary" style="border-radius: 5px 0px 0px 0px;  margin-left: 15px;">
+           <center> <h2 class="font-weight-bold text-transform-none text-8 pb-2 mb-4 mt-4 text-color-light">Send Us a Message</h2></center>
+            <form id="contact-form" class="contact-form form-style-3 px-3" action="php/contact-form.php" method="POST">
+              <div id="success-message" class="contact-form-success alert alert-success d-none mt-4">
+                <strong>Success!</strong> Your message has been sent to us.
+              </div>
+
+              <div id="error-message" class="contact-form-error alert alert-danger d-none mt-4">
+                <strong>Error!</strong> There was an error sending your message.
+                <span class="mail-error-message text-1 d-block"></span>
+              </div>
+              
+                <!-- BASE TYPE DATA -->
+                <div class="row d-none">
+                  <div class="form-group col-sm-6">
+                    <input id="BaseTypeDataModal" type="text" value="BASE TYPE"  class="form-control" name="ProductType">
+                  </div>
+                </div>
+                <!-- Name And Adddress -->
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" placeholder="Your Name*" required>
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" placeholder="Email Address*" required>
+                </div>
+              </div>
+              <!-- Company and Phone -->
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <input type="text" value=""  maxlength="100" class="form-control" name="Company-Name" placeholder="Your Compnay Name" >
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="tel" value="" data-msg-required="Please enter your Phone Number" data-msg-phone="Please enter a valid  Phone Number." maxlength="20" class="form-control" name="Phone-Number" placeholder="Phone Number*" required>
+                </div>
+              </div>
+                <!-- Width and Height -->
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <input type="number" value="" maxlength="100" class="form-control" name="Width" placeholder="Width (In Feet)" >
+                </div>
+                <div class="form-group col-sm-6">
+                  <input type="number" value=""  maxlength="100" class="form-control" name="Height" placeholder="Height (In Feet)">
+                </div>
+              </div>
+              
+              <!-- Side -->
+              <div class="row">
+                <div class="form-group col" >
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label text-color-light  text-4">
+                      <input class="form-check-input" type="radio" name="Side" data-msg-required="Please select at least one option." id="tabContent9Radio1" value="Single Sided" required=""> One Sided*
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline"  style="padding-left: 45px;">
+                    <label class="form-check-label text-color-light text-4">
+                      <input class="form-check-input" type="radio" name="Side" data-msg-required="Please select at least one option." id="tabContent9Radio2" value="Double Sided" required=""> Double Sided*
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="row">
+                <div class="form-group col">
+                  <textarea maxlength="5000" data-msg-required="Please enter your message." rows="6" class="form-control" name="message" placeholder="Your Message*" required></textarea>
+                </div>
+              </div>
+              <!-- Message Button  -->
+              <div class="row">
+                <div class="form-group col">
+                  <button type="submit" href="#" class="btn btn-modern  btn-secondary text-color-light btn-outline btn-arrow-effect-1" data-loading-text="Loading...">Send Message <i class="fas fa-arrow-right ms-2"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-5"  style="border-radius: 0px 5px 0px 0px;  background-color: white; margin-left: 15px; ">
+            <div class="overflow-hidden mb-3">
+             <h3 id="idIdexFormProductHeadingModal"
+                class="  text-transform-none   text-color-dark font-weight-bold  text-8 pb-2 mb-4 mt-4 "
+                
+              >
+              BASE TYPE
+              </h3>
+              <p id="idIdexFormProductdetailModal"
+              class=" pt-3f  text-transform-none text-4 line-height-2 mb-0  text-color-dark"
+              
+            >
+            Digital signs are perfect for monument signs, in new or retrofit installations, of all sizes. Stax can be installed with minimal heavy equipment and provides flexibility for the sign company and customer.</p>
+           <center><img id="idIdexFormProductImageModal" src="img/demos/iLEDv3/baseType/iledscreen - Base type.png"   
+            class="img-fluid pt-5"
+            width="323"
+            height="323"
+            alt=""></center> 
+              </div>
+          </div>
+          
+        </div>
+
+      </div>
+</div>
+<!-- Contact Us Section : End -->
                       </div>
                     
                     </div>
@@ -573,6 +728,32 @@
           modal.style.display = "none";
         }
       }
+      </script>
+      
+      <script>
+        document.querySelector("#contact-form").addEventListener("submit", function(event) {
+          event.preventDefault();
+          fetch("php/contact-form.php", {
+              method: "POST",
+              body: new FormData(event.target)
+          })
+          .then(response => {
+              return response.json();
+          })
+          .then(data => {
+              if(data.response === "success") {
+                  document.querySelector("#success-message").classList.remove("d-none");
+                  document.querySelector("#error-message").classList.add("d-none");
+              } else {
+                  document.querySelector("#error-message").classList.remove("d-none");
+                  document.querySelector("#success-message").classList.add("d-none");
+                  document.querySelector(".mail-error-message").innerHTML = data.error;
+              }
+          })
+          .catch(error => {
+              console.log(error);
+          });
+      });
       </script>
   </body>
 </html>

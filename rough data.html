@@ -4296,3 +4296,78 @@ const ourProducts = [
     ],
   },
 ];
+
+
+
+
+
+
+<?php
+if (isset($_POST['submit'])) {
+    $to = "email@example.com"; // change to your email address
+    $subject = "Form Submission";
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $headers = "From: " . $email . "\r\n";
+    $headers .= "Reply-To: ". $email . "\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+    $body = "Name: " . $name . "<br>" . "Email: " . $email . "<br>" . "Message: " . $message;
+    mail($to, $subject, $body, $headers);
+    echo "success";
+} else {
+    echo "error";
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  $('#contact-form').submit(function(event) {
+    event.preventDefault();
+    var formData = $('#contact-form').serialize();
+
+    $.ajax({
+      type: 'POST',
+      url: 'https://iled.bxtechnologies.net/php/contact-form.php',
+      data: formData,
+      dataType: 'json',
+      encode: true
+    }).done(function(data) {
+      if (data.response === 'success') {
+        $('.contact-form-success').removeClass('d-none');
+        $('.contact-form-error').addClass('d-none');
+      } else {
+        $('.contact-form-error').removeClass('d-none');
+        $('.contact-form-success').addClass('d-none');
+        $('.mail-error-message').text(data.response);
+      }
+    });
+  });
+});
+
