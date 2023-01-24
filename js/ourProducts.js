@@ -3144,7 +3144,7 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/STAGING Solutions/iLex series I/Front Image/iledscreen - iLEX SERIES - indoor&Outdoor rental led display.jpg",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
@@ -4767,6 +4767,36 @@ const ourProducts = [
 
 
 //  ************* ALL PRODUCTS DATA OF ILED: END  **************
+
+
+const stage = document.getElementById("owlStage");
+
+for (const product of ourProducts) {
+  if(stage){
+  let item = document.createElement("div");
+  item.classList.add("owl-item", "active");
+  item.style.cssText = "width: 410.5px; padding-left: 5px;";
+
+  item.innerHTML = `
+    <div>
+      <a id="${product.id}" onclick="FnCLickedProduct('${product.id}')" href="products-detail.html">
+        <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+          <span class="thumb-info-wrapper">
+            <img src="${product.imageForProductPage}" class="img-fluid" alt="">
+            <span class="thumb-info-title">
+              <span class="thumb-info-inner">${product.productName}</span>
+              <span class="thumb-info-type">${product.id}</span>
+            </span>
+            <span class="thumb-info-action">
+              <span class="thumb-info-action-icon"><i class="fas fa-plus"></i></span>
+            </span>
+          </span>
+        </span>
+      </a>
+    </div>
+  `;
+  stage.appendChild(item);
+}}
 
 
 
