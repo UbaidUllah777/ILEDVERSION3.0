@@ -7,7 +7,7 @@ const ElidProductDetail_two = document.getElementById("idProductDetail_two");
 const ElidtagLine_one = document.getElementById("idtagLine_one");
 const ElidtagLine_two = document.getElementById("idtagLine_two");
 const ElidtagLine_three = document.getElementById("idtagLine_three");
-const ElproductDetailImages=document.getElementById("productDetailImages");
+// const ElproductDetailImages=document.getElementById("productDetailImages");
 
 //  ********* VENDERING ALL PRPERTY NAMES OF THE THREE TABLES ********
 
@@ -4000,27 +4000,83 @@ for (const singleProduct of ourProducts) {
   }
 }
 
+const ElidProductDetailImagesContainer=document.getElementById("idProductDetailImagesContainer");
+if(ElidProductDetailImagesContainer)
+{
+ElidProductDetailImagesContainer.innerHTML=`  
+<div id="productDetailImages"
+class="productImagesDetail owl-carousel stage-margin stage-margin-sm nav-primary nav-svg-arrows-1 nav-dark custom-stage-outer-box-shadow"
+data-plugin-options=""
+>
 
-
-
-
-for (const singleProductDetail of ourProducts){
-  if(ElproductDetailImages){
-    if(singleProductDetail.id==clickedProduct){
-      for(const singleProductImage of singleProductDetail.productImages){
-        ElproductDetailImages.innerHTML+=`
-        <div>
-        <img
-          src="${singleProductImage.image}"
-          class="img-fluid"
-          alt="${singleProductDetail.productName}"
-        />
-      </div>
-        `;
-      }
+</div>`
+const ElproductDetailImages=document.getElementById("productDetailImages");
+for (const singleProductDetail of ourProducts)
+ {
+  if (singleProductDetail.id == clickedProduct)
+   {
+    for (const singleProductImage of singleProductDetail.productImages) 
+    {
+      ElproductDetailImages.innerHTML+=`
+      <div>
+      <img
+        src="${singleProductImage.image}"
+        class="img-fluid"
+        alt="${singleProductDetail.productName}"
+      />
+    </div>
+      `;
+    
     }
   }
 }
+
+$('.productImagesDetail').owlCarousel({
+
+  responsive: {
+      0:{items: 1},
+       476: {items: 1},
+        768: {items: 1},
+         992: {items: 1}, 
+         1200: {items: 1}
+  },
+  autoplay: false,
+  autoplayTimeout: 1000,
+  autoplayHoverPause: false,
+  dots: false,
+  nav: true,
+  loop: true,
+  margin: 20,
+  stagePadding: 50,
+  // height:20,
+
+  // loop:true,
+  // margin:10,
+  // nav:true,
+  // responsive:{
+  //     0:{
+  //         items:1
+  //     },
+  //     600:{
+  //         items:1
+  //     },
+  //     1000:{
+  //         items:1
+  //     }
+  // }
+});
+
+
+}
+
+
+
+
+
+
+
+
+
 
 //  ********** RENDERING DATA ON THE 3 TABLES(SPACIFICATIONS)  **********
 for (const singleProduct of ourProducts) {
