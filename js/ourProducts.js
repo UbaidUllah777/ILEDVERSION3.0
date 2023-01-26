@@ -686,7 +686,7 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/iLEXSeries/iLexSeriesII/Front/iledscreenrentalLedDisplay.png",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
