@@ -1100,16 +1100,28 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDULTRASERIES/Front/iledscreenULTRALEDSERIEScabinetFront.jpg",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDULTRASERIES/iledscreenULTRALEDSERIEScabinet1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDULTRASERIES/iledscreenULTRALEDSERIEScabinet2.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDULTRASERIES/iledscreenULTRALEDSERIEScabinet3.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDULTRASERIES/iledscreenULTRALEDSERIEScabinet4.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDULTRASERIES/iledscreenULTRALEDSERIEScabinet5.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDULTRASERIES/iledscreenULTRALEDSERIEScabinet6.jpg",
       },
     ],
     DisplayProperties: [
@@ -1303,16 +1315,25 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/ULTRANSPARENTLEDDISPLAY/FrontImage/iledscreenTransparentLedDisplayFront.jpg",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/ULTRANSPARENTLEDDISPLAY/iledscreenTransparentLedDisplay1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/ULTRANSPARENTLEDDISPLAY/iledscreenTransparentLedDisplay2.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/ULTRANSPARENTLEDDISPLAY/iledscreenTransparentLedDisplay3.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/ULTRANSPARENTLEDDISPLAY/iledscreenTransparentLedDisplay4.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/ULTRANSPARENTLEDDISPLAY/iledscreenTransparentLedDisplay5.jpg",
       },
     ],
     DisplayProperties: [
@@ -1509,23 +1530,24 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/OutdoorFixedLedDisplay/outDoorFixedLEDOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/OutdoorFixedLedDisplay/FrontImage/iledscreenOutdorFixedLedDisplayFront.jpg",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/OutdoorFixedLedDisplay/outDoorFixedLED-1.jpg",
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/OutdoorFixedLedDisplay/iledscreenOutdoorFixedLedDisplay1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/OutdoorFixedLedDisplay/outDoorFixedLED-2.jpg",
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/OutdoorFixedLedDisplay/iledscreenOutdoorFixedLedDisplay2.jpg",
       },
       {
-        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/OutdoorFixedLedDisplay/outDoorFixedLED-3.jpg",
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/OutdoorFixedLedDisplay/iledscreenOutdoorFixedLedDisplay3.jpg",
       },
       {
-        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/OutdoorFixedLedDisplay/outDoorFixedLED-4.png",
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/OutdoorFixedLedDisplay/iledscreenOutdoorFixedLedDisplay4.jpg",
       },
+      
     ],
     DisplayProperties: [
       // Pixel Pitch
@@ -1719,16 +1741,28 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/ParameterLedDisplay/Frontimag/iledscreenParameterLedDisplayFront.jpg",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/ParameterLedDisplay/iledscreenParameterLedDisplay1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/ParameterLedDisplay/iledscreenParameterLedDisplay2.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/ParameterLedDisplay/iledscreenParameterLedDisplay3.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/ParameterLedDisplay/iledscreenParameterLedDisplay4.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/ParameterLedDisplay/iledscreenParameterLedDisplay5.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/ParameterLedDisplay/iledscreenParameterLedDisplay6.jpg",
       },
     ],
     DisplayProperties: [
@@ -1923,16 +1957,13 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/StreetPole/FrontImage/lampPosterLedDisplayFront.png",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
-      },
-      {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/StreetPole/lampPosterLedDisplay1.png",
       },
     ],
     DisplayProperties: [
@@ -2126,20 +2157,17 @@ const ourProducts = [
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
-// this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/Taxitop/TaxiTopForIndex.jpg",
+    // this is also for showing product on indexPage
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/Taxitop/FrontImage/iledscreenTaxitopNewFront.jpg",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/Taxitop/TaxiTop-1.jpg",
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/Taxitop/iledscreenTaxitopNew1.jpg",
       },
       {
-        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/Taxitop/TaxiTop-2.jpg",
-      },
-      {
-        image: "img/demos/iLEDv3/AllProducts/OutDoorLedDisplay/Taxitop/TaxiTop-3.jpg",
+        image: "img/demos/iLEDv3/AllProducts/OUTDOORLEDDISPLAY/OUTDOORLEDDISPLAY/Taxitop/iledscreenTaxitopNew2.jpg",
       },
     ],
     DisplayProperties: [
