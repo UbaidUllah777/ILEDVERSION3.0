@@ -71,16 +71,16 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
      // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/COBLEDSERIES/IndoorFixeddieCast.jpg",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Back",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/COBLEDSERIES/IndoorFixedDieCast2.jpg",
       },
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/COBLEDSERIES/IndoorFixeddieCast.jpg",
       },
     ],
     DisplayProperties: [
@@ -274,13 +274,16 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/AllProducts/inDoorLedDisplay/SHELFRIBBONDISPLAY/ShelfLedDisplayForIndex.png",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/COBLEDSHELFRIBBONDISPLAY/Front/iledscreenShelfLedRibbonsFront.png",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/AllProducts/inDoorLedDisplay/SHELFRIBBONDISPLAY/ShelfLedDisplay-1.png",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/COBLEDSHELFRIBBONDISPLAY/Image1.png",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/COBLEDSHELFRIBBONDISPLAY/Image2.png",
       },
     ],
     DisplayProperties: [
@@ -474,16 +477,22 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/FISERIES/FrontImage/iledscreenIndoorFIxedLedDisplayFront.png",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/FISERIES/iledscreenIndoorFIxedeDisplay.png",
       },
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/FISERIES/iledscreenIndoorFIxedLeddisplay1.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/FISERIES/iledscreenIndoorFIxedLedDisplay2.jpg",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/FISERIES/iledscreenIndoorFIxedLedDisplay3.jpg",
       },
     ],
     DisplayProperties: [
@@ -880,16 +889,25 @@ const ourProducts = [
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
 // this is also for showing product on indexPage
-    imageForProductPage: "img/demos/iLEDv3/product-details/3dHologram/3dhologramOnIndex.jpg",
+    imageForProductPage: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDiPOSTERSERIES/Front/iledscreenFloorStandingLedDisplay.png",
     pixelPitch:"1-2",
     aspectRatio:"0.93 - 3.1 mm ",
     installAndService:"Front",
     productImages: [
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - 3d hologram.jpg",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDiPOSTERSERIES/iledscreenFloorStandingLedDisplay1.png",
       },
       {
-        image: "img/demos/iLEDv3/product-details/3dHologram/iledscreen - HD 3d Hologram iFan 500mm.jpg",
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDiPOSTERSERIES/iledscreenFloorStandingLedDisplay2.png",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDiPOSTERSERIES/iledscreenFloorStandingLedDisplay3.png",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDiPOSTERSERIES/iledscreenFloorStandingLedDisplay4.png",
+      },
+      {
+        image: "img/demos/iLEDv3/AllProducts/INDOORLEDDISPLAY/INDOORLEDDISPLAY/UHDiPOSTERSERIES/iledscreenFloorStandingLedDisplay5.png",
       },
     ],
     DisplayProperties: [
@@ -1070,14 +1088,14 @@ const ourProducts = [
       },
     ],
   },
-  // UHDUltraSeries
+  // UHD Ultra Series
   {
-    id: "UHDiPosterSeries",
-    productName: "UHDUltraSeries",
+    id: "UHDUltraSeries",
+    productName: "UHD Ultra Series",
     productHeadingLine:
-      "for UHDUltraSeries...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
+      "for UHD Ultra Series...Slim, Ultra-thin frame touch structure set weight 32KG Easy to handle and maintain .",
     productDetail:
-      "Detail of UHDUltraSeries When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
+      "Detail of UHD Ultra Series When you’re ready to invest in a fiX install display, or add more products to your rental inventory, we invite you to rely on our many years of LED Display technology experience and our broad range of products, Already familiar with ILed Screen Product Series, feel free to browse below, if you just aren’t sure, give us a call.",
     tagLine_one: "Slim",
     tagLine_two: "Ultra-thin",
     tagLine_three: "Easy to Handle",
