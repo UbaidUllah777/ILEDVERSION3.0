@@ -151,7 +151,14 @@
     <script src="js/common.js" defer></script>
     <script src="js/Markete.js" defer></script>
   </head>
-  <body>
+  <body class="loading-overlay-showing" data-loading-overlay data-plugin-options="{'hideDelay': 500, 'effect': 'zenith'}">
+    <div class="loading-overlay">
+      <div class="bounce-loader">
+        <div class="cssload-zenith-container">
+          <div class="cssload-zenith"></div>
+        </div>
+      </div>
+    </div>
     <div class="body">
       <header
         id="header"
