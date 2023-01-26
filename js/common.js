@@ -79,8 +79,7 @@ ElidHeaderLinkAboutUs.textContent = `About Us`;
 ElidHeaderLinkAboutUs.href = `about-us.html`;
 
 if (ElidHeaderlinkProducts){
-  ElidHeaderlinkProducts.innerHTML+= `
-  <ul class="dropdown-menu">
+  const allProductsInNav=`<ul class="dropdown-menu">
   <li>
     <div class="dropdown-mega-content">
       <div class="row">
@@ -282,9 +281,9 @@ if (ElidHeaderlinkProducts){
       </div>
     </div>
   </li>
-  </ul>
-  
-  `;
+  </ul>`
+  ElidHeaderlinkProducts.insertAdjacentHTML("beforeend", allProductsInNav);
+ 
 
 }
 
