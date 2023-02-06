@@ -135,7 +135,7 @@ for (const singleBlogPost of iLEDBlogPosts) {
           ${singleBlogPost.blogAuthor}
         </li>
       </ul>
-      <p class="custom-text-size-1 mb-2">
+      <p class=" showContentUptoFourLines custom-text-size-1 mb-2">
         ${singleBlogPost.blogDisplayPara}
       </p>
       <a

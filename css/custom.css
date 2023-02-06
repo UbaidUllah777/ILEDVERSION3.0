@@ -1,3 +1,11 @@
 .dropdown-menu .dropdown-item:hover{
     background-color: #82BA41 !important;;
 }
+
+.showContentUptoFourLines{
+    overflow: hidden;
+    width:300px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
