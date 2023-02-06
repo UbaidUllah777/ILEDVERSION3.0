@@ -12,6 +12,7 @@ const ElidHeaderLinkAboutUs = document.getElementById("idHeaderLinkAboutUs");
 const ElidHeaderlinkProducts = document.getElementById("idHeaderLinkProducts");
 const ElidHeaderLinkMarkets = document.getElementById("idHeaderLinkMarkets");
 const ElidHeaderLinkSupport = document.getElementById("idHeaderLinkSupport");
+const ElidHeaderLinkOurBlogs=document.getElementById("idHeaderLinkOurBlogs");
 const ElidHeaderLinkContactUs = document.getElementById(
   "idHeaderLinkContactUs"
 );
@@ -294,6 +295,9 @@ ElidHeaderLinkMarkets.href = `market.html`;
 
 ElidHeaderLinkSupport.textContent = `Support`;
 ElidHeaderLinkSupport.href = `support.html`;
+
+ElidHeaderLinkOurBlogs.textContent=`Blogs`;
+ElidHeaderLinkOurBlogs.href=`blog.html`;
 
 ElidHeaderLinkContactUs.textContent = `Contact`;
 ElidHeaderLinkContactUs.href = `contact.html`;

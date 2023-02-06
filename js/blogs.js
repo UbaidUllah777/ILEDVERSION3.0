@@ -7,88 +7,90 @@ const AuthorFahad = "Mr.Fahad";
 const AuthorFahadBhai = "Mr.Fahad Bhai";
 
 const iLEDBlogPosts = [
-  // 1st Blog
+  // 1st Blog-- A DIGITAL SIGNAGE COMPANY BUILT FOR AIRLINES AND AIRPORTS
   {
     id: "idBlog-1",
     seconderyId: "1",
-    blogShortHeading: "BLOG one Short Heading",
-    BlogLongHeading: "BLOG one Long Heading...",
-    blogPostedOnDate: "October 4, 2022",
+    blogShortHeading: "A DIGITAL SIGNAGE COMPANY BUILT FOR AIRLINES AND AIRPORTS",
+    BlogLongHeading: "A DIGITAL SIGNAGE COMPANY BUILT FOR AIRLINES AND AIRPORTS",
+    blogPostedOnDate: "February 06, 2023",
     blogAuthor: AuthorFahad,
     blogDisplayPara:
-      "Est eu in ut ea do amet ad dolor eiusmod ut proident id Lorem incididunt. Sit nulla pariatur mollit tempor. Lorem id sint eu aliquip sit exercitation labore dolore minim. Aliqua quis in deserunt labore.",
+      "Airport digital signage is the use of screens and other digital displays to convey important information to travelers and sometimes employees. The aim of using screens in airports is to optimize the overall airport experience, which has great benefits in the long term. With digital airport signage, travelers will have a more pleasant experience while navigating an airport and operations will be much smoother, saving costs and many headaches.",
     blogPara1:
-      "Nostrud consequat pariatur nulla culpa labore eu magna incididunt sint ipsum eu mollit. Eiusmod quis nostrud esse nisi consectetur qui eu enim duis reprehenderit in est laborum nostrud. Pariatur laboris laboris non culpa. Cillum occaecat et veniam Lorem voluptate in est laboris culpa tempor est esse eiusmod dolore. Aute non voluptate nostrud proident enim pariatur nostrud nostrud. Aliqua minim aliquip enim irure aute excepteur sint labore cupidatat veniam aliqua. Ad commodo officia aliquip nulla qui.",
+      "Studies have shown that employees who use digital signs are more productive than those who do not. Digital signage solutions can reduce costs by reducing staff turnover and increasing efficiency, which helps to reduce expenses associated with hiring new employees or training existing ones.",
     blogPara2:
-      "Duis cupidatat ex aute aliquip reprehenderit ex do occaecat cupidatat amet fugiat. Est ea cillum tempor cupidatat eu non. Ad cillum aliquip aliqua ullamco consectetur incididunt nostrud aute duis velit incididunt. Fugiat occaecat enim irure adipisicing exercitation proident.",
+      "You can use them in airports and airlines to provide real-time updates. Digital signage solutions enable your employees to be proactive about the upcoming events of the corporation.",
     blogPara3:
-      "Sunt ea veniam adipisicing reprehenderit excepteur elit sit do dolor. Cillum occaecat adipisicing proident laborum Lorem irure velit veniam proident irure ex voluptate labore. Consequat tempor cupidatat sint deserunt in. Duis sunt duis qui eiusmod dolor voluptate sint nostrud ullamco et. Cillum esse proident eu id qui aute id sit voluptate magna irure. Cillum velit dolor mollit pariatur dolor consectetur esse enim..",
-    blogImg: "img/demos/iLEDv3/blog/blog-11.jpg",
-    blogPostBigImage: "img/demos/iLEDv3/blog/blog-11.jpg",
+      "Airports are the critical points when dealing with customers. You deal with thousands of customers every day; Business people, tourists, domestic travelers and those who accompany them to airports. According to the International Air Transport Association (IATA), the number of air passengers passed the 4 billion mark in 2017, with a high probability of steadily increasing in the coming years. As of 2019, there was a 4.1% growth rate in air travel.Since the introduction of digital signage, airports have rapidly adopted this technology. The reason was pretty obvious. With busy schedules and crowds arriving every minute, airport digital signage solutions came to the rescue.Interactive digital signage is exactly what it sounds like: digital signage you can interact with. In case you don't know, digital signage is a type of electronic sign that displays dynamic content across multiple screens. The return on investment is not only financial, but more importantly, it makes attending the healthcare facility more satisfying for everyone.",
+    blogImg: "img/demos/iLEDv3/blog/airPortLED.jpeg",
+    blogPostBigImage: "img/demos/iLEDv3/blog/airPortLED.jpeg",
   },
-  // 2nd Blog
+
+  // 2nd Blog-- DIGITAL SIGNAGE FOR THE HOSPITALITY INDUSTRY
   {
     id: "idBlog-2",
     seconderyId: "2",
-    blogShortHeading: "BLOG Two Short Heading",
-    BlogLongHeading: "BLOG Two Long Heading...",
-    blogPostedOnDate: "October 17, 2022",
-    blogAuthor: AuthorFahadBhai,
+    blogShortHeading: "DIGITAL SIGNAGE FOR THE HOSPITALITY INDUSTRY",
+    BlogLongHeading: "DIGITAL SIGNAGE FOR THE HOSPITALITY INDUSTRY",
+    blogPostedOnDate: "February 06, 2023",
+    blogAuthor: AuthorFahad,
     blogDisplayPara:
-      "Exercitation est reprehenderit velit adipisicing culpa do nostrud ex non. Qui nisi nulla nisi ex veniam officia do cillum mollit. Deserunt amet do enim proident culpa minim sint ut elit. Cillum mollit sit cupidatat sunt consectetur consequat consectetur. Voluptate mollit cillum cupidatat amet culpa non id duis adipisicing amet Lorem dolor esse.",
+      "In hospitality, the guest experience is everything. That's why hotels and resorts work tirelessly to strengthen their reputation and provide an unmatched user experience. As a hotelier, you're probably focused on staff training, design, and amenities, but there's one thing you're probably overlooking: digital signage. ",
     blogPara1:
-      "Eiusmod ad sit nostrud do aliquip. Eiusmod magna consectetur amet occaecat tempor. Incididunt velit ullamco nostrud amet laboris irure exercitation dolor dolore.",
+      "In hospitality, the guest experience is everything. That's why hotels and resorts work tirelessly to strengthen their reputation and provide an unmatched user experience. As a hotelier, you're probably focused on staff training, design, and amenities, but there's one thing you're probably overlooking: digital signage.Technology and hospitality are two sectors that have seen steady growth in recent years. As a hotelier or manager, you're probably looking for ways to create exceptional guest experiences.",
     blogPara2:
-      "Ullamco id anim fugiat officia occaecat. Officia aliqua irure labore ad est reprehenderit voluptate quis enim ea commodo in consequat tempor. Enim qui et sint et. Ea reprehenderit tempor elit aliqua veniam incididunt do labore officia. Enim reprehenderit voluptate commodo non consequat aliquip eiusmod. Aliqua ipsum mollit incididunt esse do consectetur aute.",
+      "Studies have shown that employees who use digital signs are more productive than those who do not. Digital signage solutions can reduce costs by reducing staff turnover and increasing efficiency, which helps to reduce expenses associated with hiring new employees or training existing ones. You can use them in meetings and conferences to provide real-time updates without interrupting the meeting. Digital signage solutions enable your employees to be proactive about the upcoming events of the corporation",
     blogPara3:
-      "Proident ad non consectetur ad ad consequat labore. Eiusmod duis qui est consectetur dolore est ullamco id occaecat ullamco adipisicing velit non. Nisi esse veniam qui velit excepteur exercitation nisi quis excepteur aliquip. Dolor ad ipsum nulla sunt mollit ea ipsum laboris est laborum. Ipsum dolor aliqua reprehenderit occaecat nisi officia amet.",
+      "Information can be displayed in real time to facilitate communication with patients, visitors and staff. Digital signage also allows for quick and easy content modification to ensure messages are delivered effectively. Digital signage is signage that works electronically. It typically uses LED lights, LCD screens, or plasma screens to target consumers with changing text and graphic messages. It also has a computer component or player that decodes signage content and displays it visually on the screen. Interactive digital signage is exactly what it sounds like: digital signage you can interact with. In case you don't know, digital signage is a type of electronic sign that displays dynamic content across multiple screens. The return on investment is not only financial, but more importantly, it makes attending the healthcare facility more satisfying for everyone.",
 
-    blogImg: "img/demos/iLEDv3/blog/blog-12.jpg",
-    blogPostBigImage: "img/demos/iLEDv3/blog/blog-12.jpg",
+    blogImg: "img/demos/iLEDv3/blog/Restaurant.jpg",
+    blogPostBigImage: "img/demos/iLEDv3/blog/Restaurant.jpg",
   },
-  // 3rd Blog
 
+
+  // 3rd Blog-- DIGITAL SIGNAGE SOLUTIONS FOR COLLEGES AND UNIVERSITIES
   {
     id: "idBlog-3",
     seconderyId: "3",
-    blogShortHeading: "BLOG Three Short Heading",
-    BlogLongHeading: "BLOG Three Long Heading...",
-    blogPostedOnDate: "October 17, 2022",
+    blogShortHeading: "DIGITAL SIGNAGE SOLUTIONS FOR COLLEGES AND UNIVERSITIES",
+    BlogLongHeading: "DIGITAL SIGNAGE SOLUTIONS FOR COLLEGES AND UNIVERSITIES",
+    blogPostedOnDate: "February 06, 2023",
     blogAuthor: AuthorFahadBhai,
     blogDisplayPara:
-      "Exercitation est reprehenderit velit adipisicing culpa do nostrud ex non. Qui nisi nulla nisi ex veniam officia do cillum mollit. Deserunt amet do enim proident culpa minim sint ut elit. Cillum mollit sit cupidatat sunt consectetur consequat consectetur. Voluptate mollit cillum cupidatat amet culpa non id duis adipisicing amet Lorem dolor esse.",
+      "Whether you are a private university, government school, community college, or technical institute, you know the importance of engaging students, faculty, staff, and visitors on a daily basis. Displaying timely and relevant visual messages is  key to promoting a safe and inclusive campus and building community. School digital signage can help.",
     blogPara1:
-      "pteur proident. Aliquip ullamco do do ad. Nisi amet non ex tempor ex ullamco ea laboris aute esse ad occaecat.",
+      "Whether you are a private university, government school, community college, or technical institute, you know the importance of engaging students, faculty, staff, and visitors on a daily basis. Displaying timely and relevant visual messages is  key to promoting a safe and inclusive campus and building community. School digital signage can help.",
     blogPara2:
-      "Ullamco id anim fugiat officia occaecat. Officia aliqua irure labore ad est reprehenderit voluptate quis enim ea commodo in consequat tempor. Enim qui et sint et. Ea reprehenderit tempor elit aliqua veniam incididunt do labore officia. Enim reprehenderit voluptate commodo non consequat aliquip eiusmod. Aliqua ipsum mollit incididunt esse do consectetur aute.",
+      "Studies have shown that employees who use digital signs are more productive than those who do not.  Digital signage solutions can reduce costs by reducing staff turnover and increasing efficiency, which helps to reduce expenses associated with hiring new employees or training existing ones. You can use them in colleges and universities to provide real-time updates. Digital signage solutions enable your employees to be proactive about the upcoming events of the corporation.",
     blogPara3:
-      "Proident ad non consectetur ad ad consequat labore. Eiusmod duis qui est consectetur dolore est ullamco id occaecat ullamco adipisicing velit non. Nisi esse veniam qui velit excepteur exercitation nisi quis excepteur aliquip. Dolor ad ipsum nulla sunt mollit ea ipsum laboris est laborum. Ipsum dolor aliqua reprehenderit occaecat nisi officia amet.",
+      "Publish news and announcements, promote events, promote the bookstore, view social media feeds and keep everyone updated on your athletic results, all from one centralized app. Use digital signage to welcome guests and visitors and offer campus orientation at interactive kiosks to help them navigate your facility. We can also create custom information boards, donor boards, menu boards and more. Our digital room signs are perfect solutions for your conference or training center. Our interactive signs allow you to schedule meetings at the door, and our electronic paper signs are an affordable wireless option for shared spaces. Let Visix build an enterprise campus solution that helps you engage students, improve employee satisfaction, and increase efficiency.",
 
-    blogImg: "img/demos/iLEDv3/blog/blog-13.jpg",
-    blogPostBigImage: "img/demos/iLEDv3/blog/blog-13.jpg",
+    blogImg: "img/demos/iLEDv3/blog/schools.jpg",
+    blogPostBigImage: "img/demos/iLEDv3/blog/schools.jpg",
   },
 
   
-  // 4th Blog
+  // 4th Blog-- DIGITAL SIGNAGE SOLUTIONS FOR STADIUM AND ARENAS
 
   {
     id: "idBlog-4",
     seconderyId: "4",
-    blogShortHeading: "BLOG Four Short Heading",
-    BlogLongHeading: "BLOG Four Long Heading...",
+    blogShortHeading: "DIGITAL SIGNAGE SOLUTIONS FOR STADIUM AND ARENAS",
+    BlogLongHeading: "DIGITAL SIGNAGE SOLUTIONS FOR STADIUM AND ARENAS",
     blogPostedOnDate: "January 01, 2022",
-    blogAuthor: AuthorFahadBhai,
+    blogAuthor: AuthorFahad,
     blogDisplayPara:
-      "Exercitation est reprehenderit velit adipisicing culpa do nostrud ex non. Qui nisi nulla nisi ex veniam officia do cillum mollit. Deserunt amet do enim proident culpa minim sint ut elit. Cillum mollit sit cupidatat sunt consectetur consequat consectetur. Voluptate mollit cillum cupidatat amet culpa non id duis adipisicing amet Lorem dolor esse.",
+      "There's no question that in today's fast-paced world, advertisers need to stay  ahead of the game and their competitors. Reaching a mass audience, both in person and on live television at large commercial events such as concerts and sports tournaments, is an effective solution. In fact, the business benefits of digital signage in multi-faceted stadiums with thousands of spectators are limitless.",
     blogPara1:
-      "Nulla qui consequat amet aliqua eu laborum occaecat ex aute mollit aute cillum consequat. Et pariatur laborum amet anim voluptate veniam adipisicing excepteur proident. Aliquip ullamco do do ad. Nisi amet non ex tempor ex ullamco ea laboris aute esse ad occaecat.",
+      "There's no question that in today's fast-paced world, advertisers need to stay  ahead of the game and their competitors. Reaching a mass audience, both in person and on live television at large commercial events such as concerts and sports tournaments, is an effective solution. In fact, the business benefits of digital signage in multi-faceted stadiums with thousands of spectators are limitless. Stadiums are perfectly equipped to help you get your brand messages across to as many people as possible without incurring a huge loss in revenue. Read on to learn more about the benefits of using digital signage in stadiums and arenas.",
     blogPara2:
-      "Ullamco id anim fugiat officia occaecat. Officia aliqua irure labore ad est reprehenderit voluptate quis enim ea commodo in consequat tempor. Enim qui et sint et. Ea reprehenderit tempor elit aliqua veniam incididunt do labore officia. Enim reprehenderit voluptate commodo non consequat aliquip eiusmod. Aliqua ipsum mollit incididunt esse do consectetur aute.",
+      ": Studies have shown that employees who use digital signs are more productive than those who do not.  Digital signage solutions can reduce costs by reducing staff turnover and increasing efficiency, which helps to reduce expenses associated with hiring new employees or training existing ones. You can use them in stadiums and arenas to provide real-time updates. Digital signage solutions enable your employees to be proactive about the upcoming events of the corporation.",
     blogPara3:
-      "Proident ad non consectetur ad ad consequat labore. Eiusmod duis qui est consectetur dolore est ullamco id occaecat ullamco adipisicing velit non. Nisi esse veniam qui velit excepteur exercitation nisi quis excepteur aliquip. Dolor ad ipsum nulla sunt mollit ea ipsum laboris est laborum. Ipsum dolor aliqua reprehenderit occaecat nisi officia amet.",
+      "Digital signage is one of the fastest and most efficient ways to reach  a wide audience. And unlike online marketing, which uses content  targeted to specific demographics, digital signage in stadiums and arenas allows you to drive brand awareness on a more universal level. Here are some of the ways  companies can and do use digital signage in stadiums to their advantage. Advertising always moves much faster than the market can predict. New products and services are introduced even before you  learn how to use their predecessors! This is why advertising is so effective. Digital signage is signage that works electronically. It typically uses LED lights, LCD screens, or plasma screens to target consumers with changing text and graphic messages. It also has a computer component or player that decodes signage content and displays it visually on the screen. Interactive digital signage is exactly what it sounds like: digital signage you can interact with. In case you don't know, digital signage is a type of electronic sign that displays dynamic content across multiple screens. The return on investment is not only financial, but more importantly, it makes attending the healthcare facility more satisfying for everyone.",
 
-    blogImg: "img/demos/iLEDv3/blog/blog-11.jpg",
-    blogPostBigImage: "img/demos/iLEDv3/blog/blog-11.jpg",
+    blogImg: "img/demos/iLEDv3/blog/Sports.jpg",
+    blogPostBigImage: "img/demos/iLEDv3/blog/Sports.jpg",
   },
   
 
