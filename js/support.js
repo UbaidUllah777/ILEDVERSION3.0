@@ -2,16 +2,16 @@ const Elaccordion100=document.getElementById("accordion100");
 
 
 const allSoftwares=[
-    // Category-One
+    // LED Control Sysytem
    {
-    softwareCategory:"categ1",
-    categoryName:"First Category",
+    softwareCategory:"LEDControlSysytem",
+    categoryName:"LED Control Sysytem",
     categorizedSoftwares:[
 
-        //1st Software in categ1
+        //1st Software MCTRL 4K
         {
-            softwareId:"softwareOne",
-            softwareName:"software One",
+            softwareId:"MCTRL4K",
+            softwareName:"MCTRL 4K V1.2.6.0",
            
                 day:"03",
                 month:"JAN",
@@ -19,13 +19,13 @@ const allSoftwares=[
 
            
             softwareDescription:"Minim in esse tempor labore cupidatat tempor Tempor tempor reprehenderit ex labore irure adipisicing. Ullamco nulla fugiat reprehenderit adipisicing irure fugiat consequat minim officia incididunt sit esse minim. Ex nulla quis sint eiusmod commodo mollit tempor aute culpa magna sunt occaecat. Irure cupidatat consectetur incididunt deserunt. Enim fugiat ipsum in consequat nostrud proident. Labore commodo proident ullamco sint aliqua reprehenderit nulla minim consequat consectetur anim mollit et laborum.nisi. Et aliqua cupidatat sit ad tempor duis sit. Minim exercitation id excepteur exercitation cupidatat officia ipsum reprehenderit proident ipsum ex quis officia laboris. Officia irure est laborum elit reprehenderit ut amet minim duis ad aliqua laboris officia elit.",
-            softwareDownloadPath:"DATA_A4_V4.6.1.0.zip"
+            softwareDownloadPath:"support/LEDControlSysytem/DATA_MCTRL4K_V1.2.6.0.STD.zip"
         },
 
-        //2nd Software in categ1
+        //2nd Software MCTRL660 PRO
         {
-            softwareId:"softwareTwo",
-            softwareName:"software Two",
+            softwareId:"MCTRL660PRO",
+            softwareName:"MCTRL 660 PRO V1.0.5.0",
            
                 day:"04",
                 month:"JAN",
@@ -33,12 +33,12 @@ const allSoftwares=[
 
             
             softwareDescription:"Ullamco elit sunt dolore minim id officia incididunt commodo id sint ullamco ipsum.Minim in esse tempor labore cupidatat tempor nisi.",
-            softwareDownloadPath:"DATA_A4_V4.6.1.0.zip"
+            softwareDownloadPath:"support/LEDControlSysytem/DATA_MCTRL660PRO_V1.0.5.0.STD.zip"
         },
-        //3rd Software in categ1
+        //3rd Software MCTRL660
         {
-            softwareId:"softwarethree",
-            softwareName:"software three",
+            softwareId:"MCTRL660",
+            softwareName:"MCTRL 660  V4.7.4.0",
            
                 day:"05",
                 month:"FEB",
@@ -46,15 +46,127 @@ const allSoftwares=[
 
            
             softwareDescription:"Minim in esse tempor labore cupidatat tempor nisi.",
-            softwareDownloadPath:"DATA_A4_V4.6.1.0.zip"
+            softwareDownloadPath:"support/LEDControlSysytem/DATA_MCTRL660_V4.7.4.0.STD.zip"
         },
+        //4th Software MCTRL600
+        {
+            softwareId:"MCTRL600",
+            softwareName:"MCTRL600 V4.8.0.0.STD",
+           
+                day:"05",
+                month:"FEB",
+                year:"2021",
+
+           
+            softwareDescription:"Minim in esse tempor labore cupidatat tempor nisi.",
+            softwareDownloadPath:"support/LEDControlSysytem/DATA_MCTRL600_V4.8.0.0.STD.zip"
+        },
+        //5th Software MSD300
+        {
+            softwareId:"MSD300",
+            softwareName:"MSD300 V4.7.7.0.STD",
+           
+                day:"05",
+                month:"FEB",
+                year:"2021",
+
+           
+            softwareDescription:"Minim in esse tempor labore cupidatat tempor nisi.",
+            softwareDownloadPath:"support/LEDControlSysytem/DATA_MCTRL300_V4.7.7.0.STD.rar"
+        },
+        //6th Software MSD600​
+        {
+            softwareId:"MSD600​",
+            softwareName:"MSD600​ V4.8.0.0.STD",
+           
+                day:"05",
+                month:"FEB",
+                year:"2021",
+
+           
+            softwareDescription:"Minim in esse tempor labore cupidatat tempor nisi.",
+            softwareDownloadPath:"support/LEDControlSysytem/DATA_MCTRL600_V4.8.0.0.STD_.rar"
+        },
+        
+        //7th Software MRV 208
+        {
+          softwareId:"MRV208",
+          softwareName:"MRV 208 V4.5.2.0",
+         
+              day:"05",
+              month:"FEB",
+              year:"2021",
+
+         
+          softwareDescription:"Minim in esse tempor labore cupidatat tempor nisi.",
+          softwareDownloadPath:"support/LEDControlSysytem/DATA_MRV208_V4.5.2.0.zip"
+        },
+
+      //8th Software MRV 300
+      {
+        softwareId:"MRV300",
+        softwareName:"MRV 300 V4.6.0.0",
+       
+            day:"05",
+            month:"FEB",
+            year:"2021",
+
+       
+        softwareDescription:"Minim in esse tempor labore cupidatat tempor nisi.",
+        softwareDownloadPath:"support/LEDControlSysytem/DATA_MRV300_V4.6.0.0.zip"
+      },
+        
+      //9th Software MRV 336
+      {
+        softwareId:"MRV336",
+        softwareName:"MRV 336 V4.4.5.0",
+       
+            day:"05",
+            month:"FEB",
+            year:"2021",
+
+       
+        softwareDescription:"Minim in esse tempor labore cupidatat tempor nisi.",
+        softwareDownloadPath:"support/LEDControlSysytem/DATA_MRV336_V4.4.5.0.zip"
+      },
+      
+        
+      //10th Software MRV 328
+      {
+        softwareId:"MRV328",
+        softwareName:"MRV 328 V4.5.4.0",
+       
+            day:"05",
+            month:"FEB",
+            year:"2021",
+
+       
+        softwareDescription:"Minim in esse tempor labore cupidatat tempor nisi.",
+        softwareDownloadPath:"support/LEDControlSysytem/DATA_MRV328_V4.5.4.0.zip"
+      },
+      
+        
+      //11th Software MRV 200
+      {
+        softwareId:"MRV200",
+        softwareName:"MRV 200 V4.5.0.0",
+       
+            day:"05",
+            month:"FEB",
+            year:"2021",
+
+       
+        softwareDescription:"Minim in esse tempor labore cupidatat tempor nisi.",
+        softwareDownloadPath:"support/LEDControlSysytem/MRV200_Data_Mars_V4.5.0.0.zip"
+      },
+
     ]
    } ,
 
-   // Category-Two
+   // Processors
    {
-    softwareCategory:"categ2",
-    categoryName:"Second Category",
+    softwareCategory:"Processors",
+    categoryName:"Processors",
     categorizedSoftwares:[
 
         //1st Software in categ2
@@ -74,10 +186,10 @@ const allSoftwares=[
     ]
    },
    
-   // Category-Three
+   // Nova Cloud
    {
-    softwareCategory:"categ3",
-    categoryName:"Third Category",
+    softwareCategory:"NovaCloud",
+    categoryName:"Nova Cloud",
     categorizedSoftwares:[
 
        //1st Software in categ3
@@ -111,10 +223,10 @@ const allSoftwares=[
     ]
    },
    
-   // Category-Four
+   // Software
    {
-    softwareCategory:"categ4",
-    categoryName:"Fourth Category",
+    softwareCategory:"Software",
+    categoryName:"Software",
     categorizedSoftwares:[
 
          //1st Software in categ4
